@@ -64,7 +64,7 @@ export default function Content({ i, video }) {
 			<Img
 				src={images[i]}
 				whileHover={{ scale: 0.9 }}
-				transition={{ ease: 'easeIn', duration: 0.8 }}></Img>
+				transition={{ ease: 'easeOut', duration: 0.3 }}></Img>
 		);
 	}
 
