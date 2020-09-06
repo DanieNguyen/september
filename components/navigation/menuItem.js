@@ -52,7 +52,7 @@ const Box = styled.div`
 	z-index: 120;
 `;
 
-const words = ['Work', 'About', 'Contact', 'Resume'];
+const words = ['work', 'about', 'contact', 'resume'];
 export const MenuItem = ({ i }) => {
 	return (
 		<Item
