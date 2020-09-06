@@ -56,6 +56,7 @@ const Container = styled.div`
 	@media ${device.tablet} {
 		display: none;
 	}
+	z-index: 100;
 `;
 
 const Zav = styled.div`

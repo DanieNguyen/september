@@ -19,9 +19,12 @@ const Title = styled.h2`
 	line-height: 24px;
 	/* identical to box height, or 120% */
 
-	text-align: center;
+	text-align: left;
+	@media ${device.tablet} {
+		text-align: center;
+	}
 	letter-spacing: -0.03em;
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 `;
 
 const Tagline = styled.h2`
@@ -29,19 +32,24 @@ const Tagline = styled.h2`
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 24px;
-	text-align: center;
+	text-align: left;
+	@media ${device.tablet} {
+		text-align: center;
+	}
 	letter-spacing: -0.06em;
 	color: #b4b1b1;
 `;
 
 const videos = ['static/videos/spotify.mp4'];
-const images = ['static/images/spotify.png', 'static/images/canvas.png'];
+const images = ['static/images/spotify.png', 'static/images/canvas.png', 'static/images/vita.png', 'static/images/dispatch.png'];
 
-const title = ['Spotify Podcasts', 'UW Canvas'];
+const title = ['Spotify Podcasts', 'UW Canvas', 'Vita OS', 'Dispatch'];
 
 const taglines = [
 	'Helping listeners discover new podcasts',
 	'Empowering student communities in online learning',
+	'Promoting mental health with intentional living',
+	'Assisting police officers on foot patrol'
 ];
 
 export default function Content({ i, video }) {
@@ -63,7 +71,7 @@ export default function Content({ i, video }) {
 		content = (
 			<Img
 				src={images[i]}
-				whileHover={{ scale: 0.9 }}
+				whileHover={{ scale: 0.95 }}
 				transition={{ ease: 'easeOut', duration: 0.3 }}></Img>
 		);
 	}

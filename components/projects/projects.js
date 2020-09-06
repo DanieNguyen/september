@@ -11,28 +11,36 @@ const Container = styled.div`
 		margin-top: 900px;
 	}
 	@media ${device.laptop} {
-		margin-top: -300px;
-	}
+        margin-top: -300px;
+        margin-bottom: 0rem;
+
+    }
+    margin-bottom: 4rem;
 `;
 
 const Grid = styled.div`
 	z-index: 10;
 	position: relative;
 	display: grid;
-	height: 150vh;
 	width: 100%;
 	@media ${device.tablet} {
-		height: 200vh;
+		height: 150vh;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		grid-template-rows: repeat(12, minmax(0, 1fr));
 		column-gap: 80px;
 		row-gap: 80px;
-	}
-	row-gap: 40px;
+    }
+    @media ${device.laptop} {
+        height: 190vh;
+    }
+    @media ${device.desktop} {
+        height: 160vh;
+    }
+    row-gap: 40px;
 `;
 
 const One = styled.div`
-    order: 2;
+	order: 2;
 	@media ${device.tablet} {
 		grid-column: 1 / 1;
 		grid-row: 1 / 7;
@@ -41,7 +49,7 @@ const One = styled.div`
 
 const Two = styled.div`
 	order: 1;
-	margin-bottom: -200px;
+	margin-bottom: 0px;
 	@media ${device.tablet} {
 		order: 2;
 		grid-column: 2 / 2;
@@ -51,17 +59,15 @@ const Two = styled.div`
 `;
 
 const Three = styled.div`
-	order: 3;
+	order: 4;
 	@media ${device.tablet} {
 		grid-column: 1 / 1;
 		grid-row: 7 / 12;
 	}
-	background-color: red;
-	border: 1px solid black;
 `;
 
 const Four = styled.div`
-	order: 4;
+	order: 3;
 	@media ${device.tablet} {
 		grid-column: 2 / 2;
 		grid-row: 2 / 6;
@@ -74,8 +80,6 @@ const Five = styled.div`
 		grid-column: 2 / 2;
 		grid-row: 6 / 11;
 	}
-	background-color: black;
-	border: 1px solid black;
 `;
 
 const P = styled.p`
@@ -101,10 +105,14 @@ export default function Projects() {
 						</Box>
 					</Two>
 					<Three>
-						
+						<Content i={2} video={false}></Content>
 					</Three>
-					<Four><Content i={1} video={false}></Content></Four>
-					<Five></Five>
+					<Four>
+						<Content i={1} video={false}></Content>
+					</Four>
+					<Five>
+						<Content i={3} video={false}></Content>
+					</Five>
 				</Grid>
 			</Container>
 		</div>
