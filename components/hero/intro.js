@@ -5,7 +5,7 @@ import { device } from '../device';
 
 const Title = styled(motion.h1)`
 	height: 64px;
-	font-family: DM Serif Display;
+	font-family: 'DM Serif Display';
 	font-weight: normal;
 	font-size: 64px;
 	line-height: 64px;
@@ -15,7 +15,7 @@ const Title = styled(motion.h1)`
 `;
 
 const Subtitle = styled(motion.h2)`
-	font-family: Basier Square;
+	font-family: 'Basier';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -28,7 +28,7 @@ const Number = styled(motion.p)`
 	width: 18px;
 	height: 18px;
 
-	font-family: Basier Square;
+	font-family: 'Basier';
 	font-weight: normal;
 
 	font-size: 1rem;
@@ -41,7 +41,7 @@ const Number = styled(motion.p)`
 `;
 
 const Definition = styled(motion.p)`
-	font-family: Basier Square;
+	font-family: 'Basier';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1rem;
