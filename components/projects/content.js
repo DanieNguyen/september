@@ -64,7 +64,8 @@ export default function Content({ i, video }) {
 				onMouseLeave={(event) => event.target.pause()}
 				loop
 				muted
-				playsInline>
+				playsInline
+				poster={images[i]}>
 					<source src={videos[i]} type="video/mp4" />
                         Your browser does not support the video tag.
 				</Video>
