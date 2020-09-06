@@ -11,7 +11,6 @@ const Img = styled(motion.img)`
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
-	border: 1px solid black;
 `;
 
 const Title = styled.h2`
@@ -52,7 +51,7 @@ export default function Content({ i, video }) {
 		content = (
 			<Video
 				whileHover={{ scale: 0.95 }}
-				transition={{ ease: 'easeIn' }}
+				transition={{ ease: 'easeOut', duration: 0.3 }}
 				onMouseEnter={(event) => event.target.play()}
 				onMouseLeave={(event) => event.target.pause()}
 				src={videos[i]}
@@ -65,7 +64,7 @@ export default function Content({ i, video }) {
 			<Img
 				src={images[i]}
 				whileHover={{ scale: 0.9 }}
-				transition={{ ease: 'easeIn' }}></Img>
+				transition={{ ease: 'easeIn', duration: 0.8 }}></Img>
 		);
 	}
 
