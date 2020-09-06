@@ -62,10 +62,12 @@ export default function Content({ i, video }) {
 				transition={{ ease: 'easeOut', duration: 0.3 }}
 				onMouseEnter={(event) => event.target.play()}
 				onMouseLeave={(event) => event.target.pause()}
-				src={videos[i]}
 				loop
 				muted
-				playsInline></Video>
+				playsInline>
+					<source src={videos[i]} type="video/mp4" />
+                        Your browser does not support the video tag.
+				</Video>
 		);
 	} else {
 		content = (
