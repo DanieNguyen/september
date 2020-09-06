@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer": "^1.2.5",
+    "framer-motion": "^2.6.6",
+    "kursor": "^0.1.6",
+    "motion": "^5.0.0-beta26",
     "next": "9.5.3",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.2.0"
   }
 }
