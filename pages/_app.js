@@ -6,8 +6,8 @@ import { device } from '../components/device';
 const theme = {
 	colors: {
 		primary: '#4f7ae8',
-		text: '#353D45',
-		gray: '#B4B1B1',
+        text: '#353D45',
+		gray: '#898989',
 		lightgray: '#dfdfdf',
 	},
 };

@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import Nav from '../components/navigation/navbar';
-import Intro from '../components/homepage/intro';
-import Projects from '../components/projects/projects';
 import Layout from '../components/layout';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../components/device';
+import Hero from '../components/case study/hero';
 
 export default function Home() {
 	return (
@@ -13,8 +12,7 @@ export default function Home() {
 			<Head></Head>
 			<Nav></Nav>
 			<Layout>
-				<Intro></Intro>
-				<Projects></Projects>
+                <Hero></Hero>
 			</Layout>
 		</div>
 	);

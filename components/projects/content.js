@@ -4,13 +4,11 @@ import { device } from '../device';
 
 const Video = styled(motion.video)`
 	width: 100%;
-	cursor: pointer;
 `;
 
 const Img = styled(motion.img)`
 	width: 100%;
 	height: 100%;
-	cursor: pointer;
 `;
 
 const Title = styled.h2`
@@ -41,7 +39,12 @@ const Tagline = styled.h2`
 `;
 
 const videos = ['static/videos/spotify.mp4'];
-const images = ['static/images/spotify.png', 'static/images/canvas.png', 'static/images/vita.png', 'static/images/dispatch.png'];
+const images = [
+	'static/images/spotify.png',
+	'static/images/canvas.png',
+	'static/images/vita.png',
+	'static/images/dispatch.png',
+];
 
 const title = ['Spotify Podcasts', 'UW Canvas', 'Vita OS', 'Dispatch'];
 
@@ -49,12 +52,12 @@ const taglines = [
 	'Helping listeners discover new podcasts',
 	'Empowering student communities in online learning',
 	'Promoting mental health with intentional living',
-	'Assisting police officers on foot patrol'
+	'Assisting police officers on foot patrol',
 ];
 
-export default function Content({ i, video }) {
+export default function Content({ i, video, home }) {
 	let content = null;
-
+	let words = null;
 	if (video) {
 		content = (
 			<Video
@@ -66,9 +69,9 @@ export default function Content({ i, video }) {
 				muted
 				playsInline
 				poster={images[i]}>
-					<source src={videos[i]} type="video/mp4" />
-                        Your browser does not support the video tag.
-				</Video>
+				<source src={videos[i]} type='video/mp4' />
+				Your browser does not support the video tag.
+			</Video>
 		);
 	} else {
 		content = (
@@ -79,11 +82,19 @@ export default function Content({ i, video }) {
 		);
 	}
 
+	if (home) {
+		words = (
+			<div>
+				<Title>{title[i]}</Title>
+				<Tagline>{taglines[i]}</Tagline>
+			</div>
+		);
+	}
+
 	return (
 		<div>
 			{content}
-			<Title>{title[i]}</Title>
-			<Tagline>{taglines[i]}</Tagline>
+			{words}
 		</div>
 	);
 }

@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Hamburger } from './navigation/mobileMenu';
-import { device } from '../components/device';
+import { Hamburger } from './mobileMenu';
+import { device } from '../device';
+import Link from 'next/link';
 
-const Logo = styled.h1`
+const Logo = styled.a`
 	position: fixed;
 	width: 51px;
 	height: 24px;
 	left: 24px;
 	top: 24px;
+	cursor: pointer;
 	@media ${device.tablet} {
 		left: 64px;
 		top: 60px;
@@ -67,7 +69,9 @@ export default function Nav() {
 	return (
 		<Zav>
 			<Container></Container>
-			<Logo>dang</Logo>
+			<Link href='/'>
+				<Logo>dang</Logo>
+			</Link>
 			<Right>
 				<NavItem>WORKS</NavItem>
 				<NavItem>ABOUT</NavItem>

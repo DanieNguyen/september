@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../device';
 import Content from './content';
+import Link from 'next/link';
 
 const Container = styled.div`
 	width: 100%;
@@ -11,11 +12,10 @@ const Container = styled.div`
 		margin-top: 900px;
 	}
 	@media ${device.laptop} {
-        margin-top: -300px;
-        margin-bottom: 0rem;
-
-    }
-    margin-bottom: 4rem;
+		margin-top: -300px;
+		margin-bottom: 0rem;
+	}
+	margin-bottom: 4rem;
 `;
 
 const Grid = styled.div`
@@ -29,17 +29,17 @@ const Grid = styled.div`
 		grid-template-rows: repeat(12, minmax(0, 1fr));
 		column-gap: 80px;
 		row-gap: 80px;
-    }
-    @media ${device.laptop} {
-        height: 190vh;
-    }
-    @media ${device.desktop} {
-        height: 160vh;
-    }
-    row-gap: 40px;
+	}
+	@media ${device.laptop} {
+		height: 190vh;
+	}
+	@media ${device.desktop} {
+		height: 160vh;
+	}
+	row-gap: 40px;
 `;
 
-const One = styled.div`
+const One = styled.a`
 	order: 2;
 	@media ${device.tablet} {
 		grid-column: 1 / 1;
@@ -95,9 +95,11 @@ export default function Projects() {
 		<div>
 			<Container>
 				<Grid>
-					<One>
-						<Content i={0} video={true}></Content>
-					</One>
+					<Link href="/spotify">
+						<One>
+							<Content i={0} video={true} home={true}></Content>
+						</One>
+					</Link>
 					<Two>
 						<Box>
 							<h2>Projects</h2>
@@ -105,13 +107,13 @@ export default function Projects() {
 						</Box>
 					</Two>
 					<Three>
-						<Content i={2} video={false}></Content>
+						<Content i={2} video={false} home={true}></Content>
 					</Three>
 					<Four>
-						<Content i={1} video={false}></Content>
+						<Content i={1} video={false} home={true}></Content>
 					</Four>
 					<Five>
-						<Content i={3} video={false}></Content>
+						<Content i={3} video={false} home={true}></Content>
 					</Five>
 				</Grid>
 			</Container>
