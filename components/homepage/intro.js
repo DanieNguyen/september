@@ -91,7 +91,7 @@ const Break = styled.br`
 export default function Intro() {
 	return (
         <div>
-        <Line></Line>
+        <Line height='1200' width='140'></Line>
 		<Box>
 			<Title>Daniel</Title>
 			<Subtitle>[product designer]</Subtitle>

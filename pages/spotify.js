@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../components/device';
+import Line from '../components/homepage/line';
 
 const Hook = styled.div`
 	z-index: 2;
@@ -218,7 +219,17 @@ const Pixels = styled(Behind)`
 	margin-left: 0rem;
 	@media ${device.laptop} {
 		margin-left: 6rem;
+		margin-bottom: -4rem;
 	}
+`;
+
+const Process = styled.div`
+	margin-top: 0rem;
+	margin-bottom: -360px;
+`;
+
+const Card = styled.div`
+	margin-bottom: 1rem;
 `;
 
 export default function Home() {
@@ -313,23 +324,38 @@ export default function Home() {
 					</Center>
 					<Two>
 						<Half>
-							<Video loop muted playsInline autoPlay>
-								<source
-									src='static/videos/spotify/card.mp4'
-									type='video/mp4'
-								/>
-								Your browser does not support the video tag.
-							</Video>
-							<Caption>
-								<Fig>Easily browse through podcasts</Fig>
-								<Text>
-									However, due to the reliance on a
-									banner-based structure, the site faced
-									several challenges, including difficulty
-									scaling across devices, and a lack of visual
-									consistency across markets.
-								</Text>
-							</Caption>
+							<Card>
+								<Video loop muted playsInline autoPlay>
+									<source
+										src='static/videos/spotify/card.mp4'
+										type='video/mp4'
+									/>
+									Your browser does not support the video tag.
+								</Video>
+								<Caption>
+									<Fig>Easily browse through podcasts</Fig>
+									<Text>
+										However, due to the reliance on a
+										banner-based structure, the site faced
+										several challenges, including difficulty
+										scaling across devices, and a lack of
+										visual consistency across markets.
+									</Text>
+								</Caption>
+							</Card>
+							<Card>
+								<Img src='static/images/spotify/variety.png'></Img>
+								<Caption>
+									<Fig>Easily browse through podcasts</Fig>
+									<Text>
+										However, due to the reliance on a
+										banner-based structure, the site faced
+										several challenges, including difficulty
+										scaling across devices, and a lack of
+										visual consistency across markets.
+									</Text>
+								</Caption>
+							</Card>
 						</Half>
 						<Half>
 							<Video loop muted playsInline autoPlay>
@@ -354,10 +380,47 @@ export default function Home() {
 							</Caption>
 						</Half>
 					</Two>
-					<Div>
+					<Process>
 						<Behind>Behind</Behind>
 						<Pixels>the Pixels</Pixels>
-					</Div>
+						<Line height='400' width='60'></Line>
+					</Process>
+					<Overview>
+						<Context>
+							Individual Project <br />8 weeks <br /> <br />
+							User Research <br /> Visual Design <br />
+							Product Design
+						</Context>
+						<Table>
+							<tr>
+								<td>User Research</td>
+								<td>Individual Project</td>
+							</tr>
+							<tr>
+								<td>Visual Design</td>
+								<td>8 weeks</td>
+							</tr>
+							<tr>
+								<td>Product Design</td>
+							</tr>
+						</Table>
+						<Left>
+							<Header>THE CHALLENGE</Header>
+							<Text>
+								However, due to the reliance on a banner-based
+								structure, the site faced several challenges,
+								including difficulty scaling across devices, and
+								a lack of visual consistency across markets.
+							</Text>
+							<Header>THE APPROACH</Header>
+							<Text>
+								However, due to the reliance on a banner-based
+								structure, the site faced several challenges,
+								including difficulty scaling across devices, and
+								a lack of visual consistency across markets.
+							</Text>
+						</Left>
+					</Overview>
 				</Div>
 			</Layout>
 		</div>

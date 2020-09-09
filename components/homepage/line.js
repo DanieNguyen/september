@@ -17,15 +17,17 @@ const Container = styled.div`
 	z-index: -10000;
 `;
 
-export default function Line() {
+export default function Line({height, width}) {
+	const d = [`M ${width} 0 L ${width} ${height}`];
     return (
         <Container>
-            <svg height='1200' width='140'>
+            <svg height={height} width={width}>
+				console.log(d);
 				<LineReal
 					initial={{ pathLength: 0, pathOffset: 0 }}
 					animate={{ pathLength: 1, pathOffset: 0 }}
 					transition={{ duration: 2.5 }}
-					d='M 140 0 L 140 1200'
+					d={d}
 				/>
 			</svg>
         </Container>

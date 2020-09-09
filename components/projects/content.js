@@ -35,7 +35,7 @@ const Tagline = styled.h2`
 		text-align: center;
 	}
 	letter-spacing: -0.06em;
-	color: #b4b1b1;
+	color: ${({ theme }) => theme.colors.gray};
 `;
 
 const videos = ['static/videos/spotify/project.mp4'];
