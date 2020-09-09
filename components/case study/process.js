@@ -8,11 +8,12 @@ const Behind = styled.div`
 	font-family: DM Serif Display;
 	font-style: normal;
 	font-weight: normal;
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 
 	@media ${device.laptop} {
 		font-size: 96px;
-		line-height: 72px;
+        line-height: 72px;
+        margin-bottom: 1rem;
 	}
 
 	font-size: 32px;
@@ -21,23 +22,37 @@ const Behind = styled.div`
 `;
 
 const Pixels = styled(Behind)`
-	margin-left: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
 	@media ${device.laptop} {
-		margin-left: 7rem;
-		margin-bottom: -4rem;
+		margin-left: 8vw;
+        margin-bottom: -4rem;
+    }
+    @media ${device.desktop} {
+		margin-left: 10vw;
 	}
 `;
 
 const Top = styled.div`
-	margin-top: 4rem;
-	margin-bottom: -360px;
+    @media ${device.laptop} {
+        margin-top: 4rem;
+        margin-bottom: -360px;
+    }
 `;
 
 const Box = styled.div`
-    margin-left: 8vw;
-    margin-top: 8rem;
-    width: 40%;
-    margin-bottom: 3rem;
+    @media ${device.laptop} {
+        margin-left: 8vw;
+        margin-top: 8rem;
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+    @media ${device.desktop} {
+        margin-left: 10vw;
+        margin-top: 8rem;
+        width: 40%;
+        margin-bottom: 3rem;
+    }
 `;
 
 export default function Process() {

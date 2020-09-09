@@ -16,7 +16,9 @@ const Box = styled.div`
 `;
 
 const Caption = styled.div`
-	width: 80%;
+	@media ${device.laptop} {
+		width: 80%;
+	}
 	margin-top: 1rem;
 `;
 
