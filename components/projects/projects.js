@@ -45,6 +45,9 @@ const One = styled.a`
 		grid-column: 1 / 1;
 		grid-row: 1 / 7;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 const Two = styled.div`
@@ -64,6 +67,9 @@ const Three = styled.div`
 		grid-column: 1 / 1;
 		grid-row: 7 / 12;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 const Four = styled.div`
@@ -72,6 +78,9 @@ const Four = styled.div`
 		grid-column: 2 / 2;
 		grid-row: 2 / 6;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 const Five = styled.div`
@@ -79,6 +88,9 @@ const Five = styled.div`
 	@media ${device.tablet} {
 		grid-column: 2 / 2;
 		grid-row: 6 / 11;
+	}
+	&:hover {
+		cursor: pointer;
 	}
 `;
 
