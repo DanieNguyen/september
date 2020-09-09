@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
     
-    h1, h2, h3, p {
+    h1, h2, h3, p, li, a {
         color: ${theme.colors.text};
     }   
 

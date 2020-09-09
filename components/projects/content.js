@@ -38,7 +38,7 @@ const Tagline = styled.h2`
 	color: #b4b1b1;
 `;
 
-const videos = ['static/videos/spotify.mp4'];
+const videos = ['static/videos/spotify/project.mp4'];
 const images = [
 	'static/images/spotify.png',
 	'static/images/canvas.png',
