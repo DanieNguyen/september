@@ -30,7 +30,7 @@ const Item = styled(motion.li)`
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	z-index: 130;
+	z-index: 140;
 `;
 
 const Box = styled.div`
@@ -50,7 +50,7 @@ const Box = styled.div`
 		font-size: 48px;
 		line-height: 48px;
 	}
-	z-index: 120;
+	z-index: 110;
 `;
 
 const words = ['work', 'about', 'contact', 'resume'];

@@ -37,7 +37,7 @@ const Sidebar = styled(motion.div)`
 		width: 600px;
 	}
 	background-color: white;
-	z-index: 20;
+	z-index: 100;
 	border-left: 1.6px solid ${({ theme }) => theme.colors.lightgray};
 `;
 

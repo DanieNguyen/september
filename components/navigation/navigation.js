@@ -21,7 +21,7 @@ const MenuList = styled(motion.ul)`
         right: 72px;  
     }
 	width: 200px;
-	z-index: 100;
+	z-index: 200;
 `;
 
 export const Navigation = () => (

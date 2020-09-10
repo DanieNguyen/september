@@ -23,7 +23,7 @@ const Logo = styled.a`
 	line-height: 24px;
 
 	letter-spacing: -0.03em;
-	z-index: 140;
+	z-index: 100;
 `;
 
 const Right = styled.div`
@@ -33,7 +33,7 @@ const Right = styled.div`
 	right: 60px;
 	top: 64px;
 	margin-right: 32px;
-	z-index: 110;
+	z-index: 120;
 `;
 
 const NavItem = styled.a`
@@ -65,7 +65,7 @@ const Container = styled.div`
 	@media ${device.tablet} {
 		display: none;
 	}
-	z-index: 100;
+	z-index: 80;
 `;
 
 const Zav = styled.div`

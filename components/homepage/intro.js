@@ -9,8 +9,15 @@ const Title = styled(motion.h1)`
 	font-weight: normal;
 	font-size: 64px;
 	line-height: 64px;
-    margin-bottom: 8px;
-    @media ${device.tablet} {
+	margin-bottom: 1rem;
+	@media ${device.laptop} {
+        font-size: 72px;
+		line-height: 72px;
+	}
+	@media ${device.laptop} {
+        font-size: 84px;
+		line-height: 84px;
+		margin-bottom: 1rem;
     }
 `;
 
