@@ -146,17 +146,20 @@ export default function Hero() {
 				<Left>
 					<Header>THE CHALLENGE</Header>
 					<Text>
-						However, due to the reliance on a banner-based
-						structure, the site faced several challenges, including
-						difficulty scaling across devices, and a lack of visual
-						consistency across markets.
+						As more podcasts becomes available on Spotify, it's
+						harder for podcast listeners to find relevant podcasts
+						without investing a lot of time searching. I wanted to
+						explore ways to help existing and potential listeners to
+						discover podcast easily and efficiently.
 					</Text>
 					<Header>THE APPROACH</Header>
 					<Text>
-						However, due to the reliance on a banner-based
-						structure, the site faced several challenges, including
-						difficulty scaling across devices, and a lack of visual
-						consistency across markets.
+						I began this project with extensive user research to
+						define the problem space and user journey. Then I
+						focused on ideating how people discover
+						new content. From there, I narrowed down my solution and dived
+						into design, with continuous
+						feedback from designers and target users.
 					</Text>
 				</Left>
 			</Overview>
