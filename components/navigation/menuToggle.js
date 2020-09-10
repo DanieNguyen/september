@@ -42,7 +42,8 @@ const Button = styled(motion.button)`
 	@media ${device.tablet} {
         right: 64px;
         top: 58px;    
-    }
+	}
+	
     width: 36px;
     height: 36px;
 	border-radius: 50%;

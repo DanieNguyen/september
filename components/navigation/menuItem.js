@@ -2,6 +2,7 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { device } from '../device';
+import Link from 'next/link';
 
 const variants = {
 	open: {
@@ -22,9 +23,9 @@ const variants = {
 
 const Item = styled(motion.li)`
 	list-style: none;
-    margin-bottom: 20px;
-    @media ${device.tablet} {
-        margin-bottom: 40px;
+	margin-bottom: 20px;
+	@media ${device.tablet} {
+		margin-bottom: 40px;
 	}
 	display: flex;
 	align-items: center;
@@ -33,33 +34,37 @@ const Item = styled(motion.li)`
 `;
 
 const Box = styled.div`
-    width: 200px;
+	width: 200px;
 	height: 48px;
-    flex: 1;
-    
+	flex: 1;
+
 	font-family: DM Serif Display;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -0.03em;
-    text-align: right;
-    
+	line-height: 32px;
+	letter-spacing: -0.03em;
+	text-align: right;
+
 	@media ${device.tablet} {
 		font-size: 48px;
-        line-height: 48px;
+		line-height: 48px;
 	}
 	z-index: 120;
 `;
 
 const words = ['work', 'about', 'contact', 'resume'];
+const link = ['/', '/', '/', '/'];
+
 export const MenuItem = ({ i }) => {
 	return (
-		<Item
-			variants={variants}
-			whileHover={{ x: -20 }}
-			whileTap={{ scale: 0.95 }}>
-			<Box>{words[i]}</Box>
-		</Item>
+		<Link href={link[i]} passHref>
+			<Item
+				variants={variants}
+				whileHover={{ x: -20 }}
+				whileTap={{ scale: 0.95 }}>
+				<Box>{words[i]}</Box>
+			</Item>
+		</Link>
 	);
 };

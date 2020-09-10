@@ -32,4 +32,4 @@ export const Navigation = () => (
 	</MenuList>
 );
 
-const itemIds = [0, 1, 2, 3, 4];
+const itemIds = [0, 1, 2, 3];

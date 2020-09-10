@@ -15,12 +15,13 @@ const Logo = styled.a`
 		left: 64px;
 		top: 60px;
 	}
+
 	font-family: DM Serif Display;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 24px;
-	/* identical to box height, or 100% */
+
 	letter-spacing: -0.03em;
 	z-index: 140;
 `;
@@ -32,19 +33,25 @@ const Right = styled.div`
 	right: 60px;
 	top: 64px;
 	margin-right: 32px;
+	z-index: 110;
 `;
 
-const NavItem = styled.h2`
+const NavItem = styled.a`
 	height: 24px;
 	margin-right: 48px;
+
 	font-family: Basier-Medium;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 24px;
-	/* identical to box height, or 171% */
+
 	display: none;
+	cursor: pointer;
 	@media ${device.laptop} {
 		display: block;
+	}
+	&:hover {
+		color: ${({ theme }) => theme.colors.primary};
 	}
 `;
 
@@ -69,14 +76,22 @@ export default function Nav() {
 	return (
 		<Zav>
 			<Container></Container>
-			<Link href='/'>
+			<Link href='/' passHref>
 				<Logo>dang</Logo>
 			</Link>
 			<Right>
-				<NavItem>WORKS</NavItem>
-				<NavItem>ABOUT</NavItem>
-				<NavItem>RESUME</NavItem>
-				<NavItem>CONTACT</NavItem>
+				<Link href='/' passHref>
+					<NavItem>WORKS</NavItem>
+				</Link>
+				<Link href='/spotify' passHref>
+					<NavItem>ABOUT</NavItem>
+				</Link>
+				<Link href='/' passHref>
+					<NavItem>RESUME</NavItem>
+				</Link>
+				<Link href='/' passHref>
+					<NavItem>CONTACT</NavItem>
+				</Link>
 			</Right>
 			<Hamburger></Hamburger>
 		</Zav>
