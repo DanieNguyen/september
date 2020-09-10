@@ -17,7 +17,6 @@ const Title = styled(motion.h1)`
 	@media ${device.laptop} {
         font-size: 84px;
 		line-height: 84px;
-		margin-bottom: 1rem;
     }
 `;
 

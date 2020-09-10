@@ -47,6 +47,36 @@ export default function Product() {
 			</Center>
 			<FlexTwo>
 				<Half>
+					<Video loop muted playsInline autoPlay>
+						<source
+							src='static/videos/spotify/article.mp4'
+							type='video/mp4'
+						/>
+						Your browser does not support the video tag.
+					</Video>
+					<Caption>
+						<Fig>Read, listen, and see what a podcast is about</Fig>
+						<Text>
+							However, due to the reliance on a banner-based
+							structure, the site faced several challenges,
+							including difficulty scaling across devices, and a
+							lack of visual consistency across markets.
+						</Text>
+					</Caption>
+				</Half>
+				<Half>
+					<Card>
+						<Img src='static/images/spotify/variety.png'></Img>
+						<Caption>
+							<Fig>Discover a variety of podcasts</Fig>
+							<Text>
+								However, due to the reliance on a banner-based
+								structure, the site faced several challenges,
+								including difficulty scaling across devices, and
+								a lack of visual consistency across markets.
+							</Text>
+						</Caption>
+					</Card>
 					<Card>
 						<Video loop muted playsInline autoPlay>
 							<source
@@ -65,36 +95,6 @@ export default function Product() {
 							</Text>
 						</Caption>
 					</Card>
-					<Card>
-						<Img src='static/images/spotify/variety.png'></Img>
-						<Caption>
-							<Fig>Discover a variety of podcasts</Fig>
-							<Text>
-								However, due to the reliance on a banner-based
-								structure, the site faced several challenges,
-								including difficulty scaling across devices, and
-								a lack of visual consistency across markets.
-							</Text>
-						</Caption>
-					</Card>
-				</Half>
-				<Half>
-					<Video loop muted playsInline autoPlay>
-						<source
-							src='static/videos/spotify/article.mp4'
-							type='video/mp4'
-						/>
-						Your browser does not support the video tag.
-					</Video>
-					<Caption>
-						<Fig>Read, listen, and see what a podcast is about</Fig>
-						<Text>
-							However, due to the reliance on a banner-based
-							structure, the site faced several challenges,
-							including difficulty scaling across devices, and a
-							lack of visual consistency across markets.
-						</Text>
-					</Caption>
 				</Half>
 			</FlexTwo>
 		</div>
