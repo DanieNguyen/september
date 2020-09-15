@@ -54,17 +54,17 @@ const Box = styled.div`
 `;
 
 const words = ['work', 'about', 'contact', 'resume'];
-const link = ['/', '/', '/', '/'];
+const link = ['/', '/spotify', '/', 'mailto: yendan125@gmail.com'];
 
 export const MenuItem = ({ i }) => {
 	return (
-		<Link href={link[i]} passHref>
+		<a href={link[i]}>
 			<Item
 				variants={variants}
 				whileHover={{ x: -20 }}
 				whileTap={{ scale: 0.95 }}>
 				<Box>{words[i]}</Box>
 			</Item>
-		</Link>
+		</a>
 	);
 };

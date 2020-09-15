@@ -99,7 +99,7 @@ const P = styled.p`
 `;
 
 const Box = styled.div`
-	padding-top: 2rem;
+	padding-top: 0.75rem;
 `;
 
 export default function Projects() {

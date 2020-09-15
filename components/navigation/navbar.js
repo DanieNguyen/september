@@ -36,7 +36,7 @@ const Right = styled.div`
 	z-index: 120;
 `;
 
-const NavItem = styled.a`
+const NavItem = styled.p`
 	height: 24px;
 	margin-right: 48px;
 
@@ -86,12 +86,12 @@ export default function Nav() {
 				<Link href='/spotify' passHref>
 					<NavItem>ABOUT</NavItem>
 				</Link>
-				<Link href='/' passHref>
+				<a href='mailto: danngu@uw.edu' target='_blank'>
 					<NavItem>RESUME</NavItem>
-				</Link>
-				<Link href='/' passHref>
+				</a>
+				<a href='mailto: danyen125@gmail.com' target='_blank'>
 					<NavItem>CONTACT</NavItem>
-				</Link>
+				</a>
 			</Right>
 			<Hamburger></Hamburger>
 		</Zav>

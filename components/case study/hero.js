@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import { Title, Subtitle, Header, Context, Text } from './text';
-import { Video } from './container';
+import { Video, Center } from './container';
 
 const Hook = styled.div`
 	z-index: 2;
@@ -57,17 +57,23 @@ const Div = styled.div`
 
 const Left = styled.div`
 	@media ${device.laptop} {
-		width: 50%;
+		width: 21%;
+		margin-left: -21%;
+		margin-top: 52px;
 	}
 `;
 
-const Overview = styled.div`
+const Right = styled.div`
+	@media ${device.laptop} {
+		width: 40%;
+	}
+`;
+const Overview = styled(Center)`
 	display: flex;
 	flex-direction: column;
 	@media ${device.laptop} {
 		flex-direction: row;
-		width: 50vw;
-		margin-top: 10vh;
+		margin-top: 25vh;
 		margin-bottom: 10vh;
 	}
 `;
@@ -107,61 +113,66 @@ export default function Hero() {
 				<Hook>
 					<Title>Helping listeners discover new podcasts</Title>
 					<Summary>
-						<Subtitle>SPOTIFY PODCASTS</Subtitle>
+						<Subtitle>Featured Podcasts</Subtitle>
 						<Text>
-							Spotify is the world’s leading audio streaming
-							platform with millions of songs and podcasts
-							episodes. Right now, Spotify is pushing forward in
-							the podcast industry with podcast deals and
-							exclusive content.
+							Spotify is the world’s largest audio streaming
+							platform right now with millions of songs and
+							podcasts.{' '}
+							<strong>
+								However, listeners have trouble discovering new
+								podcasts easily and quickly.
+							</strong>
 						</Text>
 						<Text>
-							However, the current mobile app does little to help
-							users discover and learn about new podcasts. I took
-							the initiative to redesign the podcast home page to
-							be more engaging for prospective listeners.
+							After an extensive design process of research and
+							iteration, I redesigned the Spotify Podcasts home
+							page to better highlight podcasts and their
+							originality for listeners.
 						</Text>
 					</Summary>
 				</Hook>
 			</Intro>
 			<Overview>
-				<Context>
-					Individual Project <br />8 weeks <br /> <br />
-					User Research <br /> Visual Design <br />
-					Product Design
-				</Context>
 				<Table>
-					<tr>
-						<td>User Research</td>
-						<td>Individual Project</td>
-					</tr>
-					<tr>
-						<td>Visual Design</td>
-						<td>8 weeks</td>
-					</tr>
-					<tr>
-						<td>Product Design</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td>User Research</td>
+							<td>Individual Project</td>
+						</tr>
+						<tr>
+							<td>Visual Design</td>
+							<td>8 weeks</td>
+						</tr>
+						<tr>
+							<td>Product Design</td>
+						</tr>
+					</tbody>
 				</Table>
 				<Left>
-					<Header>THE CHALLENGE</Header>
 					<Text>
-						As more podcasts becomes available on Spotify, it's
-						harder for podcast listeners to find relevant podcasts
-						without investing a lot of time searching. I wanted to
-						explore ways to help existing and potential listeners to
-						discover podcast easily and efficiently.
-					</Text>
-					<Header>THE APPROACH</Header>
-					<Text>
-						I began this project with extensive user research to
-						define the problem space and user journey. Then I
-						focused on ideating how people discover
-						new content. From there, I narrowed down my solution and dived
-						into design, with continuous
-						feedback from designers and target users.
+						<strong>Individual Project</strong>
+						<br /> July - Aug 2020 <br /> 8 weeks <br /> <br />{' '}
+						<br /> <strong>Responsibilities </strong> <br /> User
+						Research <br /> Visual Design <br /> Product Design
 					</Text>
 				</Left>
+				<Right>
+					<Header>THE PROBLEM</Header>
+					<Text>
+						As the leading music streaming platform, Spotify
+						does a great job of providing a great listening
+						experience with personalized playlists, lyrics, and
+						more. However, with podcasts, the Spotify experience
+						isn't quite the same.
+					</Text>
+					<Text>
+						There's a lack of guidance inside the platform to help
+						listeners discover and engage in podcasts. As a result,
+						listeners struggle to listen to more than a handful of
+						podcasts and rely on outside sources to find more
+						podcasts.
+					</Text>
+				</Right>
 			</Overview>
 		</Div>
 	);

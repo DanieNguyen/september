@@ -7,7 +7,7 @@ const theme = {
 	colors: {
 		primary: '#4f7ae8',
         text: '#353D45',
-		gray: '#898989',
+		gray: '#aeaeb2',
 		lightgray: '#dfdfdf',
 	},
 };
@@ -52,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
     * {
         padding: 0;
         margin: 0;
+        scroll-behavior: smooth;
     }
       
     body {
@@ -68,19 +69,20 @@ const GlobalStyle = createGlobalStyle`
     }   
 
     h2 {
-        font-family: DM Serif Display;
+        font-family: 'DM Serif Display';
         font-style: normal;
         font-weight: normal;
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 48px;
+        line-height: 64px;
     }
 
     p {
         font-family: 'Basier';
         font-style: normal;
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 18px;
         line-height: 24px;
+        letter-spacing: -0.03rem;
     }
       
     ul,
@@ -103,7 +105,6 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         cursor: pointer;
     }
-      
       
 `;
 

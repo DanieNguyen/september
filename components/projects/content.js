@@ -34,7 +34,7 @@ const Tagline = styled.h2`
 	@media ${device.tablet} {
 		text-align: center;
 	}
-	letter-spacing: -0.06em;
+	letter-spacing: -0.03em;
 	color: ${({ theme }) => theme.colors.gray};
 `;
 

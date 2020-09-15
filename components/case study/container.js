@@ -21,7 +21,6 @@ export const FlexTwo = styled.div`
     margin-bottom: 4rem;
     @media ${device.laptop} {
         flex-direction: row;
-        margin-bottom: 0rem;
     }
 `;
 
@@ -30,4 +29,10 @@ export const Half = styled.div`
     @media ${device.laptop} {
         width: 48%;
     }
+`;
+
+export const Center = styled.div`
+	display: flex;
+	justify-content: center;
+	margin: 6rem 0 8rem 0;
 `;
