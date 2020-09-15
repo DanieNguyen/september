@@ -7,9 +7,8 @@ const Title = styled(motion.h1)`
 	height: 64px;
 	font-family: 'DM Serif Display';
 	font-weight: normal;
-	font-size: 23px;
+	font-size: 64px;
 	line-height: 64px;
-	margin-bottom: 1rem;
 	@media ${device.laptop} {
         font-size: 32px;
 		line-height: 72px;

@@ -98,6 +98,15 @@ const P = styled.p`
 	color: ${({ theme }) => theme.colors.gray};
 `;
 
+const H2 = styled.h2`
+	font-size: 32px !important;
+	line-height: 48px !important;
+	@media ${device.display} {
+		font-size: 48px;
+		line-height: 64px;
+	} ;
+`;
+
 const Box = styled.div`
 	padding-top: 0.75rem;
 `;
@@ -107,14 +116,14 @@ export default function Projects() {
 		<div>
 			<Container>
 				<Grid>
-					<Link href="/spotify">
+					<Link href='/spotify'>
 						<One>
 							<Content i={0} video={true} home={true}></Content>
 						</One>
 					</Link>
 					<Two>
 						<Box>
-							<h2>Projects</h2>
+							<H2>Projects</H2>
 							<P>Made with sugar, spice, and everything nice.</P>
 						</Box>
 					</Two>

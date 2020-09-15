@@ -55,7 +55,10 @@ const Fig = styled.h3`
 `;
 
 const Card = styled.div`
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
+	@media ${device.laptop} {
+		margin-bottom: 6rem;
+	}
 `;
 
 export default function Product() {

@@ -33,6 +33,9 @@ export const Half = styled.div`
 
 export const Center = styled.div`
 	display: flex;
-	justify-content: center;
-	margin: 6rem 0 8rem 0;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+    @media ${device.laptop} {
+        margin: 6rem 0 8rem 0;
+    }
 `;

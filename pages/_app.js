@@ -6,7 +6,7 @@ import { device } from '../components/device';
 const theme = {
 	colors: {
 		primary: '#4f7ae8',
-        text: '#353D45',
+		text: '#353D45',
 		gray: '#aeaeb2',
 		lightgray: '#dfdfdf',
 	},
@@ -72,8 +72,12 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'DM Serif Display';
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 64px;
+        font-size: 32px;
+        line-height: 48px;
+        @media ${device.display} {
+            font-size: 48px;
+            line-height: 64px;
+        };
     }
 
     p {

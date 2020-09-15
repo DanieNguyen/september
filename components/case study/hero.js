@@ -5,7 +5,7 @@ import { Video, Center } from './container';
 
 const Hook = styled.div`
 	z-index: 2;
-	margin-top: 5vh;
+	margin-top: 5rem;
 	@media ${device.laptop} {
 		margin-top: 10vh;
 		margin-left: -5vw;
@@ -56,6 +56,8 @@ const Div = styled.div`
 `;
 
 const Left = styled.div`
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	@media ${device.laptop} {
 		width: 21%;
 		margin-left: -21%;
@@ -71,29 +73,12 @@ const Right = styled.div`
 const Overview = styled(Center)`
 	display: flex;
 	flex-direction: column;
+	margin-top: 0rem;
+	margin-bottom: 4rem;
 	@media ${device.laptop} {
 		flex-direction: row;
 		margin-top: 25vh;
 		margin-bottom: 10vh;
-	}
-`;
-
-const Table = styled.table`
-	font-family: 'Basier';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 24px;
-
-	letter-spacing: -0.06em;
-	margin-bottom: 1.5rem;
-	color: ${({ theme }) => theme.colors.gray};
-	border-top: 1px solid ${({ theme }) => theme.colors.gray};
-	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
-	padding: 1rem 0 1rem 0;
-	margin: 1rem 0 3rem 0;
-	@media ${device.laptop} {
-		display: none;
 	}
 `;
 
@@ -133,21 +118,6 @@ export default function Hero() {
 				</Hook>
 			</Intro>
 			<Overview>
-				<Table>
-					<tbody>
-						<tr>
-							<td>User Research</td>
-							<td>Individual Project</td>
-						</tr>
-						<tr>
-							<td>Visual Design</td>
-							<td>8 weeks</td>
-						</tr>
-						<tr>
-							<td>Product Design</td>
-						</tr>
-					</tbody>
-				</Table>
 				<Left>
 					<Text>
 						<strong>Individual Project</strong>
@@ -159,11 +129,10 @@ export default function Hero() {
 				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
-						As the leading music streaming platform, Spotify
-						does a great job of providing a great listening
-						experience with personalized playlists, lyrics, and
-						more. However, with podcasts, the Spotify experience
-						isn't quite the same.
+						As the leading music streaming platform, Spotify does a
+						great job of providing a great listening experience with
+						personalized playlists, lyrics, and more. However, with
+						podcasts, the Spotify experience isn't quite the same.
 					</Text>
 					<Text>
 						There's a lack of guidance inside the platform to help
