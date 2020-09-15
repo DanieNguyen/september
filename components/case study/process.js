@@ -127,7 +127,7 @@ const Subheader = styled.h3`
 
 const Div = styled.div`
 	@media ${device.laptop} {
-		width: 40%;
+		width: 50%;
 	}
 `;
 
@@ -371,6 +371,10 @@ export default function Process() {
 					</a>
 				</HalfSticky>
 			</FlexTwo>
+			<Top>
+				<Behind>Thank You,</Behind>
+				<Pixels>Next</Pixels>
+			</Top>
 			<Center>
 				<Div>
 					<Header>REFLECTION</Header>

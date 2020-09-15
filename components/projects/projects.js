@@ -100,7 +100,7 @@ const P = styled.p`
 
 const H2 = styled.h2`
 	font-size: 32px !important;
-	line-height: 48px !important;
+	line-height: 48px !importanty;
 	@media ${device.display} {
 		font-size: 48px;
 		line-height: 64px;
