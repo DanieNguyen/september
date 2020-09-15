@@ -40,7 +40,7 @@ const Grid = styled.div`
 		height: 150vh;
 	}
 	@media ${device.desktopL} {
-		height: 160vh;
+		height: 1600px !important;
 	}
 	row-gap: 40px;
 `;
