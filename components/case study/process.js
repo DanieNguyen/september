@@ -126,27 +126,14 @@ const Subheader = styled.h3`
 `;
 
 const Div = styled.div`
-	@media ${device.laptop} {
-		width: 50%;
-	}
-`;
-
-const Drag = styled.div`
-	@media ${device.laptop} {
-		padding-top: 10rem;
-		width: 58%;
-		Img {
-			margin-bottom: 4rem;
-		}
-	}
-	@media ${device.desktop} {
-		margin-left: 0;
-		padding-top: 8rem;
-		width: 65%;
-		Img {
-			margin-bottom: 2rem;
-		}
-	}
+@media ${device.laptop} {
+	width: 50%;
+	margin-left: 8rem;
+}
+@media ${device.desktop} {
+	margin-left: 0;
+	width: 50%;
+}
 `;
 
 export default function Process() {
@@ -375,7 +362,7 @@ export default function Process() {
 				<Behind>Thank You,</Behind>
 				<Pixels>Next</Pixels>
 			</Top>
-			<Center>
+			<FlexTwo>
 				<Div>
 					<Header>REFLECTION</Header>
 					<Text>
@@ -416,7 +403,7 @@ export default function Process() {
 						feedback on this project.
 					</Text>
 				</Div>
-			</Center>
+			</FlexTwo>
 		</div>
 	);
 }
