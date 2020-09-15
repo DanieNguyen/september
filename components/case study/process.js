@@ -367,7 +367,7 @@ export default function Process() {
 					<a
 						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/spotify/cover.png'></Img>
+						<Img src='static/images/spotify/presentation.png'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>
