@@ -90,7 +90,7 @@ const Box = styled.div`
 	z-index: -100;
 `;
 
-const Statement = styled.div`
+const Statement = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
@@ -112,16 +112,16 @@ export default function Intro() {
         <div>
         <Line height='1200' width='140'></Line>
 		<Box>
-			<Title>Daniel</Title>
-			<Subtitle>[product designer]</Subtitle>
-			<Statement>
+			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 1.2, ease: "easeOut"}}} >Daniel</Title>
+			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.7, duration: 1, ease: "easeOut"}}}>[product designer]</Subtitle>
+			<Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.8, duration: 1.2, ease: "easeOut"}}}>
 				<Number>01</Number>
-				<Definition>
+				<Definition >
 					A fresh junior designer striving to create delightful, <Break/>
 					accessible experiences for everyone.
 				</Definition>
 			</Statement>
-            <Statement>
+            <Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.9, duration: 1.2, ease: "easeOut"}}}>
 				<Number>02</Number>
 				<Definition>A left-handed, dog-loving, longboarding cool dude.
 				</Definition>

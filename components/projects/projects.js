@@ -39,7 +39,7 @@ const Grid = styled.div`
 	row-gap: 40px;
 `;
 
-const One = styled.a`
+const One = styled(motion.a)`
 	order: 2;
 	@media ${device.tablet} {
 		grid-column: 1 / 1;
@@ -50,7 +50,7 @@ const One = styled.a`
 	}
 `;
 
-const Two = styled.div`
+const Two = styled(motion.div)`
 	order: 1;
 	margin-bottom: 0px;
 	@media ${device.tablet} {
@@ -117,11 +117,11 @@ export default function Projects() {
 			<Container>
 				<Grid>
 					<Link href='/spotify'>
-						<One>
+						<One initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
 							<Content i={0} video={true} home={true}></Content>
 						</One>
 					</Link>
-					<Two>
+					<Two initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 1.6, duration: 0.8, ease: "easeOut"}}}>
 						<Box>
 							<H2>Projects</H2>
 							<P>Made with sugar, spice, and everything nice.</P>

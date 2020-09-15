@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { device } from '../device';
+import { motion } from 'framer-motion'
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
 	font-family: DM Serif Display;
 	font-style: normal;
 	font-weight: normal;

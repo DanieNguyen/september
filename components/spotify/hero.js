@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { device } from '../device';
 import { Title, Subtitle, Header, Context, Text } from './text';
 import { Video, Center } from './container';
+import { motion } from 'framer-motion';
 
-const Hook = styled.div`
+const Hook = styled(motion.div)`
 	z-index: 2;
 	margin-top: 5rem;
 	@media ${device.laptop} {
@@ -18,7 +19,7 @@ const Hook = styled.div`
 	}
 `;
 
-const Summary = styled.div`
+const Summary = styled(motion.div)`
 	@media ${device.laptop} {
 		margin-left: 8vw;
 		margin-top: 2rem;
@@ -26,7 +27,7 @@ const Summary = styled.div`
 	}
 `;
 
-const Splash = styled.div`
+const Splash = styled(motion.div)`
 	@media ${device.laptop} {
 		margin-left: 8vw;
 		width: 55%;
@@ -86,7 +87,7 @@ export default function Hero() {
 	return (
 		<Div>
 			<Intro>
-				<Splash>
+				<Splash initial={{ x: -60, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { delay: 0.4, duration: 1.2, ease: "easeOut"}}}>
 					<Video loop muted playsInline autoPlay>
 						<source
 							src='static/videos/spotify/project.mp4'
@@ -96,8 +97,8 @@ export default function Hero() {
 					</Video>
 				</Splash>
 				<Hook>
-					<Title>Helping listeners discover new podcasts</Title>
-					<Summary>
+					<Title initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.4, duration: 1.2, ease: "easeOut"}}}>Helping listeners discover new podcasts</Title>
+					<Summary initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.6, duration: 1, ease: "easeOut"}}}>
 						<Subtitle>Featured Podcasts</Subtitle>
 						<Text>
 							Spotify is the world’s largest audio streaming
