@@ -33,6 +33,7 @@ const Tagline = styled.h2`
 	text-align: left;
 	@media ${device.tablet} {
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 	letter-spacing: -0.03em;
 	color: ${({ theme }) => theme.colors.gray};

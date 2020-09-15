@@ -33,7 +33,13 @@ const Grid = styled.div`
 	@media ${device.laptop} {
 		height: 190vh;
 	}
+	@media ${device.laptopL} {
+		height: 210vh;
+	}
 	@media ${device.desktop} {
+		height: 150vh;
+	}
+	@media ${device.desktopL} {
 		height: 160vh;
 	}
 	row-gap: 40px;
