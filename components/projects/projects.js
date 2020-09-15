@@ -67,7 +67,7 @@ const Two = styled(motion.div)`
 	}
 `;
 
-const Three = styled.div`
+const Three = styled(motion.div)`
 	order: 4;
 	@media ${device.tablet} {
 		grid-column: 1 / 1;
@@ -78,7 +78,7 @@ const Three = styled.div`
 	}
 `;
 
-const Four = styled.div`
+const Four = styled(motion.div)`
 	order: 3;
 	@media ${device.tablet} {
 		grid-column: 2 / 2;
@@ -89,7 +89,7 @@ const Four = styled.div`
 	}
 `;
 
-const Five = styled.div`
+const Five = styled(motion.div)`
 	order: 5;
 	@media ${device.tablet} {
 		grid-column: 2 / 2;
@@ -133,13 +133,13 @@ export default function Projects() {
 							<P>Made with sugar, spice, and everything nice.</P>
 						</Box>
 					</Two>
-					<Three>
+					<Three initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
 						<Content i={2} video={false} home={true}></Content>
 					</Three>
-					<Four>
+					<Four initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
 						<Content i={1} video={false} home={true}></Content>
 					</Four>
-					<Five>
+					<Five initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
 						<Content i={3} video={false} home={true}></Content>
 					</Five>
 				</Grid>
