@@ -21,13 +21,13 @@ const variants = {
 	},
 };
 
-const Item = styled(motion.li)`
+const Item = styled(motion.a)`
 	list-style: none;
 	margin-bottom: 20px;
 	@media ${device.tablet} {
 		margin-bottom: 40px;
 	}
-	display: flex;
+	display: ${props => props.none};
 	align-items: center;
 	cursor: pointer;
 	z-index: 140;
@@ -56,15 +56,17 @@ const Box = styled.div`
 const words = ['work', 'about', 'contact', 'resume'];
 const link = ['/', '/spotify', '/', 'mailto: yendan125@gmail.com'];
 
-export const MenuItem = ({ i }) => {
+export const MenuItem = ({ i, toggle }) => {
+	let display = "none";
+	if (toggle) {
+		display = "flex";
+	}
 	return (
-		<a href={link[i]}>
-			<Item
-				variants={variants}
-				whileHover={{ x: -20 }}
-				whileTap={{ scale: 0.95 }}>
-				<Box>{words[i]}</Box>
-			</Item>
-		</a>
+		<Item none={display}
+			variants={variants}
+			whileHover={{ x: -20 }}
+			whileTap={{ scale: 0.95 }}>
+			<Box>{words[i]}</Box>
+		</Item>
 	);
 };

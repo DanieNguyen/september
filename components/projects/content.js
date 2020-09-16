@@ -51,7 +51,7 @@ const title = ['Spotify Podcasts', 'UW Canvas', 'Vita OS', 'Dispatch'];
 const taglines = [
 	'Helping listeners discover new podcasts',
 	'Empowering student communities in online learning',
-	'Promoting mental health with intentional living',
+	'Promoting personal well-being in technology',
 	'Assisting police officers on foot patrol',
 ];
 

@@ -46,18 +46,16 @@ const Nav = styled(motion.nav)`
 	top: 0;
 	right: 0;
 	bottom: 0;
-	width: 300px;
+	width: 0;
 	z-index: 100;
-	@media ${device.tablet} {
-		width: 600px;
-	}
 `;
+
+let width = null;
 
 export const Hamburger = () => {
 	const [isOpen, toggleOpen] = useCycle(false, true);
 	const containerRef = useRef(null);
 	const { height } = useDimensions(containerRef);
-
 	return (
 		<Nav
 			initial={false}
@@ -65,8 +63,8 @@ export const Hamburger = () => {
 			custom={height}
 			ref={containerRef}>
 			<Sidebar variants={sidebar} />
-			<Navigation />
 			<MenuToggle toggle={() => toggleOpen()} />
+			<Navigation toggle={isOpen} />
 		</Nav>
 	);
 };

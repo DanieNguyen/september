@@ -24,10 +24,10 @@ const MenuList = styled(motion.ul)`
 	z-index: 200;
 `;
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
 	<MenuList variants={variants}>
 		{itemIds.map((i) => (
-			<MenuItem i={i} key={i} tag={i} />
+			<MenuItem i={i} key={i} tag={i} toggle={toggle}/>
 		))}
 	</MenuList>
 );

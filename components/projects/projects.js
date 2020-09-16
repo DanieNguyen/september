@@ -3,102 +3,7 @@ import { motion } from 'framer-motion';
 import { device } from '../device';
 import Content from './content';
 import Link from 'next/link';
-
-const Container = styled.div`
-	width: 100%;
-	height: auto;
-	margin-top: 80px;
-	@media ${device.tablet} {
-		margin-top: 900px;
-	}
-	@media ${device.laptop} {
-		margin-top: -300px;
-		margin-bottom: 0rem;
-	}
-	margin-bottom: 4rem;
-`;
-
-const Grid = styled.div`
-	z-index: 10;
-	position: relative;
-	display: grid;
-	width: 100%;
-	@media ${device.tablet} {
-		height: 150vh;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		grid-template-rows: repeat(12, minmax(0, 1fr));
-		column-gap: 80px;
-		row-gap: 80px;
-	}
-	@media ${device.laptop} {
-		height: 190vh;
-	}
-	@media ${device.laptopL} {
-		height: 210vh;
-	}
-	@media ${device.desktop} {
-		height: 150vh;
-	}
-	@media ${device.desktopL} {
-		height: 1600px !important;
-	}
-	row-gap: 40px;
-`;
-
-const One = styled(motion.a)`
-	order: 2;
-	@media ${device.tablet} {
-		grid-column: 1 / 1;
-		grid-row: 1 / 7;
-	}
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
-const Two = styled(motion.div)`
-	order: 1;
-	margin-bottom: 0px;
-	@media ${device.tablet} {
-		order: 2;
-		grid-column: 2 / 2;
-		grid-row: 1 / 1;
-		margin-bottom: 0;
-	}
-`;
-
-const Three = styled(motion.div)`
-	order: 4;
-	@media ${device.tablet} {
-		grid-column: 1 / 1;
-		grid-row: 7 / 12;
-	}
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
-const Four = styled(motion.div)`
-	order: 3;
-	@media ${device.tablet} {
-		grid-column: 2 / 2;
-		grid-row: 2 / 6;
-	}
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
-const Five = styled(motion.div)`
-	order: 5;
-	@media ${device.tablet} {
-		grid-column: 2 / 2;
-		grid-row: 6 / 11;
-	}
-	&:hover {
-		cursor: pointer;
-	}
-`;
+import { FlexTwo, Half } from '../caseStudy/container';
 
 const P = styled.p`
 	color: ${({ theme }) => theme.colors.gray};
@@ -106,44 +11,224 @@ const P = styled.p`
 
 const H2 = styled.h2`
 	font-size: 32px !important;
-	line-height: 48px !importanty;
-	@media ${device.display} {
-		font-size: 48px;
-		line-height: 64px;
+	line-height: 48px !important;
+	@media ${device.laptop} {
+		font-size: 42px !important;
+		line-height: 64px !important;
 	} ;
 `;
 
 const Box = styled.div`
-	padding-top: 0.75rem;
+`;
+
+const Flex = styled(FlexTwo)`
+	display: none;
+	@media ${device.laptop} {
+		display: flex;
+		margin-top: -18rem;
+	}
+	@media ${device.desktop} {
+		display: flex;
+		margin-top: -20rem;
+	}
+`;
+
+const Mobile = styled.div`
+	display: flex;
+	@media ${device.laptop} {
+		display: none;
+	}
+	flex-direction: column;
+	margin-top: 6rem;
+`;
+
+const Card = styled(motion.div)`
+	margin-bottom: 3rem;
+	@media ${device.laptop} {
+		margin-bottom: 5rem;
+	}
+	@media ${device.desktop} {
+		margin-bottom: 6rem;
+	}
+`;
+
+const Title = styled(motion.div)`
+	margin-bottom: 1rem;
+	@media ${device.laptop} {
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+
+	}
+	@media ${device.desktop} {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
 `;
 
 export default function Projects() {
 	return (
 		<div>
-			<Container>
-				<Grid>
+			<Flex>
+				<Half>
 					<Link href='/spotify'>
-						<One initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
+						<Card
+							initial={{ y: 200, opacity: 0.8 }}
+							animate={{
+								y: 0,
+								opacity: 1,
+								transition: {
+									delay: 1,
+									duration: 1.2,
+									ease: 'easeOut',
+								},
+							}}>
 							<Content i={0} video={true} home={true}></Content>
-						</One>
+						</Card>
 					</Link>
-					<Two initial={{ y: 60, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 1.6, duration: 0.8, ease: "easeOut"}}}>
+					<Link href='/vita'>
+						<Card
+							initial={{ y: 200, opacity: 0.8 }}
+							animate={{
+								y: 0,
+								opacity: 1,
+								transition: {
+									delay: 1,
+									duration: 1.2,
+									ease: 'easeOut',
+								},
+							}}>
+							<Content i={2} video={false} home={true}></Content>
+						</Card>
+					</Link>
+				</Half>
+				<Half>
+					<Title
+						initial={{ y: 60, opacity: 0 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 1.6,
+								duration: 0.8,
+								ease: 'easeOut',
+							},
+						}}>
 						<Box>
 							<H2>Projects</H2>
 							<P>Made with sugar, spice, and everything nice.</P>
 						</Box>
-					</Two>
-					<Three initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
-						<Content i={2} video={false} home={true}></Content>
-					</Three>
-					<Four initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
+					</Title>
+					<Link href='/canvas'>
+						<Card
+							initial={{ y: 200, opacity: 0.8 }}
+							animate={{
+								y: 0,
+								opacity: 1,
+								transition: {
+									delay: 1,
+									duration: 1.2,
+									ease: 'easeOut',
+								},
+							}}>
+							<Content i={1} video={false} home={true}></Content>
+						</Card>
+					</Link>
+					<Link href='/dispatch'>
+						<Card
+							initial={{ y: 200, opacity: 0.8 }}
+							animate={{
+								y: 0,
+								opacity: 1,
+								transition: {
+									delay: 1,
+									duration: 1.2,
+									ease: 'easeOut',
+								},
+							}}>
+							<Content i={3} video={false} home={true}></Content>
+						</Card>
+					</Link>
+				</Half>
+			</Flex>
+
+			<Mobile>
+				<Card
+					initial={{ y: 60, opacity: 0 }}
+					animate={{
+						y: 0,
+						opacity: 1,
+						transition: {
+							delay: 1.6,
+							duration: 0.8,
+							ease: 'easeOut',
+						},
+					}}>
+					<Box>
+						<H2>Projects</H2>
+						<P>Made with sugar, spice, and everything nice.</P>
+					</Box>
+				</Card>
+				<Link href='/spotify'>
+					<Card
+						initial={{ y: 200, opacity: 0.8 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 1,
+								duration: 1.2,
+								ease: 'easeOut',
+							},
+						}}>
+						<Content i={0} video={true} home={true}></Content>
+					</Card>
+				</Link>
+				<Link href='/canvas'>
+					<Card
+						initial={{ y: 200, opacity: 0.8 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 1,
+								duration: 1.2,
+								ease: 'easeOut',
+							},
+						}}>
 						<Content i={1} video={false} home={true}></Content>
-					</Four>
-					<Five initial={{ y: 200, opacity: 0.8 }} animate={{ y: 0, opacity: 1, transition: { delay: 1, duration: 1.2, ease: "easeOut"}}}>
+					</Card>
+				</Link>
+				<Link href='/canvas'>
+					<Card
+						initial={{ y: 200, opacity: 0.8 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 1,
+								duration: 1.2,
+								ease: 'easeOut',
+							},
+						}}>
+						<Content i={2} video={false} home={true}></Content>
+					</Card>
+				</Link>
+				<Link href='/canvas'>
+					<Card
+						initial={{ y: 200, opacity: 0.8 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 1,
+								duration: 1.2,
+								ease: 'easeOut',
+							},
+						}}>
 						<Content i={3} video={false} home={true}></Content>
-					</Five>
-				</Grid>
-			</Container>
+					</Card>
+				</Link>
+			</Mobile>
 		</div>
 	);
 }

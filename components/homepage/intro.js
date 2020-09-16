@@ -75,7 +75,10 @@ const Definition = styled(motion.p)`
 
 const Box = styled.div`
 	margin-top: 70%;
-    @media ${device.tablet} {
+	@media ${device.tablet} {
+        margin-top: 50%;
+	}
+    @media ${device.laptop} {
         position: absolute;
         left: 20%;
         top: 40%;

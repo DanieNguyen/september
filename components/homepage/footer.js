@@ -4,7 +4,6 @@ import { device } from '../device';
 
 const Foot = styled.div`
 	padding-bottom: 1rem;
-	text-align: right;
 `;
 
 const P = styled.p`

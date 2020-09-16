@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Header, Text } from './text';
-import { Video, Img, FlexTwo, Half, Center } from './container';
+import { Header, Text } from '../caseStudy/text';
+import { Video, Img, FlexTwo, Half, Center } from '../caseStudy/container';
 import Line from '../homepage/line';
 
 const Box = styled.div`
@@ -18,8 +18,8 @@ const Final = styled.div`
 	text-align: right;
 
 	@media ${device.laptop} {
-		font-size: 96px;
-		line-height: 72px;
+		font-size: 72px;
+		line-height: 64px;
 		margin-bottom: 1rem;
 	}
 

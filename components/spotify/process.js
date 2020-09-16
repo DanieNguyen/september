@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import Line from '../homepage/line';
-import { Header, Text } from './text';
-import { Img, FlexTwo, Half, Center } from './container';
+import { Header, Text } from '../caseStudy/text';
+import { Img, FlexTwo, Half, Center } from '../caseStudy/container';
 
 const Behind = styled.div`
 	font-family: DM Serif Display;
@@ -11,8 +11,8 @@ const Behind = styled.div`
 	margin-bottom: 0rem;
 
 	@media ${device.laptop} {
-		font-size: 96px;
-		line-height: 72px;
+		font-size: 72px;
+		line-height: 64px;
 		margin-bottom: 1rem;
 	}
 
@@ -202,7 +202,7 @@ export default function Process() {
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<Box>
+				<StickyBox>
 					<Header>PROBLEM</Header>
 					<Text>
 						With my insights, I defined my guiding question and
@@ -221,9 +221,10 @@ export default function Process() {
 							podcast
 						</Li>
 					</UL>
-				</Box>
+				</StickyBox>
 				<HalfSticky>
 					<Img src='static/images/spotify/problem.png'></Img>
+					<Img src='static/images/spotify/spotify.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>

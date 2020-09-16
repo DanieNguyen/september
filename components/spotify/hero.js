@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Context, Text } from './text';
-import { Video, Center } from './container';
+import { Title, Subtitle, Header, Text } from '../caseStudy/text';
+import { Video, Center } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
 const Hook = styled(motion.div)`
@@ -43,6 +43,7 @@ const Intro = styled.div`
 	flex-direction: column;
 	@media ${device.laptop} {
 		flex-direction: row;
+		align-items: center;
 	}
 `;
 
@@ -83,11 +84,25 @@ const Overview = styled(Center)`
 	}
 `;
 
+const SubTitle = styled(Subtitle)`
+	color: #19ba53;
+`;
+
 export default function Hero() {
 	return (
 		<Div>
 			<Intro>
-				<Splash initial={{ x: -60, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { delay: 0.4, duration: 1.2, ease: "easeOut"}}}>
+				<Splash
+					initial={{ x: -60, opacity: 0 }}
+					animate={{
+						x: 0,
+						opacity: 1,
+						transition: {
+							delay: 0.4,
+							duration: 1.2,
+							ease: 'easeOut',
+						},
+					}}>
 					<Video loop muted playsInline autoPlay>
 						<source
 							src='static/videos/spotify/project.mp4'
@@ -97,9 +112,31 @@ export default function Hero() {
 					</Video>
 				</Splash>
 				<Hook>
-					<Title initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.4, duration: 1.2, ease: "easeOut"}}}>Helping listeners discover new podcasts</Title>
-					<Summary initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.6, duration: 1, ease: "easeOut"}}}>
-						<Subtitle>Featured Podcasts</Subtitle>
+					<Title
+						initial={{ y: 50, opacity: 0 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 0.4,
+								duration: 1.2,
+								ease: 'easeOut',
+							},
+						}}>
+						Helping listeners discover new podcasts
+					</Title>
+					<Summary
+						initial={{ y: 30, opacity: 0 }}
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								delay: 0.6,
+								duration: 1,
+								ease: 'easeOut',
+							},
+						}}>
+						<SubTitle>Featured Podcasts</SubTitle>
 						<Text>
 							Spotify is the world’s largest audio streaming
 							platform right now with millions of songs and
