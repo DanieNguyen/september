@@ -15,6 +15,10 @@ const Logo = styled.a`
 		left: 64px;
 		top: 60px;
 	}
+	@media ${device.desktopL} {
+		font-size: 32px;
+		line-height: 32px;
+	}
 
 	font-family: DM Serif Display;
 	font-style: normal;
@@ -49,6 +53,10 @@ const NavItem = styled.p`
 	cursor: pointer;
 	@media ${device.laptop} {
 		display: block;
+	}
+	@media ${device.desktopL} {
+		font-size: 16px;
+		line-height: 24px;
 	}
 	&:hover {
 		color: ${({ theme }) => theme.colors.primary};
