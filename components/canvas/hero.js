@@ -30,18 +30,13 @@ const Splash = styled(motion.div)`
 	}
 	@media ${device.laptop} {
 		margin-left: 8vw;
-		width: 80%;
-		height: 70vh;
+		width: 70%;
+		margin-bottom: 6rem;
 	}
 	@media ${device.desktop} {
 		margin-left: 0vw;
 		width: 80%;
-		height: 60vh;
 	}
-	background-color: #b298ef;
-	height: 30vh;
-	margin-bottom: 2rem;
-	display: flex;
 	justify-content: center;
 `;
 
@@ -113,18 +108,12 @@ export default function Hero() {
 						x: 0,
 						opacity: 1,
 						transition: {
-							delay: 0.4,
+							delay: 0.2,
 							duration: 1.2,
 							ease: 'easeOut',
 						},
 					}}>
-					<VideoTwo loop muted playsInline autoPlay>
-						<source
-							src='static/videos/canvas/project.mp4'
-							type='video/mp4'
-						/>
-						Your browser does not support the video tag.
-					</VideoTwo>
+					<Img src='static/images/canvas.png'></Img>
 				</Splash>
 				<Hook>
 					<Title
@@ -133,7 +122,7 @@ export default function Hero() {
 							y: 0,
 							opacity: 1,
 							transition: {
-								delay: 0.4,
+								delay: 0.2,
 								duration: 1.2,
 								ease: 'easeOut',
 							},
@@ -146,26 +135,25 @@ export default function Hero() {
 							y: 0,
 							opacity: 1,
 							transition: {
-								delay: 0.6,
+								delay: 0.4,
 								duration: 1,
 								ease: 'easeOut',
 							},
 						}}>
 						<SubTitle>Study Groups</SubTitle>
 						<Text>
-							Spotify is the world’s largest audio streaming
-							platform right now with millions of songs and
-							podcasts.{' '}
+							As Covid-19 continues to impact the United States,
+							many schools have turned to online learning.{' '}
 							<strong>
-								However, listeners have trouble discovering new
-								podcasts easily and quickly.
+								Students all over the country have expressed a
+								lack of motivation and engagement during
+								classes.
 							</strong>
 						</Text>
 						<Text>
-							After an extensive design process of research and
-							iteration, I redesigned the Spotify Podcasts home
-							page to better highlight podcasts and their
-							originality for listeners.
+							Through a detailed research and design process, my
+							team and I designed a new feature for UW Canvas to
+							encourage online student communities for learning.
 						</Text>
 					</Summary>
 				</Hook>
@@ -182,17 +170,28 @@ export default function Hero() {
 				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
-						As the leading music streaming platform, Spotify does a
-						great job of providing a great listening experience with
-						personalized playlists, lyrics, and more. However, with
-						podcasts, the Spotify experience isn't quite the same.
+						Learning online has its benefits in that students can
+						work at their own pace and in their own environment.
+						However, there are a lot of issues with connectivity,
+						collaboration, and especially motivation.
 					</Text>
 					<Text>
-						There's a lack of guidance inside the platform to help
-						listeners discover and engage in podcasts. As a result,
-						listeners struggle to listen to more than a handful of
-						podcasts and rely on outside sources to find more
-						podcasts.
+						Students have a hard time adjusting to online learning
+						because of its isolated nature and lack of interaction.
+						Our team sought to address this problem by introducing a
+						Canvas feature for collaboration and bonding.
+					</Text>
+					<Header>THE APPROACH</Header>
+					<Text>
+						We partnered with UW Continuum College to work on this
+						project, starting from research and ending with final
+						designs and a video.
+					</Text>
+					<Text>
+						I contributed as the lead product designer. I designed
+						the visual design system and high-fidelity, interactive
+						prototype. I also designed and moderated the majority of
+						our user interviews and usability testing sessions.
 					</Text>
 				</Right>
 			</Overview>

@@ -126,14 +126,14 @@ const Subheader = styled.h3`
 `;
 
 const Div = styled.div`
-@media ${device.laptop} {
-	width: 50%;
-	margin-left: 8rem;
-}
-@media ${device.desktop} {
-	margin-left: 0;
-	width: 50%;
-}
+	@media ${device.laptop} {
+		width: 50%;
+		margin-left: 8rem;
+	}
+	@media ${device.desktop} {
+		margin-left: 0;
+		width: 50%;
+	}
 `;
 
 export default function Process() {
@@ -334,6 +334,20 @@ export default function Process() {
 				<HalfSticky>
 					<Img src='static/images/spotify/soundbite.png'></Img>
 					<Img src='static/images/spotify/carditerations.png'></Img>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<StickyBox>
+					<Header>HIGH FIDELITY</Header>
+					<Text>
+						After these fun 8 weeks, here's my final design. A fresh
+						redesign of the podcasts home page with eye-catching
+						cards that lead to insightful articles.
+					</Text>
+				</StickyBox>
+				<HalfSticky>
+					<Img src='static/images/spotify/podcasts.png'></Img>
+					<Img src='static/images/spotify/articles.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>

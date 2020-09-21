@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../device';
-import Content from './content';
+import Content from '../projects/content';
 import Link from 'next/link';
 import { FlexTwo, Half } from '../caseStudy/container';
 

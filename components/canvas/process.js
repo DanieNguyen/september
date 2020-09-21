@@ -126,14 +126,14 @@ const Subheader = styled.h3`
 `;
 
 const Div = styled.div`
-@media ${device.laptop} {
-	width: 50%;
-	margin-left: 8rem;
-}
-@media ${device.desktop} {
-	margin-left: 0;
-	width: 50%;
-}
+	@media ${device.laptop} {
+		width: 50%;
+		margin-left: 8rem;
+	}
+	@media ${device.desktop} {
+		margin-left: 0;
+		width: 50%;
+	}
 `;
 
 export default function Process() {
@@ -142,34 +142,50 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/spotify/process.png'></Img>
+				<Img src='static/images/canvas/process.png'></Img>
 			</Top>
 			<FlexTwo>
 				<StickyBox>
 					<Header>RESEARCH</Header>
 					<Text>
-						My process began with research to understand podcasts as
-						a listening experience and an industry.
+						Our process began with research to understand online
+						learning behaviors and student interactions with UW
+						Canvas.
 					</Text>
 					<Text>
-						I conducted semi-structured user interviews, explored
-						large-scale behaviors through a literature review, and
-						examined the industry with a competitive analysis of
-						podcast apps.
+						We started with a thorough literary analysis of how
+						learning management systems work. Then we conducted
+						semi-structured user interviews and a contextual inquiry
+						to analyze how students perceive online learning and
+						Canvas itself.
+					</Text>
+					<Text>
+						Our last research method was conducting a competitive
+						analysis of LMS such as BlackBoard to see what features
+						and interactions competitors focus on.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/methods.png'></Img>
+					<Img src='static/images/canvas/methods.png'></Img>
 					<div>
-						<Img src='static/images/spotify/zoom.png'></Img>
-						<Caption>
-							Interviewing a close friend who listens to podcasts
-						</Caption>
+						<Img src='static/images/canvas/survey.png'></Img>
+						<CaptionTwo>
+							We used a Google Form and posted online to find
+							participants
+						</CaptionTwo>
 					</div>
 					<div>
-						<Img src='static/images/spotify/comp.png'></Img>
+						<Img src='static/images/canvas/thematic.png'></Img>
 						<CaptionTwo>
-							Evaluating the top seven podcast apps
+							Thematic analysis of interview quotes
+						</CaptionTwo>
+					</div>
+					<Img src='static/images/canvas/logos.png'></Img>
+					<div>
+						<Img src='static/images/canvas/competitive.png'></Img>
+						<CaptionTwo>
+							Ranking the top 5 college LMS by their UX for
+							features
 						</CaptionTwo>
 					</div>
 				</HalfSticky>
@@ -178,91 +194,99 @@ export default function Process() {
 				<StickyBox>
 					<Header>FINDINGS</Header>
 					<Text>
-						From my research, I learned that podcasts are wonderful
-						to listen to and are a part of peoples' daily routine.
-						However, it's hard for listeners to discover new
-						podcasts.
+						From our research, we learned that students take online
+						courses because of their flexible schedules. However,
+						it's hard to interact in online courses compared to
+						in-person courses.
 					</Text>
 					<Subheader>Pain Points</Subheader>
 					<UL>
-						<Li>Users only listen to a handful podcasts</Li>
 						<Li>
-							Recommendations are the only way users try new
-							podcasts
+							In-class interactions and questions with classmates
+							are key to student learning, but unavailable in
+							online courses.
 						</Li>
-						<Li>Users don’t browse through podcasts on Spotify</Li>
 						<Li>
-							It takes at least 5-10 minutes of listening to
-							understand a new podcast
+							Students never made any friends in online courses
+							and rarely talked to other classmates.
+						</Li>
+						<Li>
+							Online courses lack resources such as professor and
+							TA office hours.
+						</Li>
+						<Li>
+							Canvas discussions do not really function as
+							discussions. Students rarely engage back and forth.
+						</Li>
+						<Li>
+							Students view Canvas as an information hub, but not
+							an engaging learning center.
 						</Li>
 					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/painpoints.png'></Img>
+					<Img src='static/images/canvas/painpoints.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
 					<Header>PROBLEM</Header>
 					<Text>
-						With my insights, I defined my guiding question and
-						scope. I wanted to help listeners discover new podcasts
-						easily and quickly.
+						From our interviews and other insights, our team defined
+						the problem to be a lack of student interaction.
+						Students depend on others to help with their learning,
+						and online courses currently aren't conducive to student
+						interactions.
 					</Text>
-					<Subheader>Design Goals</Subheader>
-					<UL>
-						<Li>
-							Get users to discover in Spotify, not through
-							recommendations
-						</Li>
-						<Li>Showcase podcasts to draw listeners in</Li>
-						<Li>
-							Reduce the time it takes to understand a single
-							podcast
-						</Li>
-					</UL>
+					<Text>
+						Our team wanted to find a solution that would improve
+						student collaboration and communication inside of
+						Canvas.
+					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/problem.png'></Img>
+					<Img src='static/images/canvas/problem.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<StickyBox>
 					<Header>IDEATION</Header>
 					<Text>
-						After defining the problem, I went to the drawing board.
-						I explored many different apps and websites such as
-						YouTube, Twitter, etc. to see how they help users
-						discover new things.
+						With our problem space, we moved into ideation. To come
+						up with ideas, we identified three questions for us to
+						brainstorm around.
 					</Text>
 					<Text>
-						With a variety of ideas, I scoped down by conducting an
-						effort impact analysis. My top three ideas were a
-						ratings and review system, showing friends' podcast
-						activities, and a featured podcast section with curated
-						articles.
+						We then came up with a diverse list of ideas that solve
+						the problem in unique ways.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
 					<div>
-						<Img src='static/images/spotify/apps.png'></Img>
-						<CaptionTwo>
-							Some of the apps I looked at for inspiration
-						</CaptionTwo>
+						<Img src='static/images/canvas/questions.png'></Img>
+						<Caption>Our guiding questions for ideation</Caption>
 					</div>
 					<div>
-						<Img src='static/images/spotify/effort.png'></Img>
+						<Img src='static/images/canvas/brainstorm.png'></Img>
 						<Caption>
-							Comparing the effort to implement and impact on
-							listeners for my ideas
+							A list of ideas we had, with informal descriptions
 						</Caption>
 					</div>
-					<div>
-						<Img src='static/images/spotify/topthreewhite.png'></Img>
-						<CaptionTwo>
-							My top three ideas with their pros and cons
-						</CaptionTwo>
-					</div>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<Box>
+					<Header>CONCEPT TESTING</Header>
+					<Text>From our ideas, the top five were.</Text>
+					<Text>
+						To decide on our solution, we reached out to students
+						again. We conducted concept testing and asked 30
+						students to rank their favorite three ideas out of the
+						five.
+					</Text>
+				</Box>
+				<HalfSticky>
+					<Img src='static/images/canvas/conceptresults.svg'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -277,7 +301,7 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/solution.png'></Img>
+					<Img src='static/images/canvas/solution.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>

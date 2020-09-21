@@ -98,7 +98,7 @@ export default function Hero() {
 						x: 0,
 						opacity: 1,
 						transition: {
-							delay: 0.4,
+							delay: 0.2,
 							duration: 1.2,
 							ease: 'easeOut',
 						},
@@ -119,7 +119,7 @@ export default function Hero() {
 							y: 0,
 							opacity: 1,
 							transition: {
-								delay: 0.4,
+								delay: 0.2,
 								duration: 1.2,
 								ease: 'easeOut',
 							},
@@ -132,7 +132,7 @@ export default function Hero() {
 							y: 0,
 							opacity: 1,
 							transition: {
-								delay: 0.6,
+								delay: 0.4,
 								duration: 1,
 								ease: 'easeOut',
 							},

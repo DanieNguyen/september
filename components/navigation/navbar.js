@@ -88,10 +88,10 @@ export default function Nav() {
 				<Logo>dang</Logo>
 			</Link>
 			<Right>
-				<Link href='/' passHref>
+				<Link href='/work' passHref>
 					<NavItem>WORKS</NavItem>
 				</Link>
-				<Link href='/spotify' passHref>
+				<Link href='/about' passHref>
 					<NavItem>ABOUT</NavItem>
 				</Link>
 				<a href='mailto: danngu@uw.edu' target='_blank'>

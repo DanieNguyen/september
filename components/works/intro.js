@@ -1,4 +1,4 @@
-import Line from './line';
+import Line from '../homepage/line';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { device } from '../device';
@@ -14,14 +14,10 @@ const Title = styled(motion.h1)`
 		line-height: 72px;
 	}
 	@media ${device.laptop} {
-        font-size: 84px;
-		line-height: 84px;
-	}
-	@media ${device.laptop} {
-        font-size: 96px;
-		line-height: 96px;
+        font-size: 64px;
+		line-height: 64px;
 		letter-spacing: -0.03em;
-		margin-bottom: 2rem;
+		margin-bottom: 0rem;
     }
 `;
 
@@ -31,7 +27,7 @@ const Subtitle = styled(motion.h2)`
 	font-weight: normal;
 	font-size: 24px;
 	letter-spacing: -0.06em;
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
 	color: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -74,14 +70,14 @@ const Definition = styled(motion.p)`
 `;
 
 const Box = styled.div`
-	margin-top: 70%;
+	margin-top: 40%;
 	@media ${device.tablet} {
         margin-top: 50%;
 	}
     @media ${device.laptop} {
         position: absolute;
         left: 20%;
-        top: 40%;
+        top: 20%;
         margin: 0;
 	}
 	@media ${device.desktop} {
@@ -113,20 +109,14 @@ const Break = styled.br`
 export default function Intro() {
 	return (
         <div>
-        <Line height='1200' width='140'></Line>
+        <Line height='900' width='140'></Line>
 		<Box>
-			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 1.2, ease: "easeOut"}}} >Daniel</Title>
-			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.7, duration: 1, ease: "easeOut"}}}>/ product designer /</Subtitle>
+			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.4, duration: 1.2, ease: "easeOut"}}} >Work</Title>
+			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.6, duration: 1, ease: "easeOut"}}}>/ selected projects /</Subtitle>
 			<Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.8, duration: 1.2, ease: "easeOut"}}}>
 				<Number>01</Number>
 				<Definition >
-					A fresh, creative designer striving to create delightful, <Break/>
-					accessible experiences for everyone.
-				</Definition>
-			</Statement>
-            <Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.9, duration: 1.2, ease: "easeOut"}}}>
-				<Number>02</Number>
-				<Definition>A left-handed, dog-loving, longboarding cool dude.
+					Some of the things I've created. Projects done as internships,<Break/> course work, and personal projects.
 				</Definition>
 			</Statement>
 		</Box>
