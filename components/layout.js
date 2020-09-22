@@ -14,7 +14,7 @@ const Layout = styled.div`
         width: 92%;
     }
     @media ${device.desktop} {
-        width: 60%;
+        width: 65%;
     }
     margin: auto;
 `;

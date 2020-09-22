@@ -182,7 +182,7 @@ export default function Process() {
 					</div>
 					<Img src='static/images/canvas/logos.png'></Img>
 					<div>
-						<Img src='static/images/canvas/competitive.png'></Img>
+						<Img src='static/images/canvas/competitive.svg'></Img>
 						<CaptionTwo>
 							Ranking the top 5 college LMS by their UX for
 							features
@@ -275,31 +275,39 @@ export default function Process() {
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<Box>
+				<StickyBox>
 					<Header>CONCEPT TESTING</Header>
-					<Text>From our ideas, the top five were.</Text>
 					<Text>
-						To decide on our solution, we reached out to students
-						again. We conducted concept testing and asked 30
-						students to rank their favorite three ideas out of the
-						five.
+						From our ideas, we narrowed down to our five favorite
+						ideas. To decide on our solution, we reached out to
+						students again. We conducted concept testing and asked
+						30 students to rank their favorite three ideas out of
+						the five.
 					</Text>
-				</Box>
+					<Text>
+						<strong>The top idea was Study Groups.</strong>
+					</Text>
+				</StickyBox>
 				<HalfSticky>
+					<Img src='static/images/canvas/topfive.png'></Img>
 					<Img src='static/images/canvas/conceptresults.svg'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<Box>
+				<StickyBox>
 					<Header>SOLUTION</Header>
 					<Text>
-						I chose to move forward with my idea of Featured
-						Podcasts because it has the best opportunity to guide
-						users to browse in Spotify, doesn't interrupt users'
-						listening experience, and can provide the most
-						information about a podcast.
+						From concept testing, students liked the idea of online
+						study groups the most. Our team moved forward with this
+						solution and came up with several key features that it
+						would have.
 					</Text>
-				</Box>
+					<Text>
+						We saw an opportunity to incorporate instant messaging
+						into study groups since it would be a great form of
+						communication.
+					</Text>
+				</StickyBox>
 				<HalfSticky>
 					<Img src='static/images/canvas/solution.png'></Img>
 				</HalfSticky>
@@ -308,40 +316,68 @@ export default function Process() {
 				<StickyBox>
 					<Header>INFORMATION ARCHITECTURE</Header>
 					<Text>
-						With my solution, I moved into mapping out the
-						information architecture. Some key decisions I had to
-						figure out was where would the featured section live on
-						the podcast page, how much information would be in an
-						article, and what kind of actions can users expect to
-						see.
+						After defining the scope of features, we dove into
+						information architecture. Some of the concepts we had to
+						discuss were how study groups will best fit into UW
+						Canvas, where and how will students join a study group,
+						and what can they do in a study group.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/sitemap.png'></Img>
-					<Img src='static/images/spotify/information.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>PROTOTYPING</Header>
-					<Text>
-						I went into high-fidelity prototyping soon after because
-						of time constraints. For visual design, I tried my best
-						to align myself with Spotify's design principles.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<div>
-						<Img src='static/images/spotify/screens.png'></Img>
-						<Caption>
-							Some of the components and screens I designed
-						</Caption>
-					</div>
+					<Img src='static/images/canvas/information.svg'></Img>
+					<Img src='static/images/canvas/studyinfo.svg'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<StickyBox>
-					<Header>ITERATIONS</Header>
+					<Header>USER FLOWS</Header>
+					<Text>
+						We then worked on creating user flows. Our team iterated
+						on what interactions and entry/exit points we wanted
+						Study Groups to have since it's a new feature that needs
+						to be incoprated smoothly.
+					</Text>
+				</StickyBox>
+				<HalfSticky>
+					<Img src='static/images/canvas/prompt.svg'></Img>
+					<Img src='static/images/canvas/announcement.svg'></Img>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<Box>
+					<Header>LOW + MEDIUM FIDELITY</Header>
+					<Text>
+						With our fleshed out structure for Study Groups, we went to designing our prototype. 
+					</Text>
+				</Box>
+				<HalfSticky>
+					<Img src='static/images/canvas/lofi.png'></Img>
+					<Img src='static/images/canvas/med.png'></Img>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<StickyBox>
+					<Header>USABILITY TESTING</Header>
+					<Text>
+						Although I couldn't schedule any formal usability tests,
+						I was able to receive feedback from users throughout
+						designing my prototype.
+					</Text>
+					<Text>
+						I made several decisions and changes from the feedback
+						such as creating a new component for soundbites,
+						utilizing multiple types of cards to draw attention, and
+						cutting down on content for users to easily skim.
+					</Text>
+				</StickyBox>
+				<HalfSticky>
+					<Img src='static/images/spotify/soundbite.png'></Img>
+					<Img src='static/images/spotify/carditerations.png'></Img>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<StickyBox>
+					<Header>HIGH FIDELITY</Header>
 					<Text>
 						Although I couldn't schedule any formal usability tests,
 						I was able to receive feedback from users throughout
@@ -361,7 +397,30 @@ export default function Process() {
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
-					<Header>FINAL PRESENTATION</Header>
+					<Header>FINAL MOCKUPS</Header>
+					<Text>
+						At the end of my 8 weeks, I presented this project to
+						the Applied 2020 community. I received recognition for
+						having great visual design, presentation and
+						storytelling, and won the audience's favorite for my
+						presentation session.
+					</Text>
+					<Text>
+						Click the image on the right to view my presentation
+						slides.
+					</Text>
+				</Box>
+				<HalfSticky>
+					<a
+						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
+						target='_blank'>
+						<Img src='static/images/spotify/presentation.png'></Img>
+					</a>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<Box>
+					<Header>VIDEO</Header>
 					<Text>
 						At the end of my 8 weeks, I presented this project to
 						the Applied 2020 community. I received recognition for

@@ -61,6 +61,10 @@ const Card = styled.div`
 	}
 `;
 
+const VideoTwo = styled(Video)`
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.10));
+`;
+
 export default function Product() {
 	return (
 		<div>
@@ -110,13 +114,13 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Video loop muted playsInline autoPlay>
+						<VideoTwo loop muted playsInline autoPlay>
 							<source
 								src='static/videos/canvas/chat.mp4'
 								type='video/mp4'
 							/>
 							Your browser does not support the video tag.
-						</Video>
+						</VideoTwo>
 						<Caption>
 							<Fig>Communicate with ease</Fig>
 							<Text>
@@ -131,13 +135,13 @@ export default function Product() {
 				</Half>
 				<Half>
 					<Card>
-						<Video loop muted playsInline autoPlay>
+						<VideoTwo loop muted playsInline autoPlay>
 							<source
 								src='static/videos/canvas/quiz.mp4'
 								type='video/mp4'
 							/>
 							Your browser does not support the video tag.
-						</Video>
+						</VideoTwo>
 						<Caption>
 							<Fig>Or get matched to the perfect one</Fig>
 							<Text>
