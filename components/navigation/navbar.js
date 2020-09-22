@@ -26,6 +26,10 @@ const Logo = styled.a`
 	font-size: 24px;
 	line-height: 24px;
 
+	&:hover {
+		color: ${({ theme }) => theme.colors.primary};
+	}
+
 	letter-spacing: -0.03em;
 	z-index: 100;
 `;
