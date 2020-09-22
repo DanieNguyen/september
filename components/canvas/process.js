@@ -344,12 +344,19 @@ export default function Process() {
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<Box>
+				<StickyBox>
 					<Header>LOW + MEDIUM FIDELITY</Header>
 					<Text>
-						With our fleshed out structure for Study Groups, we went to designing our prototype. 
+						With our fleshed out structure for Study Groups, we went
+						to designing our prototype. We focused on creating the
+						user flows we wanted to highlight for usability testing.
 					</Text>
-				</Box>
+					<Text>
+						We wanted to learn if students would be curious about
+						study groups when introduced, how they view messaging,
+						and what types of posts they would make.
+					</Text>
+				</StickyBox>
 				<HalfSticky>
 					<Img src='static/images/canvas/lofi.png'></Img>
 					<Img src='static/images/canvas/med.png'></Img>
@@ -359,86 +366,96 @@ export default function Process() {
 				<StickyBox>
 					<Header>USABILITY TESTING</Header>
 					<Text>
-						Although I couldn't schedule any formal usability tests,
-						I was able to receive feedback from users throughout
-						designing my prototype.
+						To validate our design, we conducted 8 usability tests
+						with students going through the introduction,
+						matchmaking, messaging, and announcement flows.
 					</Text>
 					<Text>
-						I made several decisions and changes from the feedback
-						such as creating a new component for soundbites,
-						utilizing multiple types of cards to draw attention, and
-						cutting down on content for users to easily skim.
+						We learned a lot about what students value in study
+						groups. Here are the key takeaways we had:
 					</Text>
+					<UL>
+						<Li>
+							Copy is very important for onboarding and influences
+							student behavior
+						</Li>
+						<Li>
+							The quiz doesn't help students find other students
+							with similar interests
+						</Li>
+						<Li>
+							Edge cases are essential. What if students don't
+							like a study group?
+						</Li>
+						<Li>
+							Messaging is more important than announcements and
+							posts
+						</Li>
+					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/soundbite.png'></Img>
-					<Img src='static/images/spotify/carditerations.png'></Img>
+					<Img src='static/images/canvas/usability.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<StickyBox>
 					<Header>HIGH FIDELITY</Header>
 					<Text>
-						Although I couldn't schedule any formal usability tests,
-						I was able to receive feedback from users throughout
-						designing my prototype.
+						With our feedback from the usability tests, our team
+						went through three rounds of iteration to reach our high
+						fidelity prototypes.
 					</Text>
 					<Text>
-						I made several decisions and changes from the feedback
-						such as creating a new component for soundbites,
-						utilizing multiple types of cards to draw attention, and
-						cutting down on content for users to easily skim.
+						We made a lot of changes such as restructuring the main
+						page to prioritize messaging, improving the visual
+						hierarchy of announcements, and many more.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/soundbite.png'></Img>
-					<Img src='static/images/spotify/carditerations.png'></Img>
+					<Img src='static/images/canvas/hifi.png'></Img>
+					<div>
+						<Img src='static/images/canvas/hifiall.png'></Img>
+						<Caption>All of the final screens</Caption>
+					</div>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<Box>
+				<StickyBox>
 					<Header>FINAL MOCKUPS</Header>
 					<Text>
-						At the end of my 8 weeks, I presented this project to
-						the Applied 2020 community. I received recognition for
-						having great visual design, presentation and
-						storytelling, and won the audience's favorite for my
-						presentation session.
+						We weren't able to conduct a second round of usability
+						tests with our high fidelity prototypes, but feedback
+						from the UW Continuum College team and our mentors were very positive about our
+						changes.
 					</Text>
 					<Text>
-						Click the image on the right to view my presentation
-						slides.
+						Here are a few key final mockups showing the changes
+						that solve the issues found from our usability testing.
 					</Text>
-				</Box>
+				</StickyBox>
 				<HalfSticky>
-					<a
-						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
-						target='_blank'>
-						<Img src='static/images/spotify/presentation.png'></Img>
-					</a>
+					<Img src='static/images/canvas/final.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
 					<Header>VIDEO</Header>
 					<Text>
-						At the end of my 8 weeks, I presented this project to
-						the Applied 2020 community. I received recognition for
-						having great visual design, presentation and
-						storytelling, and won the audience's favorite for my
-						presentation session.
-					</Text>
-					<Text>
-						Click the image on the right to view my presentation
-						slides.
+						As part of the virtual capstone showcase, our team
+						crafted this video highlighting the problem space and
+						our solution. Check it out for a concise demonstration
+						of Study Group's features. Thank you for looking through
+						this case study!
 					</Text>
 				</Box>
 				<HalfSticky>
-					<a
-						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
-						target='_blank'>
-						<Img src='static/images/spotify/presentation.png'></Img>
-					</a>
+					<iframe
+						width='100%'
+						height='500'
+						src='https://www.youtube.com/embed/q-P55l8iAx0'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+						allowfullscreen></iframe>
 				</HalfSticky>
 			</FlexTwo>
 			<Top>
@@ -449,41 +466,39 @@ export default function Process() {
 				<Div>
 					<Header>REFLECTION</Header>
 					<Text>
-						This was a really exciting and fun project for me to
-						work on because I had to dive into an unknown product,
-						design system, and problem space. I learned so much in
-						this project and here are some of my key takeaways.
+						This project was close to the heart as our team was
+						dealing with the lack of motivation and negative mental
+						health impacts that online school had during quarantine.
+						However, I’m proud of our team for pushing through and
+						creating a feature that would help future online
+						students if implemented. I learned a lot through this
+						project and some key takeaways are:
 					</Text>
-					<Subheader>Iterate, iterate, iterate</Subheader>
+					<Subheader>It’s always about what the user wants</Subheader>
 					<Text>
-						It’s important to continue thinking outside and inside
-						the box at every step of the design process. Being
-						open-minded helped me go through many ideas and find the
-						best solution at each step.
+						Being able to reach out and conduct concept testing with
+						users to guide us forward in our design was immensely
+						helpful when our team was stuck with many great ideas.
 					</Text>
-					<Subheader>
-						Think big picture, but design little pixels
-					</Subheader>
+					<Subheader>Communication is key</Subheader>
 					<Text>
-						Something I focused on for this project was working
-						within constraints. I made sure to choose the most
-						feasible, impactful solution to the problem instead of
-						designing a brand new, sky-high experience like many of
-						my course projects.
+						Working remotely was pretty difficult as our team wasn’t
+						used to conducting tests and design sessions online but
+						maintaining strong communication made it a lot easier.
 					</Text>
-					<Subheader>Feedback is always valuable</Subheader>
+					<Subheader>Positive vibes only</Subheader>
 					<Text>
-						Within the 8 weeks, it was difficult to conduct a lot of
-						formal usability and a/b testing. But, being able to
-						reach out and just ask for small feedback helped me
-						throughout the process immensely.
+						One lesson I learned was that language and copy can
+						really make or break a product. It’s important that the
+						feature communicates what it is to users clearly.
 					</Text>
 					<br />
 					<Text>
-						Thanks to the Applied program for providing a fun
-						mock-internship experience! I appreciate my buddies,
-						mentors, and fellow designers for their wonderful
-						feedback on this project.
+						Thanks to my capstone team for all the zoom calls,
+						Messenger calls, and FaceTime calls (clearly need to
+						choose a main platform next time). Thanks to Regina and
+						UW Continuum College for guiding us through this
+						project.
 					</Text>
 				</Div>
 			</FlexTwo>
