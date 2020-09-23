@@ -26,10 +26,6 @@ const Logo = styled.a`
 	font-size: 24px;
 	line-height: 24px;
 
-	&:hover {
-		color: ${({ theme }) => theme.colors.primary};
-	}
-
 	letter-spacing: -0.03em;
 	z-index: 100;
 `;
@@ -92,9 +88,6 @@ export default function Nav() {
 				<Logo>dang</Logo>
 			</Link>
 			<Right>
-				<Link href='/work' passHref>
-					<NavItem>WORKS</NavItem>
-				</Link>
 				<Link href='/about' passHref>
 					<NavItem>ABOUT</NavItem>
 				</Link>

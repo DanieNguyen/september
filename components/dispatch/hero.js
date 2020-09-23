@@ -85,7 +85,7 @@ const Overview = styled(Center)`
 `;
 
 const SubTitle = styled(Subtitle)`
-	color: #548DFC;
+	color: #548dfc;
 `;
 
 export default function Hero() {
@@ -124,7 +124,7 @@ export default function Hero() {
 								ease: 'easeOut',
 							},
 						}}>
-						Assisting police <br/> officers on foot patrol
+						Assisting police <br /> officers on foot patrol
 					</Title>
 					<Summary
 						initial={{ y: 30, opacity: 0 }}
@@ -139,19 +139,18 @@ export default function Hero() {
 						}}>
 						<SubTitle>Dispatch</SubTitle>
 						<Text>
-							Spotify is the world’s largest audio streaming
-							platform right now with millions of songs and
-							podcasts.{' '}
+							Today, police are equipped with state of the art
+							technology. They can access real-time actionable
+							information with their vehicle computers.{' '}
 							<strong>
-								However, listeners have trouble discovering new
-								podcasts easily and quickly.
+								However, the technology loses its effectiveness
+								once the officer is out of their vehicle.
 							</strong>
 						</Text>
 						<Text>
-							After an extensive design process of research and
-							iteration, I redesigned the Spotify Podcasts home
-							page to better highlight podcasts and their
-							originality for listeners.
+							In a rapid design challenge for the Protothon, I
+							designed a mobile app to provide data and assistance
+							to police officers patrolling on foot.
 						</Text>
 					</Summary>
 				</Hook>
@@ -159,26 +158,36 @@ export default function Hero() {
 			<Overview>
 				<Left>
 					<Text>
-						<strong>Individual Project</strong>
-						<br /> July - Aug 2020 <br /> 8 weeks <br /> <br />{' '}
-						<br /> <strong>Responsibilities </strong> <br /> User
+						<strong>Competition Project</strong>
+						<br /> June 2020 <br /> 2 Days <br /> Team of 2<br />{' '}
+						<br /> <strong>Responsibilities </strong> <br /> Problem
 						Research <br /> Visual Design <br /> Product Design
 					</Text>
 				</Left>
 				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
-						As the leading music streaming platform, Spotify does a
-						great job of providing a great listening experience with
-						personalized playlists, lyrics, and more. However, with
-						podcasts, the Spotify experience isn't quite the same.
+						Police officers rely on their vehicle computers to
+						access information, communicate with their team, and
+						even write up citations. But when they're outside of
+						their vehicles, they lose access to all of those
+						capabilities.
 					</Text>
 					<Text>
-						There's a lack of guidance inside the platform to help
-						listeners discover and engage in podcasts. As a result,
-						listeners struggle to listen to more than a handful of
-						podcasts and rely on outside sources to find more
-						podcasts.
+						In metropolitan areas, police officers are often
+						patrolling on foot or bikes without access to a
+						computer. This lack of technology puts the officers at
+						risk and decreases the effectiveness of their ability to
+						keep our communities safe.
+					</Text>
+					<Header>THE APPROACH</Header>
+					<Text>
+						To tackle this problem, I worked with Lena Tran to
+						design a mobile app that would serve as a computer for
+						officers outside their vehicles. We worked together
+						throughout the project from research to product design.
+						I led the design of our visual identity and presentation
+						deck.
 					</Text>
 				</Right>
 			</Overview>

@@ -68,79 +68,66 @@ export default function Product() {
 				<Final>The</Final>
 				<Solution>Solution</Solution>
 			</Top>
-			<Img src='static/images/spotify/hero.png'></Img>
+			<Img src='static/images/dispatch/featured.png'></Img>
 			<Center>
 				<Box>
 					<Header>THE SOLUTION</Header>
 					<Text>
-						Research showed that listeners wanted more information
-						about a podcast before listening to it. I redesigned the
-						podcast home page to spark discovery and listeners'
-						understanding of podcasts. The redesign showcases
-						podcasts through engaging mini-articles meant to clarify
-						all listeners' questions about the content of a podcast.
+						Dispatch is a mobile app meant to provide real-time data
+						for police officers on the go. Police officers will be
+						able to see and respond to nearby incidents, call for
+						backup, and issue citations. Dispatch is also tailored
+						towards an individual police officer, allowing them to
+						keep track of their own records.
 					</Text>
 				</Box>
 			</Center>
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Video loop muted playsInline autoPlay>
-							<source
-								src='static/videos/spotify/article.mp4'
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</Video>
+						<Img src='static/images/dispatch/dash.png'></Img>
 						<Caption>
-							<Fig>Digest bite-sized pieces of information</Fig>
+							<Fig>Understand the neighborhood at a glance</Fig>
 							<Text>
-								The short articles have clear call to actions
-								and digestible information for listeners to
-								understand a podcast in under 5 minutes.
+								Officers can quickly browse through incidents in
+								their patrol area by location, type, and
+								priority in their dashboard.
 							</Text>
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/spotify/variety.png'></Img>
+						<Img src='static/images/dispatch/citation.png'></Img>
 						<Caption>
-							<Fig>Explore genres, topics, and new podcasts</Fig>
+							<Fig>Fill out citations in a minute</Fig>
 							<Text>
-								The possibilities are endless with Featured
-								Podcasts. Listeners can browse through articles
-								highlighting a single podcast, a genre, topic,
-								or even a celebrity's recommendations.
+								For minor incidents, officers can quickly scan a
+								drivers’ license and fill out a citation
+								immediately in the app.
 							</Text>
 						</Caption>
 					</Card>
 				</Half>
 				<Half>
 					<Card>
-						<Img src='static/images/spotify/cards.png'></Img>
+						<Img src='static/images/dispatch/map.png'></Img>
 						<Caption>
-							<Fig>Understand at a glance</Fig>
+							<Fig>Find the best route</Fig>
 							<Text>
-								Expressive cards draw listeners in to discover
-								new podcasts. Different card styles represent
-								different article content from talking about one
-								podcast to multiple podcasts.
+								On foot, it can be difficult to understand where
+								an incident is. The map routes officers to the
+								best route for a speedy response to any
+								incident.
 							</Text>
 						</Caption>
 					</Card>
 					<Card>
-						<Video loop muted playsInline autoPlay>
-							<source
-								src='static/videos/spotify/card.mp4'
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</Video>
+						<Img src='static/images/dispatch/backup.png'></Img>
 						<Caption>
-							<Fig>Swipe for more</Fig>
+							<Fig>Call for backup immediately</Fig>
 							<Text>
-								Following Spotify’s existing patterns, listeners
-								can swipe to quickly browse and discover
-								podcasts.
+								Calling for backup is a case where it’s better
+								to be safe than sorry. Dispatch provides a clear
+								method with large red buttons.
 							</Text>
 						</Caption>
 					</Card>

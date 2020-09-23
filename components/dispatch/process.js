@@ -126,14 +126,14 @@ const Subheader = styled.h3`
 `;
 
 const Div = styled.div`
-@media ${device.laptop} {
-	width: 50%;
-	margin-left: 8rem;
-}
-@media ${device.desktop} {
-	margin-left: 0;
-	width: 50%;
-}
+	@media ${device.laptop} {
+		width: 50%;
+		margin-left: 8rem;
+	}
+	@media ${device.desktop} {
+		margin-left: 0;
+		width: 50%;
+	}
 `;
 
 export default function Process() {
@@ -142,209 +142,40 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/spotify/process.png'></Img>
+				<Img src='static/images/dispatch/process.png'></Img>
 			</Top>
 			<FlexTwo>
-				<StickyBox>
-					<Header>RESEARCH</Header>
-					<Text>
-						My process began with research to understand podcasts as
-						a listening experience and an industry.
-					</Text>
-					<Text>
-						I conducted semi-structured user interviews, explored
-						large-scale behaviors through a literature review, and
-						examined the industry with a competitive analysis of
-						podcast apps.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/methods.png'></Img>
-					<div>
-						<Img src='static/images/spotify/zoom.png'></Img>
-						<Caption>
-							Interviewing a close friend who listens to podcasts
-						</Caption>
-					</div>
-					<div>
-						<Img src='static/images/spotify/comp.png'></Img>
-						<CaptionTwo>
-							Evaluating the top seven podcast apps
-						</CaptionTwo>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>FINDINGS</Header>
-					<Text>
-						From my research, I learned that podcasts are wonderful
-						to listen to and are a part of peoples' daily routine.
-						However, it's hard for listeners to discover new
-						podcasts.
-					</Text>
-					<Subheader>Pain Points</Subheader>
-					<UL>
-						<Li>Users only listen to a handful podcasts</Li>
-						<Li>
-							Recommendations are the only way users try new
-							podcasts
-						</Li>
-						<Li>Users don’t browse through podcasts on Spotify</Li>
-						<Li>
-							It takes at least 5-10 minutes of listening to
-							understand a new podcast
-						</Li>
-					</UL>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/painpoints.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>PROBLEM</Header>
-					<Text>
-						With my insights, I defined my guiding question and
-						scope. I wanted to help listeners discover new podcasts
-						easily and quickly.
-					</Text>
-					<Subheader>Design Goals</Subheader>
-					<UL>
-						<Li>
-							Get users to discover in Spotify, not through
-							recommendations
-						</Li>
-						<Li>Showcase podcasts to draw listeners in</Li>
-						<Li>
-							Reduce the time it takes to understand a single
-							podcast
-						</Li>
-					</UL>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/problem.png'></Img>
-					<Img src='static/images/spotify/spotify.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>IDEATION</Header>
-					<Text>
-						After defining the problem, I went to the drawing board.
-						I explored many different apps and websites such as
-						YouTube, Twitter, etc. to see how they help users
-						discover new things.
-					</Text>
-					<Text>
-						With a variety of ideas, I scoped down by conducting an
-						effort impact analysis. My top three ideas were a
-						ratings and review system, showing friends' podcast
-						activities, and a featured podcast section with curated
-						articles.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<div>
-						<Img src='static/images/spotify/apps.png'></Img>
-						<CaptionTwo>
-							Some of the apps I looked at for inspiration
-						</CaptionTwo>
-					</div>
-					<div>
-						<Img src='static/images/spotify/effort.png'></Img>
-						<Caption>
-							Comparing the effort to implement and impact on
-							listeners for my ideas
-						</Caption>
-					</div>
-					<div>
-						<Img src='static/images/spotify/topthreewhite.png'></Img>
-						<CaptionTwo>
-							My top three ideas with their pros and cons
-						</CaptionTwo>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
 				<Box>
-					<Header>SOLUTION</Header>
+					<Header>OUR PROCESS</Header>
 					<Text>
-						I chose to move forward with my idea of Featured
-						Podcasts because it has the best opportunity to guide
-						users to browse in Spotify, doesn't interrupt users'
-						listening experience, and can provide the most
-						information about a podcast.
+						A whole lot of panic and winging it. We had roughly 28
+						hours to design our mobile app from start to finish.
+					</Text>
+					<Text>
+						Lena and I attempted to conduct user research but were
+						unable to get police officers to respond to us...
+					</Text>
+					<Text>
+						So we did our best with secondary literature research
+						and then dove into one InVision freehand to brainstorm,
+						ideate, and walk through user flows. Then we went into a
+						Figma file and dove into multiple iterations of our high
+						fidelity screens.
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/solution.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>INFORMATION ARCHITECTURE</Header>
-					<Text>
-						With my solution, I moved into mapping out the
-						information architecture. Some key decisions I had to
-						figure out was where would the featured section live on
-						the podcast page, how much information would be in an
-						article, and what kind of actions can users expect to
-						see.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/sitemap.png'></Img>
-					<Img src='static/images/spotify/information.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>PROTOTYPING</Header>
-					<Text>
-						I went into high-fidelity prototyping soon after because
-						of time constraints. For visual design, I tried my best
-						to align myself with Spotify's design principles.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<div>
-						<Img src='static/images/spotify/screens.png'></Img>
-						<Caption>
-							Some of the components and screens I designed
-						</Caption>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>ITERATIONS</Header>
-					<Text>
-						Although I couldn't schedule any formal usability tests,
-						I was able to receive feedback from users throughout
-						designing my prototype.
-					</Text>
-					<Text>
-						I made several decisions and changes from the feedback
-						such as creating a new component for soundbites,
-						utilizing multiple types of cards to draw attention, and
-						cutting down on content for users to easily skim.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/soundbite.png'></Img>
-					<Img src='static/images/spotify/carditerations.png'></Img>
+						<Img style={{width: '500px'}} src='static/images/dispatch/lol.jpg'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
 					<Header>FINAL PRESENTATION</Header>
 					<Text>
-						At the end of my 8 weeks, I presented this project to
-						the Applied 2020 community. I received recognition for
-						having great visual design, presentation and
-						storytelling, and won the audience's favorite for my
-						presentation session.
+						This was our final presentation for the Protothon,
+						highlighting our process and design.
+					</Text>
+					<Text>
+						<strong>We placed 3rd for the enterprise track!</strong>
 					</Text>
 					<Text>
 						Click the image on the right to view my presentation
@@ -353,9 +184,9 @@ export default function Process() {
 				</Box>
 				<HalfSticky>
 					<a
-						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
+						href='https://www.figma.com/proto/x1uLCzuJGUpXszsOYQyyw9/Dispatch?node-id=498%3A4555&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/spotify/presentation.png'></Img>
+						<Img src='static/images/dispatch/presentation.png'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>
@@ -367,41 +198,43 @@ export default function Process() {
 				<Div>
 					<Header>REFLECTION</Header>
 					<Text>
-						This was a really exciting and fun project for me to
-						work on because I had to dive into an unknown product,
-						design system, and problem space. I learned so much in
-						this project and here are some of my key takeaways.
-					</Text>
-					<Subheader>Iterate, iterate, iterate</Subheader>
-					<Text>
-						It’s important to continue thinking outside and inside
-						the box at every step of the design process. Being
-						open-minded helped me go through many ideas and find the
-						best solution at each step.
+						This was a fun project because it was an interesting
+						problem space that I would have never thought of. I
+						learned a lot and was pretty stressed over the weekend,
+						but I think it was worth it. Some lessons I learned:
 					</Text>
 					<Subheader>
-						Think big picture, but design little pixels
+						Without resources, just make informed decisions
 					</Subheader>
 					<Text>
-						Something I focused on for this project was working
-						within constraints. I made sure to choose the most
-						feasible, impactful solution to the problem instead of
-						designing a brand new, sky-high experience like many of
-						my course projects.
+						Without user research, we were a little lost in the
+						beginning since it was hard to wrap our heads around the
+						problem. But we had to push forward with the information
+						that we had.
 					</Text>
-					<Subheader>Feedback is always valuable</Subheader>
+					<Subheader>Privacy and security matter a lot</Subheader>
 					<Text>
-						Within the 8 weeks, it was difficult to conduct a lot of
-						formal usability and a/b testing. But, being able to
-						reach out and just ask for small feedback helped me
-						throughout the process immensely.
+						Although we didn’t have time to add privacy and security
+						features to the app, this project really got me thinking
+						about their impact for users, especially with critical
+						information.
+					</Text>
+					<Subheader>Design is fun!</Subheader>
+					<Text>
+						This project was done during quarantine when I was
+						feeling a little hopeless in my career and job hunt. It
+						reminded me of what I love which is designing and
+						solving user problems.
 					</Text>
 					<br />
 					<Text>
-						Thanks to the Applied program for providing a fun
-						mock-internship experience! I appreciate my buddies,
-						mentors, and fellow designers for their wonderful
-						feedback on this project.
+						Thank you to Dubhacks for hosting the fun Protothon.
+						Thanks to Lena for motivating me and being a great
+						partner. After what happened this summer, I definitely
+						feel discouraged about this project and the police
+						system with its systematic brutality and racism.
+						However, I’m keeping this in my portfolio because it’s
+						some dope stuff.
 					</Text>
 				</Div>
 			</FlexTwo>
