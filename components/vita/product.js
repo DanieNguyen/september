@@ -68,79 +68,115 @@ export default function Product() {
 				<Final>The</Final>
 				<Solution>Solution</Solution>
 			</Top>
-			<Img src='static/images/spotify/hero.png'></Img>
+			<Img src='static/images/vita/featured.png'></Img>
 			<Center>
 				<Box>
 					<Header>THE SOLUTION</Header>
 					<Text>
-						Research showed that listeners wanted more information
-						about a podcast before listening to it. I redesigned the
-						podcast home page to spark discovery and listeners'
-						understanding of podcasts. The redesign showcases
-						podcasts through engaging mini-articles meant to clarify
-						all listeners' questions about the content of a podcast.
+						Introducing Vita OS, designed for intentional living.
+						Vita is humanistic and human-made. It’s meant to
+						encourage users to reflect on their life in all aspects
+						from work, relationships, goals, and most importantly
+						happiness. The core concepts of Vita are education and
+						inspiration, hoping to inform and motivate users to
+						change their lives for the better.
 					</Text>
 				</Box>
 			</Center>
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Video loop muted playsInline autoPlay>
-							<source
-								src='static/videos/spotify/article.mp4'
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</Video>
+						<Img src='static/images/vita/home.png'></Img>
 						<Caption>
-							<Fig>Digest bite-sized pieces of information</Fig>
+							<Fig>Home is what you make it</Fig>
 							<Text>
-								The short articles have clear call to actions
-								and digestible information for listeners to
-								understand a podcast in under 5 minutes.
+								Users can customize their home with two layouts: grid and list. They can also
+								create behaviors such as muting and scheduling
+								apps to launch.
 							</Text>
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/spotify/variety.png'></Img>
+						<Img src='static/images/vita/messages.png'></Img>
 						<Caption>
-							<Fig>Explore genres, topics, and new podcasts</Fig>
+							<Fig>Messages keep you in touch</Fig>
 							<Text>
-								The possibilities are endless with Featured
-								Podcasts. Listeners can browse through articles
-								highlighting a single podcast, a genre, topic,
-								or even a celebrity's recommendations.
+								Vita’s message app is smart, allowing users to
+								organize chats by group. Users are reminded to
+								stay in touch with their relationships in the
+								follow up section.
+							</Text>
+						</Caption>
+					</Card>
+					<Card>
+						<Img src='static/images/vita/tasks.png'></Img>
+						<Caption>
+							<Fig>Tasks are attainable</Fig>
+							<Text>
+								Users can keep track of tasks and goals they
+								have for the future. Both are organized and
+								encourage users through reminders and
+								percentages.
+							</Text>
+						</Caption>
+					</Card>
+					<Card>
+						<Img src='static/images/vita/notes.png'></Img>
+						<Caption>
+							<Fig>Notes creatively express your thoughts</Fig>
+							<Text>
+								Expressing yourself is essential to maintaining
+								your mental health. Notes is a place for users
+								to type, draw, and show their thoughts and
+								feelings.
 							</Text>
 						</Caption>
 					</Card>
 				</Half>
 				<Half>
 					<Card>
-						<Img src='static/images/spotify/cards.png'></Img>
+						<Img src='static/images/vita/control.png'></Img>
 						<Caption>
-							<Fig>Understand at a glance</Fig>
+							<Fig>Control what’s important to you</Fig>
 							<Text>
-								Expressive cards draw listeners in to discover
-								new podcasts. Different card styles represent
-								different article content from talking about one
-								podcast to multiple podcasts.
+								Swipe down to see the control panel where users
+								can choose what tools they need and filter the
+								notifications by apps they want to see.
 							</Text>
 						</Caption>
 					</Card>
 					<Card>
-						<Video loop muted playsInline autoPlay>
-							<source
-								src='static/videos/spotify/card.mp4'
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</Video>
+						<Img src='static/images/vita/wallet.png'></Img>
 						<Caption>
-							<Fig>Swipe for more</Fig>
+							<Fig>Wallet keeps you accountable</Fig>
 							<Text>
-								Following Spotify’s existing patterns, listeners
-								can swipe to quickly browse and discover
-								podcasts.
+								Users can learn how to grow their personal
+								finances with the smart Wallet app. Wallet
+								analyzes spending and provides resources to help
+								users maintain a budget.
+							</Text>
+						</Caption>
+					</Card>
+					<Card>
+						<Img src='static/images/vita/health.png'></Img>
+						<Caption>
+							<Fig>Health empowers you</Fig>
+							<Text>
+								Taking care of your body is something everyone
+								should do. The health app considers both mental
+								and physical wellbeing through tracking steps,
+								activity, and moods.
+							</Text>
+						</Caption>
+					</Card>
+					<Card>
+						<Img src='static/images/vita/calendar.png'></Img>
+						<Caption>
+							<Fig>Calendar is on your time</Fig>
+							<Text>
+								A simple calendar with multiple views helps
+								users track their short-term activities and
+								long-term goals.
 							</Text>
 						</Caption>
 					</Card>

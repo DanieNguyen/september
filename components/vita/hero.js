@@ -99,7 +99,7 @@ const Overview = styled(Center)`
 `;
 
 const SubTitle = styled(Subtitle)`
-	color: #FD9EA1;
+	color: #fd9ea1;
 `;
 
 export default function Hero() {
@@ -153,19 +153,21 @@ export default function Hero() {
 						}}>
 						<SubTitle>Vita OS</SubTitle>
 						<Text>
-							Spotify is the world’s largest audio streaming
-							platform right now with millions of songs and
-							podcasts.{' '}
+							From young adults hustling with multiple jobs to the
+							on-call doctors and nurses, it’s tough to have a
+							normal work-life balance in America. The growing
+							digital world makes it even harder for people to
+							unwind because of{' '}
 							<strong>
-								However, listeners have trouble discovering new
-								podcasts easily and quickly.
+								the idea that if you have a phone, you’re
+								“available.”
 							</strong>
 						</Text>
 						<Text>
-							After an extensive design process of research and
-							iteration, I redesigned the Spotify Podcasts home
-							page to better highlight podcasts and their
-							originality for listeners.
+							My team and I designed an original concept for a
+							mobile OS to encourage healthy living. Vita is an OS
+							that helps keep users grounded mentally and inspires
+							them to focus on themselves.
 						</Text>
 					</Summary>
 				</Hook>
@@ -173,26 +175,41 @@ export default function Hero() {
 			<Overview>
 				<Left>
 					<Text>
-						<strong>Capstone Project</strong>
+						<strong>Course Project</strong>
 						<br /> April - June 2020 <br /> 10 weeks <br /> Team of
 						4<br /> <br /> <strong>My Role</strong> <br /> User
-						Researcher <br /> Lead Product Designer <br />
+						Researcher <br /> Lead Product Designer <br /> <br/> <strong>1st Place</strong> <br/>Perfect Score from <br/> Industry Judges
 					</Text>
 				</Left>
 				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
-						As the leading music streaming platform, Spotify does a
-						great job of providing a great listening experience with
-						personalized playlists, lyrics, and more. However, with
-						podcasts, the Spotify experience isn't quite the same.
+						In our competitive society, many people hate feeling
+						‘unproductive’ and overwork themselves in their careers.
+						After work, when all you want to do is look at your
+						phone, it’s easy to mindlessly scroll through Instagram
+						or Twitter while feeling like you’re wasting time. But
+						life isn’t all about work or social media.
 					</Text>
 					<Text>
-						There's a lack of guidance inside the platform to help
-						listeners discover and engage in podcasts. As a result,
-						listeners struggle to listen to more than a handful of
-						podcasts and rely on outside sources to find more
-						podcasts.
+						Our goal was to stop the cycle of working and lazing
+						around to help people focus on their goals,
+						relationships, and happiness. We wanted to promote
+						meaningful interactions with technology through an
+						original OS, focusing on typical system apps like
+						messages and mail.
+					</Text>
+					<Header>THE APPROACH</Header>
+					<Text>
+						I worked in a team of seven to complete this project for
+						a course, Informatics 365: Mobile App Design. The
+						project was to design an original series of 10-15 system
+						apps for a mobile OS.
+					</Text>
+					<Text>
+						I served as the lead product designer, working closely with my team to keep our OS consistent. I created our visual design
+						language and component library in Figma. I also designed
+						all of our presentation decks.
 					</Text>
 				</Right>
 			</Overview>

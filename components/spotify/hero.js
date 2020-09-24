@@ -159,9 +159,9 @@ export default function Hero() {
 				<Left>
 					<Text>
 						<strong>Individual Project</strong>
-						<br /> July - Aug 2020 <br /> 8 weeks <br /> <br />{' '}
+						<br /> July - Aug 2020 <br /> 8 weeks <br /> 
 						<br /> <strong>Responsibilities </strong> <br /> User
-						Research <br /> Visual Design <br /> Product Design
+						Research <br /> Visual Design <br /> Product Design <br/> <br/> <strong>Recognized for Best</strong> <br/>UX, Visual Design, <br/> and Presentation
 					</Text>
 				</Left>
 				<Right>

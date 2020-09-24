@@ -91,7 +91,7 @@ export default function Nav() {
 				<Link href='/about' passHref>
 					<NavItem>ABOUT</NavItem>
 				</Link>
-				<a href='mailto: danngu@uw.edu' target='_blank'>
+				<a href='https://www.dropbox.com/s/s8qebeevjr19eyz/Daniel_Nguyen_Res.pdf?dl=0' target='_blank'>
 					<NavItem>RESUME</NavItem>
 				</a>
 				<a href='mailto: danyen125@gmail.com' target='_blank'>

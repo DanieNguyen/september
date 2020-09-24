@@ -54,7 +54,7 @@ const Box = styled.div`
 `;
 
 const words = ['work', 'about', 'contact', 'resume'];
-const link = ['/', '/spotify', '/', 'mailto: yendan125@gmail.com'];
+const link = ['/', '/about', 'mailto: yendan125@gmail.com', 'https://www.dropbox.com/s/s8qebeevjr19eyz/Daniel_Nguyen_Res.pdf?dl=0'];
 
 export const MenuItem = ({ i, toggle }) => {
 	let display = "none";

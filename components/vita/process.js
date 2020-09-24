@@ -126,14 +126,14 @@ const Subheader = styled.h3`
 `;
 
 const Div = styled.div`
-@media ${device.laptop} {
-	width: 50%;
-	margin-left: 8rem;
-}
-@media ${device.desktop} {
-	margin-left: 0;
-	width: 50%;
-}
+	@media ${device.laptop} {
+		width: 50%;
+		margin-left: 8rem;
+	}
+	@media ${device.desktop} {
+		margin-left: 0;
+		width: 50%;
+	}
 `;
 
 export default function Process() {
@@ -142,208 +142,173 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/spotify/process.png'></Img>
+				<Img src='static/images/vita/process.png'></Img>
 			</Top>
 			<FlexTwo>
-				<StickyBox>
+				<Box>
 					<Header>RESEARCH</Header>
 					<Text>
-						My process began with research to understand podcasts as
-						a listening experience and an industry.
+						The idea for our OS came after our team vented about
+						finding jobs and working for the rest of our lives.
 					</Text>
 					<Text>
-						I conducted semi-structured user interviews, explored
-						large-scale behaviors through a literature review, and
-						examined the industry with a competitive analysis of
-						podcast apps.
+						We noted how discouraging our phones were in how they
+						only show everyone's perfect lives and distract us with
+						addictive social media.
 					</Text>
-				</StickyBox>
+					<Text>
+						We conducted research through surveys and academic
+						articles to see if other young adults felt the same way
+						about their phones.
+					</Text>
+				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/methods.png'></Img>
+					<Img src='static/images/vita/methods.png'></Img>
 					<div>
-						<Img src='static/images/spotify/zoom.png'></Img>
-						<Caption>
-							Interviewing a close friend who listens to podcasts
-						</Caption>
-					</div>
-					<div>
-						<Img src='static/images/spotify/comp.png'></Img>
+						<Img src='static/images/vita/article.png'></Img>
 						<CaptionTwo>
-							Evaluating the top seven podcast apps
+							A very insightful article talking about smartphone
+							addiction
 						</CaptionTwo>
 					</div>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
-				<StickyBox>
+				<Box>
 					<Header>FINDINGS</Header>
 					<Text>
-						From my research, I learned that podcasts are wonderful
-						to listen to and are a part of peoples' daily routine.
-						However, it's hard for listeners to discover new
-						podcasts.
+						From our surveys, we learned that young adults had
+						several pain points about their phone usage.
 					</Text>
 					<Subheader>Pain Points</Subheader>
 					<UL>
-						<Li>Users only listen to a handful podcasts</Li>
 						<Li>
-							Recommendations are the only way users try new
-							podcasts
+							Being distracted from life through mindless browsing{' '}
 						</Li>
-						<Li>Users don’t browse through podcasts on Spotify</Li>
 						<Li>
-							It takes at least 5-10 minutes of listening to
-							understand a new podcast
+							Working after hours because of stress from
+							notifications
+						</Li>
+						<Li>
+							Feeling discouraged from seeing others’ online
+							personas
 						</Li>
 					</UL>
-				</StickyBox>
+					<Text>
+						However, they recognized that their phone is essential
+						to their daily life and helps them plan, communicate,
+						and connect with others.
+					</Text>
+				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/painpoints.png'></Img>
+					<Img src='static/images/vita/painpoints.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
 					<Header>PROBLEM</Header>
 					<Text>
-						With my insights, I defined my guiding question and
-						scope. I wanted to help listeners discover new podcasts
-						easily and quickly.
+						With our findings, we identified the overall concept for
+						our OS. We wanted to tackle the problem of helping young
+						adults balance their lives and phone usage.
 					</Text>
 					<Subheader>Design Goals</Subheader>
 					<UL>
 						<Li>
-							Get users to discover in Spotify, not through
-							recommendations
+							Help young adults achieve a better work-life balance
 						</Li>
-						<Li>Showcase podcasts to draw listeners in</Li>
 						<Li>
-							Reduce the time it takes to understand a single
-							podcast
+							Encourage them to focus on person goals and
+							interests
+						</Li>
+						<Li>
+							Support them in creating and maintaining
+							relationships
 						</Li>
 					</UL>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/problem.png'></Img>
+					<Img src='static/images/vita/problem.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<StickyBox>
-					<Header>IDEATION</Header>
+					<Header>FOUNDATION</Header>
 					<Text>
-						After defining the problem, I went to the drawing board.
-						I explored many different apps and websites such as
-						YouTube, Twitter, etc. to see how they help users
-						discover new things.
+						To keep our large team on track over this project, we
+						made sure to lay a solid foundation of our OS. We
+						followed the metaphor of the bullet journal to inspire
+						our design.
 					</Text>
 					<Text>
-						With a variety of ideas, I scoped down by conducting an
-						effort impact analysis. My top three ideas were a
-						ratings and review system, showing friends' podcast
-						activities, and a featured podcast section with curated
-						articles.
+						We then made two personas and four design principles for
+						everyone to refer to as we split up to design apps.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
+					<Img src='static/images/vita/bullet.png'></Img>
+					<Img src='static/images/vita/kelly.png'></Img>
 					<div>
-						<Img src='static/images/spotify/apps.png'></Img>
-						<CaptionTwo>
-							Some of the apps I looked at for inspiration
-						</CaptionTwo>
-					</div>
-					<div>
-						<Img src='static/images/spotify/effort.png'></Img>
+						<Img src='static/images/vita/steph.png'></Img>
 						<Caption>
-							Comparing the effort to implement and impact on
-							listeners for my ideas
+							Meet Kelly and Stephen! Our two young adults who
+							need Vita OS :)
 						</Caption>
 					</div>
 					<div>
-						<Img src='static/images/spotify/topthreewhite.png'></Img>
-						<CaptionTwo>
-							My top three ideas with their pros and cons
-						</CaptionTwo>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>SOLUTION</Header>
-					<Text>
-						I chose to move forward with my idea of Featured
-						Podcasts because it has the best opportunity to guide
-						users to browse in Spotify, doesn't interrupt users'
-						listening experience, and can provide the most
-						information about a podcast.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<Img src='static/images/spotify/solution.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>INFORMATION ARCHITECTURE</Header>
-					<Text>
-						With my solution, I moved into mapping out the
-						information architecture. Some key decisions I had to
-						figure out was where would the featured section live on
-						the podcast page, how much information would be in an
-						article, and what kind of actions can users expect to
-						see.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img src='static/images/spotify/sitemap.png'></Img>
-					<Img src='static/images/spotify/information.png'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>PROTOTYPING</Header>
-					<Text>
-						I went into high-fidelity prototyping soon after because
-						of time constraints. For visual design, I tried my best
-						to align myself with Spotify's design principles.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<div>
-						<Img src='static/images/spotify/screens.png'></Img>
-						<Caption>
-							Some of the components and screens I designed
-						</Caption>
+						<Img src='static/images/vita/principles.png'></Img>
 					</div>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<StickyBox>
-					<Header>ITERATIONS</Header>
+					<Header>DESIGN SYSTEM</Header>
 					<Text>
-						Although I couldn't schedule any formal usability tests,
-						I was able to receive feedback from users throughout
-						designing my prototype.
+						As we moved into designing apps, I was in charge of
+						creating a consistent design system for our OS. I chose
+						our system typography, colors, and created reusable
+						components.
 					</Text>
 					<Text>
-						I made several decisions and changes from the feedback
-						such as creating a new component for soundbites,
-						utilizing multiple types of cards to draw attention, and
-						cutting down on content for users to easily skim.
+						I also worked to build out the component library in
+						Figma to help my team be more efficient.
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/soundbite.png'></Img>
-					<Img src='static/images/spotify/carditerations.png'></Img>
+					<Img src='static/images/vita/style.png'></Img>
+				</HalfSticky>
+			</FlexTwo>
+			<FlexTwo>
+				<StickyBox>
+					<Header>APP DESIGN</Header>
+					<Text>
+						After laying out the overarching design system and
+						principles, we dove into our app ideas. We had extremely
+						quick design sprints for each app since our timeline was
+						short.
+					</Text>
+					<Text>
+						Since it was a little chaotic, we didn't get to properly
+						document all the iterations for the apps. But, here are
+						some of the ideas that developed for the apps that I
+						worked on (Home, Messages, and Wallet).
+					</Text>
+				</StickyBox>
+				<HalfSticky>
+					<Img src='static/images/vita/timeline.png'></Img>
+					<Img src='static/images/vita/apps.png'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
 				<Box>
-					<Header>FINAL PRESENTATION</Header>
+					<Header>FINAL DESIGN + PRESENTATION</Header>
 					<Text>
-						At the end of my 8 weeks, I presented this project to
-						the Applied 2020 community. I received recognition for
-						having great visual design, presentation and
-						storytelling, and won the audience's favorite for my
-						presentation session.
+						At the end of our 10 weeks, we presented our final
+						designs to industry judges.
+					</Text>
+					<Text>
+						We received a perfect score from industry judges and
+						placed 1st out of the class.
 					</Text>
 					<Text>
 						Click the image on the right to view my presentation
@@ -352,9 +317,9 @@ export default function Process() {
 				</Box>
 				<HalfSticky>
 					<a
-						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
+						href='https://www.figma.com/proto/xwcUDhblAXLzk4lO0ZT73V/Vita-Final-Presentation?node-id=498%3A4555&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/spotify/presentation.png'></Img>
+						<Img src='static/images/vita/presentation.png'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>
@@ -366,41 +331,45 @@ export default function Process() {
 				<Div>
 					<Header>REFLECTION</Header>
 					<Text>
-						This was a really exciting and fun project for me to
-						work on because I had to dive into an unknown product,
-						design system, and problem space. I learned so much in
-						this project and here are some of my key takeaways.
+						This was one of the most challenging projects I’ve
+						worked on because of the rapid amount of design and
+						prototyping needed for over 12 different apps in under
+						10 weeks. But, I loved being able to lead the visual
+						design system and thinking beyond mobile apps into an
+						OS. Some lessons that I learned:
 					</Text>
-					<Subheader>Iterate, iterate, iterate</Subheader>
+					<Subheader>Stay true to your heart</Subheader>
 					<Text>
-						It’s important to continue thinking outside and inside
-						the box at every step of the design process. Being
-						open-minded helped me go through many ideas and find the
-						best solution at each step.
+						Because we had to focus on different apps and ideas
+						every week, it was easy to forget what our mission was
+						about when looking at competing and existing apps. But
+						keeping in mind our personas and design principles
+						helped us stay true to the heart of the problem and
+						concept.
 					</Text>
-					<Subheader>
-						Think big picture, but design little pixels
-					</Subheader>
+					<Subheader>Get others to buy in</Subheader>
 					<Text>
-						Something I focused on for this project was working
-						within constraints. I made sure to choose the most
-						feasible, impactful solution to the problem instead of
-						designing a brand new, sky-high experience like many of
-						my course projects.
+						This was my first project where I was one of the more
+						senior designers of the project, leading the visual
+						design and facilitating brainstorming and feedback
+						sessions. I learned a lot about articulating design
+						decisions and explaining my perspective while
+						encouraging others to speak up too.
 					</Text>
-					<Subheader>Feedback is always valuable</Subheader>
+					<Subheader>Keep it simple silly</Subheader>
 					<Text>
-						Within the 8 weeks, it was difficult to conduct a lot of
-						formal usability and a/b testing. But, being able to
-						reach out and just ask for small feedback helped me
-						throughout the process immensely.
+						A classic lesson. But for this project, it was
+						important. Since we had to work across so many apps, it
+						was important to not be extravagant in one app. For our
+						apps, we focused on highlighting 1-3 key features that
+						would convey our concept.
 					</Text>
 					<br />
 					<Text>
-						Thanks to the Applied program for providing a fun
-						mock-internship experience! I appreciate my buddies,
-						mentors, and fellow designers for their wonderful
-						feedback on this project.
+						Thank you to Brian Fling and Khang Lee for guiding my
+						team during this project. Thanks to my team for being
+						great and putting together this fun project through
+						endless nights.
 					</Text>
 				</Div>
 			</FlexTwo>

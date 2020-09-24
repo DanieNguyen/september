@@ -161,7 +161,7 @@ export default function Hero() {
 						<strong>Competition Project</strong>
 						<br /> June 2020 <br /> 2 Days <br /> Team of 2<br />{' '}
 						<br /> <strong>Responsibilities </strong> <br /> Problem
-						Research <br /> Visual Design <br /> Product Design
+						Research <br /> Visual Design <br /> Product Design <br/> <br/> <strong>3rd Place</strong> <br/> Out of 20 Teams
 					</Text>
 				</Left>
 				<Right>
