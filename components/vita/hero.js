@@ -117,14 +117,9 @@ export default function Hero() {
 							ease: 'easeOut',
 						},
 					}}>
-					{/* <VideoTwo loop muted playsInline autoPlay>
-						<source
-							src='static/videos/canvas/project.mp4'
-							type='video/mp4'
-						/>
-						Your browser does not support the video tag.
-					</VideoTwo> */}
-					<Img src='static/images/vita.png'></Img>
+					<Img
+						src='static/images/vita.png'
+						alt='Vita Cover image'></Img>
 				</Splash>
 				<Hook>
 					<Title
@@ -178,7 +173,9 @@ export default function Hero() {
 						<strong>Course Project</strong>
 						<br /> April - June 2020 <br /> 10 weeks <br /> Team of
 						4<br /> <br /> <strong>My Role</strong> <br /> User
-						Researcher <br /> Lead Product Designer <br /> <br/> <strong>1st Place</strong> <br/>Perfect Score from <br/> Industry Judges
+						Researcher <br /> Lead Product Designer <br /> <br />{' '}
+						<strong>1st Place</strong> <br />
+						Perfect Score from <br /> Industry Judges
 					</Text>
 				</Left>
 				<Right>
@@ -207,9 +204,10 @@ export default function Hero() {
 						apps for a mobile OS.
 					</Text>
 					<Text>
-						I served as the lead product designer, working closely with my team to keep our OS consistent. I created our visual design
-						language and component library in Figma. I also designed
-						all of our presentation decks.
+						I served as the lead product designer, working closely
+						with my team to keep our OS consistent. I created our
+						visual design language and component library in Figma. I
+						also designed all of our presentation decks.
 					</Text>
 				</Right>
 			</Overview>

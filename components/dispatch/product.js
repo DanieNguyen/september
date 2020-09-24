@@ -68,7 +68,9 @@ export default function Product() {
 				<Final>The</Final>
 				<Solution>Solution</Solution>
 			</Top>
-			<Img src='static/images/dispatch/featured.png'></Img>
+			<Img
+				src='static/images/dispatch/featured.png'
+				alt='dispatch final solution'></Img>
 			<Center>
 				<Box>
 					<Header>THE SOLUTION</Header>
@@ -85,7 +87,9 @@ export default function Product() {
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Img src='static/images/dispatch/dash.png'></Img>
+						<Img
+							src='static/images/dispatch/dash.png'
+							alt='dispatch dashboard screens'></Img>
 						<Caption>
 							<Fig>Understand the neighborhood at a glance</Fig>
 							<Text>
@@ -96,7 +100,9 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/dispatch/citation.png'></Img>
+						<Img
+							src='static/images/dispatch/citation.png'
+							alt='dispatch citation screens'></Img>
 						<Caption>
 							<Fig>Fill out citations in a minute</Fig>
 							<Text>
@@ -109,7 +115,9 @@ export default function Product() {
 				</Half>
 				<Half>
 					<Card>
-						<Img src='static/images/dispatch/map.png'></Img>
+						<Img
+							src='static/images/dispatch/map.png'
+							alt='dispatch map screens'></Img>
 						<Caption>
 							<Fig>Find the best route</Fig>
 							<Text>
@@ -121,7 +129,9 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/dispatch/backup.png'></Img>
+						<Img
+							src='static/images/dispatch/backup.png'
+							alt='dispatch call for backup screens'></Img>
 						<Caption>
 							<Fig>Call for backup immediately</Fig>
 							<Text>

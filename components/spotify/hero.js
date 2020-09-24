@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Text } from '../caseStudy/text';
+import { Title, Subtitle, Header, Text, A } from '../caseStudy/text';
 import { Video, Center } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -72,6 +72,7 @@ const Right = styled.div`
 		width: 40%;
 	}
 `;
+
 const Overview = styled(Center)`
 	display: flex;
 	flex-direction: column;
@@ -159,7 +160,7 @@ export default function Hero() {
 				<Left>
 					<Text>
 						<strong>Individual Project</strong>
-						<br /> July - Aug 2020 <br /> 8 weeks <br /> 
+						<br /> July - Aug 2020 <br /> 8 weeks <br /> <A href="https://applied2020.com/" target="_blank">Applied 2020 </A><br/>
 						<br /> <strong>Responsibilities </strong> <br /> User
 						Research <br /> Visual Design <br /> Product Design <br/> <br/> <strong>Recognized for Best</strong> <br/>UX, Visual Design, <br/> and Presentation
 					</Text>

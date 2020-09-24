@@ -113,7 +113,9 @@ export default function Hero() {
 							ease: 'easeOut',
 						},
 					}}>
-					<Img src='static/images/canvas.png'></Img>
+					<Img
+						src='static/images/canvas.png'
+						alt='Canvas Cover Image'></Img>
 				</Splash>
 				<Hook>
 					<Title

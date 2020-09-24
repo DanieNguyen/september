@@ -68,7 +68,8 @@ const Li = styled.li`
 	padding-left: 1rem;
 `;
 
-const Move = styled(motion.div)``;
+const Move = styled(motion.div)`y
+`;
 
 const Heade = styled(Header)`
 	margin-top: 2rem;
@@ -81,8 +82,8 @@ const StickyBox = styled(Half)`
 		position: sticky;
 		top: 0;
 		align-self: flex-start; /* <-- this is the fix */
-		margin-top: -10rem;
-		padding-top: 10rem;
+		margin-top: -15rem;
+		padding-top: 15rem;
 	}
 `;
 
@@ -93,17 +94,15 @@ export default function Home() {
 			<Nav></Nav>
 			<Layout>
 				<Flex>
-					<Box
-						initial={{ y: 40, opacity: 0 }}
-						animate={{
-							y: 0,
-							opacity: 1,
-							transition: {
-								delay: 0.4,
-								duration: 1,
-								ease: 'easeOut',
-							},
-						}}>
+					<Box initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+								transition: {
+									delay: 0.6,
+									duration: 0.8,
+									ease: 'easeOut',
+								},
+							}}>
 						<Title>Hey, I'm Daniel</Title>
 						<Text>
 							I'm a Seattle-based product designer hoping to solve
@@ -130,7 +129,7 @@ export default function Home() {
 								longboard{' '}
 							</Li>
 							<Li>Playing Valorant late at night</Li>
-							<Li>Reading about systematic racism because BLM</Li>
+							<Li>Reading about systematic racism because <strong>Black Lives Matter.</strong></Li>
 						</UL>
 						<Heade>things I like</Heade>
 						<UL>
@@ -159,16 +158,15 @@ export default function Home() {
 						<Text>
 							My goal as a designer is to{' '}
 							<strong>
-								prevent the design of technology that negatively
-								impacts peoples' lives.
+								prevent dark UX patterns and
+								create meaningful experiences for
+								everyone.
 							</strong>
 						</Text>
 					</Box>
 					<StickyBox>
-						<Move
-							initial={{ y: 40, opacity: 0 }}
-							animate={{
-								y: 0,
+						<Move initial={{ y: 40, opacity: 0 }}
+							animate={{ y: 0,
 								opacity: 1,
 								transition: {
 									delay: 0.6,
@@ -176,7 +174,7 @@ export default function Home() {
 									ease: 'easeOut',
 								},
 							}}>
-							<Img src='static/images/about.jpg'></Img>
+							<Img src='static/images/about.jpg' alt="image of me and my friends"></Img>
 							<Caption>
 								I'm in the sweatpants chillin' with no makeup on
 							</Caption>

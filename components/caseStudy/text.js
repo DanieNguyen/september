@@ -63,6 +63,12 @@ export const Header = styled(Subtitle)`
 	color: ${({ theme }) => theme.colors.text};
 `;
 
+export const A = styled.a`
+	font-weight bold;
+	color: ${({ theme }) => theme.colors.primary};
+	cursor: pointer;
+`;
+
 export const Break = styled.br`
 
 `;

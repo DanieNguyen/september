@@ -46,6 +46,13 @@ const images = [
 	'static/images/dispatch.png',
 ];
 
+const alt = [
+	'Spotify Podcasts Project',
+	'UW Canvas Project',
+	'Vita OS Project',
+	'Dispatch Project',
+];
+
 const title = ['Spotify Podcasts', 'UW Canvas', 'Vita OS', 'Dispatch'];
 
 const taglines = [
@@ -75,7 +82,7 @@ export default function Content({ i, video, home }) {
 		);
 	} else {
 		content = (
-			<Img
+			<Img alt={alt[i]}
 				src={images[i]}
 				whileHover={{ scale: 0.97 }}
 				transition={{ ease: 'easeOut', duration: 0.5 }}></Img>

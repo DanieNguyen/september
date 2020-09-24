@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import Line from '../homepage/line';
-import { Header, Text } from '../caseStudy/text';
+import { Header, Text, A } from '../caseStudy/text';
 import { Img, FlexTwo, Half, Center } from '../caseStudy/container';
 
 const Behind = styled.div`
@@ -142,7 +142,9 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/dispatch/process.png'></Img>
+				<Img
+					src='static/images/dispatch/process.png'
+					alt='snapshot of design process'></Img>
 			</Top>
 			<FlexTwo>
 				<Box>
@@ -164,7 +166,10 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-						<Img style={{width: '500px'}} src='static/images/dispatch/lol.jpg'></Img>
+					<Img
+						style={{ width: '500px' }}
+						src='static/images/dispatch/lol.jpg'
+						alt='drake meme about protothon and no sleep'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -178,7 +183,8 @@ export default function Process() {
 						<strong>We placed 3rd for the enterprise track!</strong>
 					</Text>
 					<Text>
-						Click the image on the right to view my presentation
+						<A href='https://www.figma.com/proto/x1uLCzuJGUpXszsOYQyyw9/Dispatch?node-id=498%3A4555&scaling=contain'
+						target='_blank'>Click here</A> or the image on the right to view my presentation
 						slides.
 					</Text>
 				</Box>
@@ -186,7 +192,7 @@ export default function Process() {
 					<a
 						href='https://www.figma.com/proto/x1uLCzuJGUpXszsOYQyyw9/Dispatch?node-id=498%3A4555&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/dispatch/presentation.png'></Img>
+						<Img src='static/images/dispatch/presentation.png' alt='presentation slides'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>
@@ -228,13 +234,16 @@ export default function Process() {
 					</Text>
 					<br />
 					<Text>
-						Thank you to Dubhacks for hosting the fun Protothon.
-						Thanks to Lena for motivating me and being a great
-						partner. After what happened this summer, I definitely
-						feel discouraged about this project and the police
-						system with its systematic brutality and racism.
-						However, I’m keeping this in my portfolio because it’s
-						some dope stuff.
+						Thank you to{' '}
+						<A href='https://dubhacks.co/' target='_blank'>
+							Dubhacks
+						</A>{' '}
+						for hosting the fun Protothon. Thanks to Lena for
+						motivating me and being a great partner. After what
+						happened this summer, I definitely feel discouraged
+						about this project and the police system with its
+						systematic brutality and racism. However, I’m keeping
+						this in my portfolio because it’s some dope stuff.
 					</Text>
 				</Div>
 			</FlexTwo>

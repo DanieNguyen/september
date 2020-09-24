@@ -67,7 +67,7 @@ const Title = styled(motion.div)`
 
 export default function Projects() {
 	return (
-		<div id="work">
+		<div id="work" aria-label="All Projects">
 			<Flex>
 				<Half>
 					<Link href='/spotify'>

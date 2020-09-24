@@ -62,7 +62,7 @@ const Card = styled.div`
 `;
 
 const VideoTwo = styled(Video)`
-	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.10));
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.1));
 `;
 
 export default function Product() {
@@ -72,7 +72,9 @@ export default function Product() {
 				<Final>The</Final>
 				<Solution>Solution</Solution>
 			</Top>
-			<Img src='static/images/canvas/hero.png'></Img>
+			<Img
+				src='static/images/canvas/hero.png'
+				alt='Canvas final solution'></Img>
 			<Center>
 				<Box>
 					<Header>THE SOLUTION</Header>
@@ -90,7 +92,9 @@ export default function Product() {
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Img src='static/images/canvas/explore.png'></Img>
+						<Img
+							src='static/images/canvas/explore.png'
+							alt='Explore Study Groups page'></Img>
 						<Caption>
 							<Fig>Explore study groups for you</Fig>
 							<Text>
@@ -101,7 +105,9 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/canvas/group.png'></Img>
+						<Img
+							src='static/images/canvas/group.png'
+							alt='Dashboard page'></Img>
 						<Caption>
 							<Fig>Schedule study sessions quickly</Fig>
 							<Text>
@@ -152,7 +158,9 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/canvas/announcements.png'></Img>
+						<Img
+							src='static/images/canvas/announcements.png'
+							alt='Announcements page'></Img>
 						<Caption>
 							<Fig>Keep what's important visible</Fig>
 							<Text>
@@ -164,7 +172,9 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/canvas/onboardin.png'></Img>
+						<Img
+							src='static/images/canvas/onboardin.png'
+							alt='Onboarding page'></Img>
 						<Caption>
 							<Fig>Learn from the get go</Fig>
 							<Text>

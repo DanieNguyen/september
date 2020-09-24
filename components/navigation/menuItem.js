@@ -62,7 +62,7 @@ export const MenuItem = ({ i, toggle }) => {
 		display = "flex";
 	}
 	return (
-		<Item none={display}
+		<Item none={display} href={link[i]}
 			variants={variants}
 			whileHover={{ x: -20 }}
 			whileTap={{ scale: 0.95 }}>

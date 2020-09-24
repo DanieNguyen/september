@@ -142,7 +142,9 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/canvas/process.png'></Img>
+				<Img
+					src='static/images/canvas/process.png'
+					alt='Design Process Snapshot'></Img>
 			</Top>
 			<FlexTwo>
 				<StickyBox>
@@ -166,23 +168,33 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/methods.png'></Img>
+					<Img
+						src='static/images/canvas/methods.png'
+						alt='Research methods used'></Img>
 					<div>
-						<Img src='static/images/canvas/survey.png'></Img>
+						<Img
+							src='static/images/canvas/survey.png'
+							alt='Survey Screenshot'></Img>
 						<CaptionTwo>
 							We used a Google Form and posted online to find
 							participants
 						</CaptionTwo>
 					</div>
 					<div>
-						<Img src='static/images/canvas/thematic.png'></Img>
+						<Img
+							src='static/images/canvas/thematic.png'
+							alt='Thematic analysis of survey'></Img>
 						<CaptionTwo>
 							Thematic analysis of interview quotes
 						</CaptionTwo>
 					</div>
-					<Img src='static/images/canvas/logos.png'></Img>
+					<Img
+						src='static/images/canvas/logos.png'
+						alt='Logos of companies looked at in competitive analysis'></Img>
 					<div>
-						<Img src='static/images/canvas/competitive.svg'></Img>
+						<Img
+							src='static/images/canvas/competitive.svg'
+							alt='Competitive analysis document'></Img>
 						<CaptionTwo>
 							Ranking the top 5 college LMS by their UX for
 							features
@@ -225,7 +237,9 @@ export default function Process() {
 					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/painpoints.png'></Img>
+					<Img
+						src='static/images/canvas/painpoints.png'
+						alt='List of user painpoints'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -245,7 +259,9 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/canvas/problem.png'></Img>
+					<Img
+						src='static/images/canvas/problem.png'
+						alt='Problem Defined'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -263,11 +279,15 @@ export default function Process() {
 				</StickyBox>
 				<HalfSticky>
 					<div>
-						<Img src='static/images/canvas/questions.png'></Img>
+						<Img
+							src='static/images/canvas/questions.png'
+							alt='Guiding Questions for Ideation'></Img>
 						<Caption>Our guiding questions for ideation</Caption>
 					</div>
 					<div>
-						<Img src='static/images/canvas/brainstorm.png'></Img>
+						<Img
+							src='static/images/canvas/brainstorm.png'
+							alt='Screenshot of brainstorm'></Img>
 						<Caption>
 							A list of ideas we had, with informal descriptions
 						</Caption>
@@ -289,8 +309,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/topfive.png'></Img>
-					<Img src='static/images/canvas/conceptresults.svg'></Img>
+					<Img
+						src='static/images/canvas/topfive.png'
+						alt='Top 5 best ideas and what they are'></Img>
+					<Img
+						src='static/images/canvas/conceptresults.svg'
+						alt='results of concept testing'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -309,7 +333,9 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/solution.png'></Img>
+					<Img
+						src='static/images/canvas/solution.png'
+						alt='Chosen solution is Study Groups'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -324,8 +350,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/information.svg'></Img>
-					<Img src='static/images/canvas/studyinfo.svg'></Img>
+					<Img
+						src='static/images/canvas/information.svg'
+						alt='global information architecture'></Img>
+					<Img
+						src='static/images/canvas/studyinfo.svg'
+						alt='information architecture for study groups'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -339,8 +369,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/prompt.svg'></Img>
-					<Img src='static/images/canvas/announcement.svg'></Img>
+					<Img
+						src='static/images/canvas/prompt.svg'
+						alt='user flow for introducing study groups'></Img>
+					<Img
+						src='static/images/canvas/announcement.svg'
+						alt='user flow for making an announcement'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -358,8 +392,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/lofi.png'></Img>
-					<Img src='static/images/canvas/med.png'></Img>
+					<Img
+						src='static/images/canvas/lofi.png'
+						alt='lofi fidelity wireframes'></Img>
+					<Img
+						src='static/images/canvas/med.png'
+						alt='medium fidelity wireframes'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -394,7 +432,9 @@ export default function Process() {
 					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/usability.png'></Img>
+					<Img
+						src='static/images/canvas/usability.png'
+						alt='results of usability test'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -412,9 +452,13 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/hifi.png'></Img>
+					<Img
+						src='static/images/canvas/hifi.png'
+						alt='hifi mockups and changes'></Img>
 					<div>
-						<Img src='static/images/canvas/hifiall.png'></Img>
+						<Img
+							src='static/images/canvas/hifiall.png'
+							alt='screenshot of all final screens'></Img>
 						<Caption>All of the final screens</Caption>
 					</div>
 				</HalfSticky>
@@ -425,8 +469,8 @@ export default function Process() {
 					<Text>
 						We weren't able to conduct a second round of usability
 						tests with our high fidelity prototypes, but feedback
-						from the UW Continuum College team and our mentors were very positive about our
-						changes.
+						from the UW Continuum College team and our mentors were
+						very positive about our changes.
 					</Text>
 					<Text>
 						Here are a few key final mockups showing the changes
@@ -434,7 +478,9 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/canvas/final.png'></Img>
+					<Img
+						src='static/images/canvas/final.png'
+						alt='final mockups'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>

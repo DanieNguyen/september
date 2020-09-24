@@ -9,11 +9,11 @@ export default function Home() {
 	return (
 		<div>
 			<Head></Head>
-			<Nav></Nav>
+			<Nav aria-label="Navigation Menu"></Nav>
 			<Layout>
-				<Intro></Intro>
+				<Intro aria-label="Personal Introduction"></Intro>
 				<Projects></Projects>
-				<Footer></Footer>
+				<Footer aria-label="Footer"></Footer>
 			</Layout>
 		</div>
 	);

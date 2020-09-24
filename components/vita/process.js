@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import Line from '../homepage/line';
-import { Header, Text } from '../caseStudy/text';
+import { Header, Text, A } from '../caseStudy/text';
 import { Img, FlexTwo, Half, Center } from '../caseStudy/container';
 
 const Behind = styled.div`
@@ -142,7 +142,9 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/vita/process.png'></Img>
+				<Img
+					src='static/images/vita/process.png'
+					alt='Snapshot of Vita Design process'></Img>
 			</Top>
 			<FlexTwo>
 				<Box>
@@ -163,9 +165,13 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/vita/methods.png'></Img>
+					<Img
+						src='static/images/vita/methods.png'
+						alt='Research methods used'></Img>
 					<div>
-						<Img src='static/images/vita/article.png'></Img>
+						<Img
+							src='static/images/vita/article.png'
+							alt='Title of helpful article'></Img>
 						<CaptionTwo>
 							A very insightful article talking about smartphone
 							addiction
@@ -201,7 +207,9 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/vita/painpoints.png'></Img>
+					<Img
+						src='static/images/vita/painpoints.png'
+						alt='pain points found from survey'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -228,7 +236,9 @@ export default function Process() {
 					</UL>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/vita/problem.png'></Img>
+					<Img
+						src='static/images/vita/problem.png'
+						alt='problem defined'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -246,17 +256,25 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/vita/bullet.png'></Img>
-					<Img src='static/images/vita/kelly.png'></Img>
+					<Img
+						src='static/images/vita/bullet.png'
+						alt='bullet journal inspiration'></Img>
+					<Img
+						src='static/images/vita/kelly.png'
+						alt='kelly persona'></Img>
 					<div>
-						<Img src='static/images/vita/steph.png'></Img>
+						<Img
+							src='static/images/vita/steph.png'
+							alt='stephen persona'></Img>
 						<Caption>
 							Meet Kelly and Stephen! Our two young adults who
 							need Vita OS :)
 						</Caption>
 					</div>
 					<div>
-						<Img src='static/images/vita/principles.png'></Img>
+						<Img
+							src='static/images/vita/principles.png'
+							alt='design principles'></Img>
 					</div>
 				</HalfSticky>
 			</FlexTwo>
@@ -275,7 +293,9 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/vita/style.png'></Img>
+					<Img
+						src='static/images/vita/style.png'
+						alt='design system and style guide'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -295,8 +315,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/vita/timeline.png'></Img>
-					<Img src='static/images/vita/apps.png'></Img>
+					<Img
+						src='static/images/vita/timeline.png'
+						alt='timeline for design'></Img>
+					<Img
+						src='static/images/vita/apps.png'
+						alt='design of apps = home, wallet, and messages'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -311,7 +335,12 @@ export default function Process() {
 						placed 1st out of the class.
 					</Text>
 					<Text>
-						Click the image on the right to view my presentation
+						<A
+							href='https://www.figma.com/proto/xwcUDhblAXLzk4lO0ZT73V/Vita-Final-Presentation?node-id=498%3A4555&scaling=contain'
+							target='_blank'>
+							Click here
+						</A>{' '}
+						or the image on the right to view my presentation
 						slides.
 					</Text>
 				</Box>
@@ -319,7 +348,9 @@ export default function Process() {
 					<a
 						href='https://www.figma.com/proto/xwcUDhblAXLzk4lO0ZT73V/Vita-Final-Presentation?node-id=498%3A4555&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/vita/presentation.png'></Img>
+						<Img
+							src='static/images/vita/presentation.png'
+							alt='first presentation slide'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>

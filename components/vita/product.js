@@ -68,7 +68,7 @@ export default function Product() {
 				<Final>The</Final>
 				<Solution>Solution</Solution>
 			</Top>
-			<Img src='static/images/vita/featured.png'></Img>
+			<Img src='static/images/vita/featured.png' alt="Vita final solution"></Img>
 			<Center>
 				<Box>
 					<Header>THE SOLUTION</Header>
@@ -86,7 +86,7 @@ export default function Product() {
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Img src='static/images/vita/home.png'></Img>
+						<Img src='static/images/vita/home.png' alt="Vita Home screens"></Img>
 						<Caption>
 							<Fig>Home is what you make it</Fig>
 							<Text>
@@ -97,7 +97,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/messages.png'></Img>
+						<Img src='static/images/vita/messages.png' alt="Vita messaging screens"></Img>
 						<Caption>
 							<Fig>Messages keep you in touch</Fig>
 							<Text>
@@ -109,7 +109,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/tasks.png'></Img>
+						<Img src='static/images/vita/tasks.png' alt="Vita task screens"></Img>
 						<Caption>
 							<Fig>Tasks are attainable</Fig>
 							<Text>
@@ -121,7 +121,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/notes.png'></Img>
+						<Img src='static/images/vita/notes.png' alt="Vita notes screens"></Img>
 						<Caption>
 							<Fig>Notes creatively express your thoughts</Fig>
 							<Text>
@@ -135,7 +135,7 @@ export default function Product() {
 				</Half>
 				<Half>
 					<Card>
-						<Img src='static/images/vita/control.png'></Img>
+						<Img src='static/images/vita/control.png' alt="Vita control screens"></Img>
 						<Caption>
 							<Fig>Control what’s important to you</Fig>
 							<Text>
@@ -146,7 +146,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/wallet.png'></Img>
+						<Img src='static/images/vita/wallet.png' alt="Vita wallet screens"></Img>
 						<Caption>
 							<Fig>Wallet keeps you accountable</Fig>
 							<Text>
@@ -158,7 +158,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/health.png'></Img>
+						<Img src='static/images/vita/health.png' alt="Vita health screens"></Img>
 						<Caption>
 							<Fig>Health empowers you</Fig>
 							<Text>
@@ -170,7 +170,7 @@ export default function Product() {
 						</Caption>
 					</Card>
 					<Card>
-						<Img src='static/images/vita/calendar.png'></Img>
+						<Img src='static/images/vita/calendar.png' alt="Vita calendar screens"></Img>
 						<Caption>
 							<Fig>Calendar is on your time</Fig>
 							<Text>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Text } from '../caseStudy/text';
+import { Title, Subtitle, Header, Text, A } from '../caseStudy/text';
 import { Video, Center, Img } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -103,14 +103,9 @@ export default function Hero() {
 							ease: 'easeOut',
 						},
 					}}>
-					{/* <Video loop muted playsInline autoPlay>
-						<source
-							src='static/videos/spotify/project.mp4'
-							type='video/mp4'
-						/>
-						Your browser does not support the video tag.
-					</Video> */}
-					<Img src='static/images/dispatch.png'></Img>
+					<Img
+						src='static/images/dispatch.png'
+						alt='dispatch cover image'></Img>
 				</Splash>
 				<Hook>
 					<Title
@@ -161,7 +156,9 @@ export default function Hero() {
 						<strong>Competition Project</strong>
 						<br /> June 2020 <br /> 2 Days <br /> Team of 2<br />{' '}
 						<br /> <strong>Responsibilities </strong> <br /> Problem
-						Research <br /> Visual Design <br /> Product Design <br/> <br/> <strong>3rd Place</strong> <br/> Out of 20 Teams
+						Research <br /> Visual Design <br /> Product Design{' '}
+						<br /> <br /> <strong>3rd Place</strong> <br /> Out of
+						20 Teams
 					</Text>
 				</Left>
 				<Right>
@@ -182,9 +179,12 @@ export default function Hero() {
 					</Text>
 					<Header>THE APPROACH</Header>
 					<Text>
-						To tackle this problem, I worked with Lena Tran to
-						design a mobile app that would serve as a computer for
-						officers outside their vehicles. We worked together
+						To tackle this problem, I worked with{' '}
+						<A href='https://www.lenatr0n.com' target='_blank'>
+							Lena Tran
+						</A>{' '}
+						to design a mobile app that would serve as a computer
+						for officers outside their vehicles. We worked together
 						throughout the project from research to product design.
 						I led the design of our visual identity and presentation
 						deck.

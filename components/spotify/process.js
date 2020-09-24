@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import Line from '../homepage/line';
-import { Header, Text } from '../caseStudy/text';
+import { Header, Text, A } from '../caseStudy/text';
 import { Img, FlexTwo, Half, Center } from '../caseStudy/container';
 
 const Behind = styled.div`
@@ -142,7 +142,9 @@ export default function Process() {
 			<Top>
 				<Behind>Behind</Behind>
 				<Pixels>the Pixels</Pixels>
-				<Img src='static/images/spotify/process.png'></Img>
+				<Img
+					src='static/images/spotify/process.png'
+					alt='snapshot of spotify design process'></Img>
 			</Top>
 			<FlexTwo>
 				<StickyBox>
@@ -159,15 +161,21 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/methods.png'></Img>
+					<Img
+						src='static/images/spotify/methods.png'
+						alt='research methods used'></Img>
 					<div>
-						<Img src='static/images/spotify/zoom.png'></Img>
+						<Img
+							src='static/images/spotify/zoom.png'
+							alt='zoom screenshot'></Img>
 						<Caption>
 							Interviewing a close friend who listens to podcasts
 						</Caption>
 					</div>
 					<div>
-						<Img src='static/images/spotify/comp.png'></Img>
+						<Img
+							src='static/images/spotify/comp.png'
+							alt='competitive analysis table'></Img>
 						<CaptionTwo>
 							Evaluating the top seven podcast apps
 						</CaptionTwo>
@@ -198,7 +206,9 @@ export default function Process() {
 					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/painpoints.png'></Img>
+					<Img
+						src='static/images/spotify/painpoints.png'
+						alt='user painpoints found from interviews'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -223,8 +233,12 @@ export default function Process() {
 					</UL>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/problem.png'></Img>
-					<Img src='static/images/spotify/spotify.png'></Img>
+					<Img
+						src='static/images/spotify/problem.png'
+						alt='problem defined'></Img>
+					<Img
+						src='static/images/spotify/spotify.png'
+						alt='existing spotify podcasts and its problems'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -246,20 +260,26 @@ export default function Process() {
 				</StickyBox>
 				<HalfSticky>
 					<div>
-						<Img src='static/images/spotify/apps.png'></Img>
+						<Img
+							src='static/images/spotify/apps.png'
+							alt='logos of apps i used for inspiration'></Img>
 						<CaptionTwo>
 							Some of the apps I looked at for inspiration
 						</CaptionTwo>
 					</div>
 					<div>
-						<Img src='static/images/spotify/effort.png'></Img>
+						<Img
+							src='static/images/spotify/effort.png'
+							alt='effort impact analysis table'></Img>
 						<Caption>
 							Comparing the effort to implement and impact on
 							listeners for my ideas
 						</Caption>
 					</div>
 					<div>
-						<Img src='static/images/spotify/topthreewhite.png'></Img>
+						<Img
+							src='static/images/spotify/topthreewhite.png'
+							alt='top three ideas and their pros and cons'></Img>
 						<CaptionTwo>
 							My top three ideas with their pros and cons
 						</CaptionTwo>
@@ -278,7 +298,9 @@ export default function Process() {
 					</Text>
 				</Box>
 				<HalfSticky>
-					<Img src='static/images/spotify/solution.png'></Img>
+					<Img
+						src='static/images/spotify/solution.png'
+						alt='chosen solution - featured podcasts'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -294,8 +316,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/sitemap.png'></Img>
-					<Img src='static/images/spotify/information.png'></Img>
+					<Img
+						src='static/images/spotify/sitemap.png'
+						alt='global information architecture for spotify podcasts'></Img>
+					<Img
+						src='static/images/spotify/information.png'
+						alt='information hierarchy for featured podcasts'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -309,7 +335,9 @@ export default function Process() {
 				</Box>
 				<HalfSticky>
 					<div>
-						<Img src='static/images/spotify/screens.png'></Img>
+						<Img
+							src='static/images/spotify/screens.png'
+							alt='screenshot of figma screens'></Img>
 						<Caption>
 							Some of the components and screens I designed
 						</Caption>
@@ -332,8 +360,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/soundbite.png'></Img>
-					<Img src='static/images/spotify/carditerations.png'></Img>
+					<Img
+						src='static/images/spotify/soundbite.png'
+						alt='soundbite iterations'></Img>
+					<Img
+						src='static/images/spotify/carditerations.png'
+						alt='article card iterations'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -346,8 +378,12 @@ export default function Process() {
 					</Text>
 				</StickyBox>
 				<HalfSticky>
-					<Img src='static/images/spotify/podcasts.png'></Img>
-					<Img src='static/images/spotify/articles.png'></Img>
+					<Img
+						src='static/images/spotify/podcasts.png'
+						alt='final design for podcasts home page'></Img>
+					<Img
+						src='static/images/spotify/articles.png'
+						alt='final design of articles'></Img>
 				</HalfSticky>
 			</FlexTwo>
 			<FlexTwo>
@@ -361,7 +397,12 @@ export default function Process() {
 						presentation session.
 					</Text>
 					<Text>
-						Click the image on the right to view my presentation
+						<A
+							href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
+							target='_blank'>
+							Click here
+						</A>{' '}
+						or the image on the right to view my presentation
 						slides.
 					</Text>
 				</Box>
@@ -369,7 +410,9 @@ export default function Process() {
 					<a
 						href='https://www.figma.com/proto/GKTnBdvZiY0J5u04dEpd87/Final-Presentation?node-id=1%3A2&scaling=contain'
 						target='_blank'>
-						<Img src='static/images/spotify/presentation.png'></Img>
+						<Img
+							src='static/images/spotify/presentation.png'
+							alt='presentation slide deck'></Img>
 					</a>
 				</HalfSticky>
 			</FlexTwo>
@@ -412,10 +455,13 @@ export default function Process() {
 					</Text>
 					<br />
 					<Text>
-						Thanks to the Applied program for providing a fun
-						mock-internship experience! I appreciate my buddies,
-						mentors, and fellow designers for their wonderful
-						feedback on this project.
+						Thanks to the{' '}
+						<A href='https://applied2020.com/' target='_blank'>
+							Applied program{' '}
+						</A>{' '}
+						for providing a fun mock-internship experience! I
+						appreciate my buddies, mentors, and fellow designers for
+						their wonderful feedback on this project.
 					</Text>
 				</Div>
 			</FlexTwo>
