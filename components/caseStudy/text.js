@@ -69,6 +69,12 @@ export const A = styled.a`
 	cursor: pointer;
 `;
 
+export const Strong = styled.strong`
+	font-family: 'Basier-Bold';
+	font-weight: normal;
+	letter-spacing: 0.01rem;
+`;
+
 export const Break = styled.br`
 
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Text, A } from '../caseStudy/text';
+import { Title, Subtitle, Header, Text, A, Strong } from '../caseStudy/text';
 import { Video, Center } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -159,10 +159,10 @@ export default function Hero() {
 			<Overview>
 				<Left>
 					<Text>
-						<strong>Individual Project</strong>
+						<Strong>Individual Project</Strong>
 						<br /> July - Aug 2020 <br /> 8 weeks <br /> <A href="https://applied2020.com/" target="_blank">Applied 2020 </A><br/>
-						<br /> <strong>Responsibilities </strong> <br /> User
-						Research <br /> Visual Design <br /> Product Design <br/> <br/> <strong>Recognized for Best</strong> <br/>UX, Visual Design, <br/> and Presentation
+						<br /> <Strong>Responsibilities </Strong> <br /> User
+						Research <br /> Visual Design <br /> Product Design <br/> <br/> <Strong>Recognized for Best</Strong> <br/>UX, Visual Design, <br/> and Presentation
 					</Text>
 				</Left>
 				<Right>

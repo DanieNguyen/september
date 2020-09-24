@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Context, Text } from '../caseStudy/text';
+import { Title, Subtitle, Header, Context, Text, Strong } from '../caseStudy/text';
 import { Video, Center, Img } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -170,11 +170,11 @@ export default function Hero() {
 			<Overview>
 				<Left>
 					<Text>
-						<strong>Course Project</strong>
+						<Strong>Course Project</Strong>
 						<br /> April - June 2020 <br /> 10 weeks <br /> Team of
-						4<br /> <br /> <strong>My Role</strong> <br /> User
+						4<br /> <br /> <Strong>My Role</Strong> <br /> User
 						Researcher <br /> Lead Product Designer <br /> <br />{' '}
-						<strong>1st Place</strong> <br />
+						<Strong>1st Place</Strong> <br />
 						Perfect Score from <br /> Industry Judges
 					</Text>
 				</Left>
