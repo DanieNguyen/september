@@ -68,8 +68,8 @@ export default function Content({ i, video, home }) {
 	if (video) {
 		content = (
 			<Video
-				whileHover={{ scale: 0.97 }}
-				transition={{ ease: 'easeInOut', duration: 0.3 }}
+				whileHover={{ scale: 0.96 }}
+				transition={{ duration: 0.3 }}
 				onMouseEnter={(event) => event.target.play()}
 				onMouseLeave={(event) => event.target.pause()}
 				loop
@@ -84,8 +84,8 @@ export default function Content({ i, video, home }) {
 		content = (
 			<Img alt={alt[i]}
 				src={images[i]}
-				whileHover={{ scale: 0.97 }}
-				transition={{ ease: 'easeInOut', duration: 0.3 }}></Img>
+				whileHover={{ scale: 0.96 }}
+				transition={{ duration: 0.3 }}></Img>
 		);
 	}
 
