@@ -90,19 +90,26 @@ const StickyBox = styled(Half)`
 export default function Home() {
 	return (
 		<div>
-			<Head></Head>
+			<Head>
+				<title>About Me</title>
+				<meta
+					name='viewport'
+					content='initial-scale=1.0, width=device-width'
+				/>
+			</Head>
 			<Nav></Nav>
 			<Layout>
 				<Flex>
-					<Box initial={{ opacity: 0 }}
-							animate={{
-								opacity: 1,
-								transition: {
-									delay: 0.6,
-									duration: 0.8,
-									ease: 'easeOut',
-								},
-							}}>
+					<Box
+						initial={{ opacity: 0 }}
+						animate={{
+							opacity: 1,
+							transition: {
+								delay: 0.6,
+								duration: 0.8,
+								ease: 'easeOut',
+							},
+						}}>
 						<Title>Hey, I'm Daniel</Title>
 						<Text>
 							I'm a Seattle-based product designer hoping to solve
@@ -129,7 +136,10 @@ export default function Home() {
 								longboard{' '}
 							</Li>
 							<Li>Playing Valorant late at night</Li>
-							<Li>Reading about systematic racism because <strong>Black Lives Matter.</strong></Li>
+							<Li>
+								Reading about systematic racism because{' '}
+								<strong>Black Lives Matter.</strong>
+							</Li>
 						</UL>
 						<Heade>things I like</Heade>
 						<UL>
@@ -158,15 +168,16 @@ export default function Home() {
 						<Text>
 							My goal as a designer is to{' '}
 							<strong>
-								prevent dark UX patterns and
-								create meaningful experiences for
-								everyone.
+								prevent dark UX patterns and create meaningful
+								experiences for everyone.
 							</strong>
 						</Text>
 					</Box>
 					<StickyBox>
-						<Move initial={{ y: 40, opacity: 0 }}
-							animate={{ y: 0,
+						<Move
+							initial={{ y: 40, opacity: 0 }}
+							animate={{
+								y: 0,
 								opacity: 1,
 								transition: {
 									delay: 0.6,
@@ -174,7 +185,9 @@ export default function Home() {
 									ease: 'easeOut',
 								},
 							}}>
-							<Img src='static/images/about.jpg' alt="image of me and my friends"></Img>
+							<Img
+								src='static/images/about.jpg'
+								alt='image of me and my friends'></Img>
 							<Caption>
 								I'm in the sweatpants chillin' with no makeup on
 							</Caption>

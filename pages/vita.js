@@ -8,7 +8,13 @@ import Product from '../components/vita/product';
 export default function Home() {
 	return (
 		<div>
-			<Head></Head>
+			<Head>
+				<title>Vita OS</title>
+				<meta
+					name='viewport'
+					content='initial-scale=1.0, width=device-width'
+				/>
+			</Head>
 			<Nav></Nav>
 			<Layout>
 				<Hero></Hero>

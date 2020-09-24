@@ -8,12 +8,18 @@ import Footer from '../components/homepage/footer';
 export default function Home() {
 	return (
 		<div>
-			<Head></Head>
-			<Nav aria-label="Navigation Menu"></Nav>
+			<Head>
+				<title>Daniel Nguyen</title>
+				<meta
+					name='viewport'
+					content='initial-scale=1.0, width=device-width'
+				/>
+			</Head>
+			<Nav aria-label='Navigation Menu'></Nav>
 			<Layout>
-				<Intro aria-label="Personal Introduction"></Intro>
+				<Intro aria-label='Personal Introduction'></Intro>
 				<Projects></Projects>
-				<Footer aria-label="Footer"></Footer>
+				<Footer aria-label='Footer'></Footer>
 			</Layout>
 		</div>
 	);
