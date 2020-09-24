@@ -85,37 +85,6 @@ export default function Product() {
 			<FlexTwo>
 				<Half>
 					<Card>
-						<Video loop muted playsInline autoPlay>
-							<source
-								src='static/videos/spotify/article.mp4'
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</Video>
-						<Caption>
-							<Fig>Digest bite-sized pieces of information</Fig>
-							<Text>
-								The short articles have clear call to actions
-								and digestible information for listeners to
-								understand a podcast in under 5 minutes.
-							</Text>
-						</Caption>
-					</Card>
-					<Card>
-						<Img src='static/images/spotify/variety.png'></Img>
-						<Caption>
-							<Fig>Explore genres, topics, and new podcasts</Fig>
-							<Text>
-								The possibilities are endless with Featured
-								Podcasts. Listeners can browse through articles
-								highlighting a single podcast, a genre, topic,
-								or even a celebrity's recommendations.
-							</Text>
-						</Caption>
-					</Card>
-				</Half>
-				<Half>
-					<Card>
 						<Img src='static/images/spotify/cards.png'></Img>
 						<Caption>
 							<Fig>Understand at a glance</Fig>
@@ -141,6 +110,37 @@ export default function Product() {
 								Following Spotify’s existing patterns, listeners
 								can swipe to quickly browse and discover
 								podcasts.
+							</Text>
+						</Caption>
+					</Card>
+				</Half>
+				<Half>
+					<Card>
+						<Video loop muted playsInline autoPlay>
+							<source
+								src='static/videos/spotify/article.mp4'
+								type='video/mp4'
+							/>
+							Your browser does not support the video tag.
+						</Video>
+						<Caption>
+							<Fig>Digest bite-sized pieces of information</Fig>
+							<Text>
+								The short articles have clear call to actions
+								and digestible information for listeners to
+								understand a podcast in under 5 minutes.
+							</Text>
+						</Caption>
+					</Card>
+					<Card>
+						<Img src='static/images/spotify/variety.png'></Img>
+						<Caption>
+							<Fig>Explore genres, topics, and new podcasts</Fig>
+							<Text>
+								The possibilities are endless with Featured
+								Podcasts. Listeners can browse through articles
+								highlighting a single podcast, a genre, topic,
+								or even a celebrity's recommendations.
 							</Text>
 						</Caption>
 					</Card>
