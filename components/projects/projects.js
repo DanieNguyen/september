@@ -18,8 +18,7 @@ const H2 = styled.h2`
 	} ;
 `;
 
-const Box = styled.div`
-`;
+const Box = styled.div``;
 
 const Flex = styled(FlexTwo)`
 	display: none;
@@ -50,6 +49,7 @@ const Card = styled(motion.div)`
 	@media ${device.desktop} {
 		margin-bottom: 6rem;
 	}
+	cursor: pointer;
 `;
 
 const Title = styled(motion.div)`
@@ -57,7 +57,6 @@ const Title = styled(motion.div)`
 	@media ${device.laptop} {
 		margin-top: 1rem;
 		margin-bottom: 3rem;
-
 	}
 	@media ${device.desktop} {
 		margin-top: 2rem;
@@ -67,7 +66,7 @@ const Title = styled(motion.div)`
 
 export default function Projects() {
 	return (
-		<div id="work" aria-label="All Projects">
+		<div id='work' aria-label='All Projects'>
 			<Flex>
 				<Half>
 					<Link href='/spotify'>
