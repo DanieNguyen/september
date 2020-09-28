@@ -142,7 +142,7 @@ export default function Home() {
 						<Text>
 							My goal as a designer is to{' '}
 							<Strong>
-								prevent dark UX patterns and create meaningful
+								prevent dark UX patterns like casinos and create meaningful
 								experiences for everyone.
 							</Strong>
 						</Text>

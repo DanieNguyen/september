@@ -13,7 +13,7 @@ const H2 = styled.h2`
 	font-size: 32px !important;
 	line-height: 48px !important;
 	@media ${device.laptop} {
-		font-size: 42px !important;
+		font-size: 48px !important;
 		line-height: 64px !important;
 	} ;
 `;

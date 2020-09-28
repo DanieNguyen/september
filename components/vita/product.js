@@ -28,17 +28,6 @@ const Final = styled.div`
 	color: #dadada;
 `;
 
-const Solution = styled(Final)`
-	margin-left: 0rem;
-	margin-bottom: 2rem;
-`;
-
-const Top = styled.div`
-	@media ${device.laptop} {
-		margin-top: 2rem;
-		margin-bottom: 0px;
-	}
-`;
 
 const Caption = styled.div`
 	@media ${device.laptop} {
@@ -64,10 +53,6 @@ const Card = styled.div`
 export default function Product() {
 	return (
 		<div>
-			<Top>
-				<Final>The</Final>
-				<Solution>Solution</Solution>
-			</Top>
 			<Img src='static/images/vita/featured.png' alt="Vita final solution"></Img>
 			<Center>
 				<Box>

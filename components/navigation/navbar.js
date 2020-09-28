@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Hamburger } from './mobileMenu';
 import { device } from '../device';
 import Link from 'next/link';
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
+import { ArrowUp } from 'react-feather';
 
 const Logo = styled.a`
 	position: fixed;
@@ -76,9 +77,42 @@ const Container = styled.div`
 	z-index: 80;
 `;
 
+const Arrow = styled.div`
+	outline: none;
+	border: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: pointer;
+
+	position: fixed;
+	right: 56px;
+	top: 24px;
+	@media ${device.tablet} {
+		left: 78px;
+		top: 96px;
+	}
+	@media ${device.desktop} {
+		left: 86px;
+		top: 108px;
+	}
+	width: 36px;
+	height: 36px;
+	z-index: 110;
+	background-color: transparent;
+	color: ${({ theme }) => theme.colors.text};
+	&:hover {
+		color: ${({ theme }) => theme.colors.primary};
+	}
+`;
+
 const Zav = styled.div`
 	z-index: 100;
 `;
+
+const scrollTop = () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 export default function Nav() {
 	const [lastYPos, setLastYPos] = React.useState(0);
@@ -123,6 +157,9 @@ export default function Nav() {
 				animate={{ opacity: shouldShowActions ? 1 : 0 }}
 				transition={{ opacity: { duration: 0.2, ease: 'easeOut' } }}>
 				<Hamburger></Hamburger>
+				<Arrow>
+					<ArrowUp onClick={scrollTop}></ArrowUp>
+				</Arrow>
 			</motion.div>
 		</Zav>
 	);
