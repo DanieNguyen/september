@@ -48,7 +48,11 @@ const Button = styled(motion.button)`
 	right: 24px;
 	top: 20px;
 	@media ${device.tablet} {
-		right: 64px;
+		right: 32px;
+		top: 58px;
+	}
+	@media ${device.desktop} {
+		right: 48px;
 		top: 58px;
 	}
 	width: 36px;

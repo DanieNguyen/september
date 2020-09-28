@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Hamburger } from './mobileMenu';
 import { device } from '../device';
 import Link from 'next/link';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 const Logo = styled.a`
 	position: fixed;
@@ -30,13 +31,12 @@ const Logo = styled.a`
 	z-index: 100;
 `;
 
-const Right = styled.div`
+const Right = styled(motion.div)`
 	display: flex;
 	position: absolute;
 	justify-content: space-between;
-	right: 60px;
+	right: 0px;
 	top: 64px;
-	margin-right: 32px;
 	z-index: 120;
 `;
 
@@ -81,6 +81,24 @@ const Zav = styled.div`
 `;
 
 export default function Nav() {
+	const [lastYPos, setLastYPos] = React.useState(0);
+	const [shouldShowActions, setShouldShowActions] = React.useState(false);
+
+	React.useEffect(() => {
+		function handleScroll() {
+			const yPos = window.scrollY;
+			const isScrollingDown = yPos > lastYPos || window.scrollY > 600;
+			setShouldShowActions(isScrollingDown);
+			setLastYPos(yPos);
+		}
+
+		window.addEventListener('scroll', handleScroll, false);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll, false);
+		};
+	}, [lastYPos]);
+
 	return (
 		<Zav>
 			<Container></Container>
@@ -91,14 +109,21 @@ export default function Nav() {
 				<Link href='/about' passHref>
 					<NavItem>ABOUT</NavItem>
 				</Link>
-				<a href='https://www.dropbox.com/s/s8qebeevjr19eyz/Daniel_Nguyen_Res.pdf?dl=0' target='_blank'>
+				<a
+					href='https://www.dropbox.com/s/s8qebeevjr19eyz/Daniel_Nguyen_Res.pdf?dl=0'
+					target='_blank'>
 					<NavItem>RESUME</NavItem>
 				</a>
 				<a href='mailto: danyen125@gmail.com' target='_blank'>
 					<NavItem>CONTACT</NavItem>
 				</a>
 			</Right>
-			<Hamburger></Hamburger>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: shouldShowActions ? 1 : 0 }}
+				transition={{ opacity: { duration: 0.2, ease: 'easeOut' } }}>
+				<Hamburger></Hamburger>
+			</motion.div>
 		</Zav>
 	);
 }

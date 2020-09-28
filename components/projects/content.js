@@ -69,7 +69,7 @@ export default function Content({ i, video, home }) {
 		content = (
 			<Video
 				whileHover={{ scale: 0.96 }}
-				transition={{ duration: 0.3 }}
+				transition={{ yduration: 0.3 }}
 				onMouseEnter={(event) => event.target.play()}
 				onMouseLeave={(event) => event.target.pause()}
 				loop

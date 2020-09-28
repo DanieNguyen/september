@@ -7,17 +7,15 @@ const Title = styled(motion.h1)`
 	height: 64px;
 	font-family: 'DM Serif Display';
 	font-weight: normal;
-	font-size: 64px;
-	line-height: 64px;
+	font-size: 54px;
+	line-height: 54px;
+	margin-bottom: 3rem;
 	@media ${device.laptop} {
-        font-size: 32px;
+        font-size: 72px;
 		line-height: 72px;
+		margin-bottom: 0rem;
 	}
-	@media ${device.laptop} {
-        font-size: 84px;
-		line-height: 84px;
-	}
-	@media ${device.laptop} {
+	@media ${device.desktop} {
         font-size: 96px;
 		line-height: 96px;
 		letter-spacing: -0.03em;
@@ -115,7 +113,7 @@ export default function Intro() {
         <div>
         <Line height='1200' width='140'></Line>
 		<Box>
-			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 1.2, ease: "easeOut"}}} >Daniel</Title>
+			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 1.2, ease: "easeOut"}}} >Daniel Nguyen</Title>
 			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.7, duration: 1, ease: "easeOut"}}}>/ product designer /</Subtitle>
 			<Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.8, duration: 1.2, ease: "easeOut"}}}>
 				<Number>01</Number>
