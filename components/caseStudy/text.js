@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export const Title = styled(motion.h1)`
 	font-family: DM Serif Display;
@@ -78,7 +78,7 @@ export const Strong = styled.strong`
 export const Break = styled.hr`
 	height: 0px;
 	border: 0.5px solid ${({ theme }) => theme.colors.lightgray};
-	color: ${({ theme }) => theme.colors.lightgray}; 
+	color: ${({ theme }) => theme.colors.lightgray};
 	background-color: ${({ theme }) => theme.colors.lightgray};
 `;
 
@@ -96,6 +96,19 @@ export const options = {
 		slideAnimationType: 'fade',
 		slideSpringValues: [300, 200],
 		slideTransitionSpeed: 0.6,
-		slideTransitionTimingFunction: 'linear'
-	  }
+		slideTransitionTimingFunction: 'linear',
+	},
+	buttons: {
+		backgroundColor: 'rgba(30,30,36,0.8)',
+		iconColor: 'rgba(255, 255, 255, 0.8)',
+		iconPadding: '5px',
+		showAutoplayButton: false,
+		showCloseButton: true,
+		showDownloadButton: false,
+		showFullscreenButton: false,
+		showNextButton: true,
+		showPrevButton: true,
+		showThumbnailsButton: false,
+		size: '40px',
+	},
 };

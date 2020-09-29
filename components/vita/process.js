@@ -148,183 +148,194 @@ export default function Process() {
 					alt='Snapshot of Vita Design process'></Img>
 			</Top>
 			<SRLWrapper options={options}>
-			<FlexTwo>
-				<Box>
-					<Header>RESEARCH</Header>
-					<Text>
-						The idea for our OS came after our team vented about
-						finding jobs and working for the rest of our lives.
-					</Text>
-					<Text>
-						We noted how discouraging our phones were in how they
-						only show everyone's perfect lives and distract us with
-						addictive social media.
-					</Text>
-					<Text>
-						We conducted research through surveys and academic
-						articles to see if other young adults felt the same way
-						about their phones.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/methods.png'
-						alt='Research methods used'></Img>
-					<div>
+				<FlexTwo>
+					<Box>
+						<Header>RESEARCH</Header>
+						<Text>
+							The idea for our OS came after our team vented about
+							finding jobs and working for the rest of our lives.
+						</Text>
+						<Text>
+							We noted how discouraging our phones were in how
+							they only show everyone's perfect lives and distract
+							us with addictive social media.
+						</Text>
+						<Text>
+							We conducted research through surveys and academic
+							articles to see if other young adults felt the same
+							way about their phones.
+						</Text>
+					</Box>
+					<HalfSticky>
 						<Img
-							src='static/images/vita/article.png'
-							alt='Title of helpful article'></Img>
-						<CaptionTwo>
-							A very insightful article talking about smartphone
-							addiction
-						</CaptionTwo>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>FINDINGS</Header>
-					<Text>
-						From our surveys, we learned that young adults had
-						several pain points about their phone usage.
-					</Text>
-					<Subheader>Pain Points</Subheader>
-					<UL>
-						<Li>
-							Being distracted from life through mindless browsing{' '}
-						</Li>
-						<Li>
-							Working after hours because of stress from
-							notifications
-						</Li>
-						<Li>
-							Feeling discouraged from seeing others’ online
-							personas
-						</Li>
-					</UL>
-					<Text>
-						However, they recognized that their phone is essential
-						to their daily life and helps them plan, communicate,
-						and connect with others.
-					</Text>
-				</Box>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/painpoints.png'
-						alt='pain points found from survey'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<Box>
-					<Header>PROBLEM</Header>
-					<Text>
-						With our findings, we identified the overall concept for
-						our OS. We wanted to tackle the problem of helping young
-						adults balance their lives and phone usage.
-					</Text>
-					<Subheader>Design Goals</Subheader>
-					<UL>
-						<Li>
-							Help young adults achieve a better work-life balance
-						</Li>
-						<Li>
-							Encourage them to focus on person goals and
-							interests
-						</Li>
-						<Li>
-							Support them in creating and maintaining
-							relationships
-						</Li>
-					</UL>
-				</Box>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/problem.png'
-						alt='problem defined'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>FOUNDATION</Header>
-					<Text>
-						To keep our large team on track over this project, we
-						made sure to lay a solid foundation of our OS. We
-						followed the metaphor of the bullet journal to inspire
-						our design.
-					</Text>
-					<Text>
-						We then made two personas and four design principles for
-						everyone to refer to as we split up to design apps.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/bullet.png'
-						alt='bullet journal inspiration'></Img>
-					<Img
-						src='static/images/vita/kelly.png'
-						alt='kelly persona'></Img>
-					<div>
+							src='static/images/vita/methods.png'
+							alt='Research methods used'></Img>
+						<div>
+							<Img
+								src='static/images/vita/article.png'
+								alt='Title of helpful article'></Img>
+							<CaptionTwo>
+								A very insightful article talking about
+								smartphone addiction
+							</CaptionTwo>
+						</div>
+					</HalfSticky>
+				</FlexTwo>
+				<FlexTwo>
+					<Box>
+						<Header>FINDINGS</Header>
+						<Text>
+							From our surveys, we learned that young adults had
+							several pain points about their phone usage.
+						</Text>
+						<Subheader>Pain Points</Subheader>
+						<UL>
+							<Li>
+								Being distracted from life through mindless
+								browsing{' '}
+							</Li>
+							<Li>
+								Working after hours because of stress from
+								notifications
+							</Li>
+							<Li>
+								Feeling discouraged from seeing others’ online
+								personas
+							</Li>
+						</UL>
+						<Text>
+							However, they recognized that their phone is
+							essential to their daily life and helps them plan,
+							communicate, and connect with others.
+						</Text>
+					</Box>
+					<HalfSticky>
 						<Img
-							src='static/images/vita/steph.png'
-							alt='stephen persona'></Img>
-						<Caption>
-							Meet Kelly and Stephen! Our two young adults who
-							need Vita OS :)
-						</Caption>
-					</div>
-					<div>
+							src='static/images/vita/painpoints.png'
+							alt='pain points found from survey'></Img>
+					</HalfSticky>
+				</FlexTwo>
+				<FlexTwo>
+					<Box>
+						<Header>PROBLEM</Header>
+						<Text>
+							With our findings, we identified the overall concept
+							for our OS. We wanted to tackle the problem of
+							helping young adults balance their lives and phone
+							usage.
+						</Text>
+						<Subheader>Design Goals</Subheader>
+						<UL>
+							<Li>
+								Help young adults achieve a better work-life
+								balance
+							</Li>
+							<Li>
+								Encourage them to focus on person goals and
+								interests
+							</Li>
+							<Li>
+								Support them in creating and maintaining
+								relationships
+							</Li>
+						</UL>
+					</Box>
+					<HalfSticky>
 						<Img
-							src='static/images/vita/principles.png'
-							alt='design principles'></Img>
-					</div>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>DESIGN SYSTEM</Header>
-					<Text>
-						As we moved into designing apps, I was in charge of
-						creating a consistent design system for our OS. I chose
-						our system typography, colors, and created reusable
-						components.
-					</Text>
-					<Text>
-						I also worked to build out the component library in
-						Figma to help my team be more efficient.
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/style.png'
-						alt='design system and style guide'></Img>
-				</HalfSticky>
-			</FlexTwo>
-			<FlexTwo>
-				<StickyBox>
-					<Header>APP DESIGN</Header>
-					<Text>
-						After laying out the overarching design system and
-						principles, we dove into our app ideas. We had extremely
-						quick design sprints for each app since our timeline was
-						short.
-					</Text>
-					<Text>
-						Since it was a little chaotic, we didn't get to properly
-						document all the iterations for the apps. But, here are
-						some of the ideas that developed for the apps that I
-						worked on (Home, Messages, and Wallet).
-					</Text>
-				</StickyBox>
-				<HalfSticky>
-					<Img
-						src='static/images/vita/timeline.png'
-						alt='timeline for design'></Img>
-					<Img
-						src='static/images/vita/apps.png'
-						alt='design of apps = home, wallet, and messages'></Img>
-				</HalfSticky>
-			</FlexTwo>
+							src='static/images/vita/problem.png'
+							alt='problem defined'></Img>
+					</HalfSticky>
+				</FlexTwo>
+				<FlexTwo>
+					<StickyBox>
+						<Header>FOUNDATION</Header>
+						<Text>
+							To keep our large team on track over this project,
+							we made sure to lay a solid foundation of our OS. We
+							followed the metaphor of the bullet journal to
+							inspire our design.
+						</Text>
+						<Text>
+							We then made two personas and four design principles
+							for everyone to refer to as we split up to design
+							apps.
+						</Text>
+					</StickyBox>
+					<HalfSticky>
+						<Img
+							src='static/images/vita/bullet.png'
+							alt='bullet journal inspiration'></Img>
+						<Img
+							src='static/images/vita/kelly.png'
+							alt='kelly persona'></Img>
+						<div>
+							<Img
+								src='static/images/vita/steph.png'
+								alt='stephen persona'></Img>
+							<Caption>
+								Meet Kelly and Stephen! Our two young adults who
+								need Vita OS :)
+							</Caption>
+						</div>
+						<div>
+							<Img
+								src='static/images/vita/principles.png'
+								alt='design principles'></Img>
+						</div>
+					</HalfSticky>
+				</FlexTwo>
+				<FlexTwo>
+					<StickyBox>
+						<Header>DESIGN SYSTEM</Header>
+						<Text>
+							As we moved into designing apps, I was in charge of
+							creating a consistent design system for our OS. I
+							chose our system typography, colors, and created
+							reusable components.
+						</Text>
+						<Text>
+							I also worked to build out the component library in
+							Figma to help my team be more efficient.
+						</Text>
+					</StickyBox>
+					<HalfSticky>
+						<Img
+							src='static/images/vita/style.png'
+							alt='design system and style guide'></Img>
+					</HalfSticky>
+				</FlexTwo>
+				<FlexTwo>
+					<StickyBox>
+						<Header>APP DESIGN</Header>
+						<Text>
+							After laying out the overarching design system and
+							principles, we dove into our app ideas. We had
+							extremely quick design sprints for each app since
+							our timeline was short.
+						</Text>
+						<Text>
+							Since it was a little chaotic, we didn't get to
+							properly document all the iterations for the apps.
+							But, here are some of the ideas that developed for
+							the apps that I worked on (Home, Messages, and
+							Wallet).
+						</Text>
+					</StickyBox>
+					<HalfSticky>
+						<Img
+							src='static/images/vita/timeline.png'
+							alt='timeline for design'></Img>
+						<Img
+							src='static/images/vita/messageBig.png'
+							alt='design of messaging app'></Img>
+						<Img
+							src='static/images/vita/homeBig.png'
+							alt='design of home screen'></Img>
+						<Img
+							src='static/images/vita/walletBig.png'
+							alt='design of Wallet app'></Img>
+					</HalfSticky>
+				</FlexTwo>
 			</SRLWrapper>
 			<FlexTwo>
 				<Box>
