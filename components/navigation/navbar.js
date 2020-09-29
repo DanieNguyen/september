@@ -89,12 +89,12 @@ const Arrow = styled.div`
 	right: 56px;
 	top: 24px;
 	@media ${device.tablet} {
-		left: 78px;
-		top: 96px;
+		right: 30px;
+		top: 93vh;
 	}
 	@media ${device.desktop} {
-		left: 86px;
-		top: 108px;
+		right: 38px;
+		top: 93vh;
 	}
 	width: 36px;
 	height: 36px;
