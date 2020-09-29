@@ -81,3 +81,21 @@ export const Break = styled.hr`
 	color: ${({ theme }) => theme.colors.lightgray}; 
 	background-color: ${({ theme }) => theme.colors.lightgray};
 `;
+
+export const options = {
+	caption: {
+		captionColor: 'white',
+		captionFontFamily: 'Basier',
+		captionFontWeight: 'normal',
+		captionTextTransform: 'capitalize',
+	},
+	settings: {
+		lightboxTransitionSpeed: 0.1,
+		lightboxTransitionTimingFunction: 'linear',
+		overlayColor: 'rgba(0, 0, 0, 0.9)',
+		slideAnimationType: 'fade',
+		slideSpringValues: [300, 200],
+		slideTransitionSpeed: 0.6,
+		slideTransitionTimingFunction: 'linear'
+	  }
+};

@@ -191,7 +191,7 @@ export default function Hero() {
 						presentation deck. We worked collaboratively throughout
 						the project from research to product design. I took
 						charge for our visual design and created our style guide
-						and presentation deck.
+						and ypresentation deck.
 					</Text>
 				</Right>
 			</Overview>

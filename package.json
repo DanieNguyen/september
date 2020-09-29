@@ -16,6 +16,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-feather": "^2.0.8",
+    "simple-react-lightbox": "^3.3.4-1",
     "styled-components": "^5.2.0"
   }
 }

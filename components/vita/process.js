@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { device } from '../device';
 import Line from '../homepage/line';
-import { Header, Text, A } from '../caseStudy/text';
+import { Header, Text, A, options } from '../caseStudy/text';
 import { Img, FlexTwo, Half, Center } from '../caseStudy/container';
+import { SRLWrapper } from 'simple-react-lightbox';
 
 const Behind = styled.div`
 	font-family: DM Serif Display;
@@ -146,6 +147,7 @@ export default function Process() {
 					src='static/images/vita/process.png'
 					alt='Snapshot of Vita Design process'></Img>
 			</Top>
+			<SRLWrapper options={options}>
 			<FlexTwo>
 				<Box>
 					<Header>RESEARCH</Header>
@@ -323,6 +325,7 @@ export default function Process() {
 						alt='design of apps = home, wallet, and messages'></Img>
 				</HalfSticky>
 			</FlexTwo>
+			</SRLWrapper>
 			<FlexTwo>
 				<Box>
 					<Header>FINAL DESIGN + PRESENTATION</Header>

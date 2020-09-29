@@ -2,6 +2,7 @@ import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import { device } from '../components/device';
+import SimpleReactLightbox from 'simple-react-lightbox';
 
 const theme = {
 	colors: {
@@ -117,7 +118,9 @@ export default class MyApp extends App {
 		return (
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
-				<Component {...pageProps} />
+				<SimpleReactLightbox>
+					<Component {...pageProps} />
+				</SimpleReactLightbox>
 			</ThemeProvider>
 		);
 	}
