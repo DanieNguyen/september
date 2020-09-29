@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { device } from '../device';
+import { A } from '../caseStudy/text';
 
 const Foot = styled.div`
 	padding-bottom: 1rem;
@@ -14,7 +13,7 @@ export default function Footer() {
 	return (
 		<div>
 			<Foot>
-				<P>Made with tears and NextJS</P>
+				<P>Made with tears and <A href='https://github.com/DanieNguyen/september' target='_blank'>NextJS</A></P>
 			</Foot>
 		</div>
 	);

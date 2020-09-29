@@ -154,11 +154,11 @@ export default function Process() {
 						a listening experience and an industry.
 					</Text>
 					<Text>
-						I conducted semi-structured user interviews, explored
-						large-scale behaviors through a literature review, and
-						examined the industry with a competitive analysis of
-						podcast apps.
+						I conducted semi-structured user interviews and explored
+						large-scale podcast behaviors through a literature review.
 					</Text>
+					<Text>Then, I conducted a heuristic evaluation of Spotify and examined the industry with a competitive analysis of
+						podcast apps.</Text>
 				</StickyBox>
 				<HalfSticky>
 					<Img
@@ -171,6 +171,14 @@ export default function Process() {
 						<Caption>
 							Interviewing a close friend who listens to podcasts
 						</Caption>
+					</div>
+					<div>
+						<Img
+							src='static/images/spotify/heuristic.png'
+							alt='heuristic evaluation of Spotify'></Img>
+						<CaptionTwo>
+							Examining types of Spotify screens and the podcast flow
+						</CaptionTwo>
 					</div>
 					<div>
 						<Img

@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Text, A, Strong } from '../caseStudy/text';
+import {
+	Title,
+	Subtitle,
+	Header,
+	Text,
+	A,
+	Strong,
+	Break,
+} from '../caseStudy/text';
 import { Video, Center, Img } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -9,18 +17,23 @@ const Hook = styled(motion.div)`
 	margin-top: 5rem;
 	@media ${device.laptop} {
 		margin-top: 10vh;
-		margin-left: -5vw;
+		margin-left: -3.5vw;
 		width: 60%;
 	}
 	@media ${device.desktop} {
 		margin-top: 15vh;
-		margin-left: -5vw;
+		margin-left: -3.5vw;
 		width: 70%;
 	}
 `;
 
 const Summary = styled(motion.div)`
 	@media ${device.laptop} {
+		margin-left: 9.5vw;
+		margin-top: 2rem;
+		width: 60%;
+	}
+	@media ${device.desktop} {
 		margin-left: 8vw;
 		margin-top: 2rem;
 		width: 60%;
@@ -162,6 +175,29 @@ export default function Hero() {
 					</Text>
 				</Left>
 				<Right>
+					<Header>THE CONTEXT</Header>
+					<Text>
+						This past June, I participated in the Dubhacks Protothon
+						with{' '}
+						<A href='https://www.lenatr0n.com' target='_blank'>
+							Lena Tran
+						</A>
+						. We entered the enterprise track to design a mobile app
+						to help police officers access information without their
+						vehicle computers.
+					</Text>
+					<Text>
+						In just two days, we designed a mobile app and
+						presentation deck. We worked collaboratively throughout
+						the project from research to product design. I took
+						charge for our visual design and created our style guide
+						and presentation deck.
+					</Text>
+				</Right>
+			</Overview>
+			<Break></Break>
+			<Center>
+				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
 						Police officers rely on their vehicle computers to
@@ -177,20 +213,8 @@ export default function Hero() {
 						risk and decreases the effectiveness of their ability to
 						keep our communities safe.
 					</Text>
-					<Header>THE APPROACH</Header>
-					<Text>
-						To tackle this problem, I worked with{' '}
-						<A href='https://www.lenatr0n.com' target='_blank'>
-							Lena Tran
-						</A>{' '}
-						to design a mobile app that would serve as a computer
-						for officers outside their vehicles. We worked together
-						throughout the project from research to product design.
-						I led the design of our visual identity and presentation
-						deck.
-					</Text>
 				</Right>
-			</Overview>
+			</Center>
 		</Div>
 	);
 }

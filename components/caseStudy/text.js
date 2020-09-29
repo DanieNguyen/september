@@ -8,14 +8,14 @@ export const Title = styled(motion.h1)`
 	font-weight: normal;
 	margin-bottom: 1rem;
 	@media ${device.laptop} {
-		font-size: 48px;
-		line-height: 48px;
+		font-size: 54px;
+		line-height: 54px;
 		margin-bottom: 0rem;
 		width: 85%;
 	}
 	@media ${device.desktop} {
-		font-size: 56px;
-		line-height: 56px;
+		font-size: 64px;
+		line-height: 64px;
 		margin-bottom: 0rem;
 		width: 100%;
 	}
@@ -75,6 +75,9 @@ export const Strong = styled.strong`
 	letter-spacing: 0.01rem;
 `;
 
-export const Break = styled.br`
-
+export const Break = styled.hr`
+	height: 0px;
+	border: 0.5px solid ${({ theme }) => theme.colors.lightgray};
+	color: ${({ theme }) => theme.colors.lightgray}; 
+	background-color: ${({ theme }) => theme.colors.lightgray};
 `;

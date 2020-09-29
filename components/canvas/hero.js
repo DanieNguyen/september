@@ -1,24 +1,37 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Context, Text, Strong } from '../caseStudy/text';
+import {
+	Title,
+	Subtitle,
+	Header,
+	Context,
+	Text,
+	Strong,
+	Break,
+} from '../caseStudy/text';
 import { Video, Center, Img } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
 const Hook = styled(motion.div)`
 	z-index: 2;
 	@media ${device.laptop} {
-		margin-left: -5vw;
-		width: 60%;
+		margin-left: -2.5vw;
+		width: 65%;
 	}
 	@media ${device.desktop} {
-		margin-left: -5vw;
+		margin-left: -2vw;
 		width: 70%;
 	}
 `;
 
 const Summary = styled(motion.div)`
 	@media ${device.laptop} {
-		margin-left: 8vw;
+		margin-left: 7vw;
+		margin-top: 2rem;
+		width: 60%;
+	}
+	@media ${device.desktop} {
+		margin-left: 6vw;
 		margin-top: 2rem;
 		width: 60%;
 	}
@@ -29,7 +42,7 @@ const Splash = styled(motion.div)`
 		height: 50vh;
 	}
 	@media ${device.laptop} {
-		margin-left: 8vw;
+		margin-left: 7vw;
 		width: 70%;
 		margin-bottom: 6rem;
 	}
@@ -170,6 +183,24 @@ export default function Hero() {
 					</Text>
 				</Left>
 				<Right>
+					<Header>THE CONTEXT</Header>
+					<Text>
+						For my senior capstone project, my team partnered with
+						UW Continuum College to improve UW Canvas for online
+						learning. Our goals were to understand and improve how
+						students learn in online classes.
+					</Text>
+					<Text>
+						I contributed as the lead product designer. I designed
+						the visual design system and high-fidelity, interactive
+						prototype. I also designed and moderated the majority of
+						our user interviews and usability testing sessions.
+					</Text>
+				</Right>
+			</Overview>
+			<Break></Break>
+			<Center>
+				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
 						Learning online has its benefits in that students can
@@ -183,20 +214,8 @@ export default function Hero() {
 						Our team sought to address this problem by introducing a
 						Canvas feature for collaboration and bonding.
 					</Text>
-					<Header>THE APPROACH</Header>
-					<Text>
-						We partnered with UW Continuum College to work on this
-						project, starting from research and ending with final
-						designs and a video.
-					</Text>
-					<Text>
-						I contributed as the lead product designer. I designed
-						the visual design system and high-fidelity, interactive
-						prototype. I also designed and moderated the majority of
-						our user interviews and usability testing sessions.
-					</Text>
 				</Right>
-			</Overview>
+			</Center>
 		</Div>
 	);
 }

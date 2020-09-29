@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Context, Text, Strong } from '../caseStudy/text';
+import {
+	Title,
+	Subtitle,
+	Header,
+	Context,
+	Text,
+	Strong,
+	Break,
+} from '../caseStudy/text';
 import { Video, Center, Img } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -8,16 +16,21 @@ const Hook = styled(motion.div)`
 	z-index: 2;
 	@media ${device.laptop} {
 		margin-left: -5vw;
-		width: 60%;
+		width: 65%;
 	}
 	@media ${device.desktop} {
-		margin-left: -5vw;
+		margin-left: -4vw;
 		width: 70%;
 	}
 `;
 
 const Summary = styled(motion.div)`
 	@media ${device.laptop} {
+		margin-left: 10vw;
+		margin-top: 2rem;
+		width: 60%;
+	}
+	@media ${device.desktop} {
 		margin-left: 8vw;
 		margin-top: 2rem;
 		width: 60%;
@@ -179,6 +192,24 @@ export default function Hero() {
 					</Text>
 				</Left>
 				<Right>
+					<Header>THE CONTEXT</Header>
+					<Text>
+						I worked in a team of seven to complete this project for
+						a course, Informatics 365: Mobile App Design. The
+						project was to design an original series of 10-15 system
+						apps for a mobile OS in 10 weeks.
+					</Text>
+					<Text>
+						I served as the lead product designer, working closely
+						with my team to keep our OS consistent. I created our
+						visual design language and component library in Figma. I
+						also designed all of our presentation decks.
+					</Text>
+				</Right>
+			</Overview>
+			<Break></Break>
+			<Center>
+				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
 						In our competitive society, many people hate feeling
@@ -196,21 +227,8 @@ export default function Hero() {
 						original OS, focusing on typical system apps like
 						messages and mail.
 					</Text>
-					<Header>THE APPROACH</Header>
-					<Text>
-						I worked in a team of seven to complete this project for
-						a course, Informatics 365: Mobile App Design. The
-						project was to design an original series of 10-15 system
-						apps for a mobile OS.
-					</Text>
-					<Text>
-						I served as the lead product designer, working closely
-						with my team to keep our OS consistent. I created our
-						visual design language and component library in Figma. I
-						also designed all of our presentation decks.
-					</Text>
 				</Right>
-			</Overview>
+			</Center>
 		</Div>
 	);
 }

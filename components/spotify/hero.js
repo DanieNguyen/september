@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { device } from '../device';
-import { Title, Subtitle, Header, Text, A, Strong } from '../caseStudy/text';
+import {
+	Title,
+	Subtitle,
+	Header,
+	Text,
+	A,
+	Strong,
+	Break,
+} from '../caseStudy/text';
 import { Video, Center } from '../caseStudy/container';
 import { motion } from 'framer-motion';
 
@@ -14,13 +22,18 @@ const Hook = styled(motion.div)`
 	}
 	@media ${device.desktop} {
 		margin-top: 15vh;
-		margin-left: -5vw;
+		margin-left: -4vw;
 		width: 70%;
 	}
 `;
 
 const Summary = styled(motion.div)`
 	@media ${device.laptop} {
+		margin-left: 9vw;
+		margin-top: 2rem;
+		width: 60%;
+	}
+	@media ${device.desktop} {
 		margin-left: 8vw;
 		margin-top: 2rem;
 		width: 60%;
@@ -160,11 +173,37 @@ export default function Hero() {
 				<Left>
 					<Text>
 						<Strong>Individual Project</Strong>
-						<br /> July - Aug 2020 <br /> 8 weeks <br /> <A href="https://applied2020.com/" target="_blank">Applied 2020 </A><br/>
+						<br /> July - Aug 2020 <br /> 8 weeks
+						<br />
 						<br /> <Strong>Responsibilities </Strong> <br /> User
-						Research <br /> Visual Design <br /> Product Design <br/> <br/> <Strong>Recognized for Best</Strong> <br/>UX, Visual Design, <br/> and Presentation
+						Research <br /> Visual Design <br /> Product Design{' '}
+						<br /> <br /> <Strong>Awards</Strong> <br />
+						Best UX <br /> Best Visual Design <br /> Presentation +
+						Storytelling
 					</Text>
 				</Left>
+				<Right>
+					<Header>THE CONTEXT</Header>
+					<Text>
+						This summer, I took part in the{' '}
+						<A href='www.applied2020.com' target='_blank'>
+							Applied 2020
+						</A>{' '}
+						program. Out of over 275 applicants, I was selected to
+						join the 27-member cohort. Throughout 8 weeks, I worked
+						on an industry-inspired design project with support and
+						guidance from designers from Facebook, Shopify,
+						Microsoft, and other great companies.
+					</Text>
+					<Text>
+						This was a solo project where I led the design process
+						from start to finish, going from research to final
+						designs. 
+					</Text>
+				</Right>
+			</Overview>
+			<Break></Break>
+			<Center>
 				<Right>
 					<Header>THE PROBLEM</Header>
 					<Text>
@@ -181,7 +220,7 @@ export default function Hero() {
 						podcasts.
 					</Text>
 				</Right>
-			</Overview>
+			</Center>
 		</Div>
 	);
 }

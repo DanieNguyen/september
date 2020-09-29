@@ -197,7 +197,7 @@ export default function Projects() {
 						<Content i={1} video={false} home={true}></Content>
 					</Card>
 				</Link>
-				<Link href='/canvas'>
+				<Link href='/vita'>
 					<Card
 						initial={{ y: 200, opacity: 0.8 }}
 						animate={{
@@ -212,7 +212,7 @@ export default function Projects() {
 						<Content i={2} video={false} home={true}></Content>
 					</Card>
 				</Link>
-				<Link href='/canvas'>
+				<Link href='/dispatch'>
 					<Card
 						initial={{ y: 200, opacity: 0.8 }}
 						animate={{
