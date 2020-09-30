@@ -15,7 +15,7 @@ const Logo = styled.a`
 	cursor: pointer;
 	@media ${device.tablet} {
 		left: 64px;
-		top: 60px;
+		top: 42px;
 	}
 	@media ${device.desktopL} {
 		font-size: 32px;
@@ -37,7 +37,7 @@ const Right = styled(motion.div)`
 	position: absolute;
 	justify-content: space-between;
 	right: 0px;
-	top: 64px;
+	top: 42px;
 	z-index: 120;
 `;
 
