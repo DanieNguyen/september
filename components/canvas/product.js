@@ -148,7 +148,7 @@ export default function Product() {
 						<Caption>
 							<Fig>Keep what's important visible</Fig>
 							<Text>
-								Annoucements are a place for students to post
+								Announcements are a place for students to post
 								important information that might get lost in
 								chat or voice. Students can share and reference
 								resources easily in a secure location.

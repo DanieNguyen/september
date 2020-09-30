@@ -121,7 +121,7 @@ export default function Nav() {
 	React.useEffect(() => {
 		function handleScroll() {
 			const yPos = window.scrollY;
-			const isScrollingDown = yPos > lastYPos || window.scrollY > 600;
+			const isScrollingDown = yPos > lastYPos && window.scrollY > 600;
 			setShouldShowActions(isScrollingDown);
 			setLastYPos(yPos);
 		}
