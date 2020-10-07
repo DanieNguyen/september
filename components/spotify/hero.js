@@ -186,7 +186,7 @@ export default function Hero() {
 					<Header>THE CONTEXT</Header>
 					<Text>
 						This summer, I took part in the{' '}
-						<A href='www.applied2020.com' target='_blank'>
+						<A href='https://www.applied2020.com' target='_blank'>
 							Applied 2020
 						</A>{' '}
 						program. Out of over 275 applicants, I was selected to
