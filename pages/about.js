@@ -152,12 +152,9 @@ export default function Home() {
 						<br />
 						<Heade>Things I Do</Heade>
 						<UL>
+							<Li>Design and code this portfolio at night</Li>
+							<Li>Playing Valorant when I can't figure out my code</Li>
 							<Li>Eat dessert after every meal</Li>
-							<Li>
-								Fall on my butt because I'm learning how to
-								longboard{' '}
-							</Li>
-							<Li>Playing Valorant late at night</Li>
 							<Li>
 								Reading about systematic racism because{' '}
 								<Strong>Black Lives Matter.</Strong>

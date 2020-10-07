@@ -13,7 +13,7 @@ export default function Footer() {
 	return (
 		<div>
 			<Foot>
-				<P>Made with tears and <A href='https://github.com/DanieNguyen/september' target='_blank'>NextJS</A></P>
+				<P>Designed in <A href='https://www.figma.com' target='_blank'>Figma</A> and coded with <A href='https://github.com/DanieNguyen/september' target='_blank'>NextJS</A></P>
 			</Foot>
 		</div>
 	);

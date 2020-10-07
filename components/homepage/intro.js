@@ -18,7 +18,7 @@ const Title = styled(motion.h1)`
 	@media ${device.desktop} {
         font-size: 96px;
 		line-height: 96px;
-		letter-spacing: -0.02em;
+		letter-spacing: -0.03em;
 		margin-bottom: 2rem;
     }
 `;
@@ -114,7 +114,7 @@ export default function Intro() {
         <Line height='1200' width='140'></Line>
 		<Box>
 			<Title initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 1.2, ease: "easeOut"}}} >Daniel Nguyen</Title>
-			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.7, duration: 1.2, ease: "easeOut"}}}>/ product designer /</Subtitle>
+			<Subtitle initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.7, duration: 1, ease: "easeOut"}}}>/ product designer /</Subtitle>
 			<Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.8, duration: 1.2, ease: "easeOut"}}}>
 				<Number>01</Number>
 				<Definition >
@@ -125,11 +125,6 @@ export default function Intro() {
             <Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.9, duration: 1.2, ease: "easeOut"}}}>
 				<Number>02</Number>
 				<Definition>A left-handed, dog-loving, longboarding cool dude.
-				</Definition>
-			</Statement>
-			<Statement initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 1.1, duration: 1.2, ease: "easeOut"}}}>
-				<Number>03</Number>
-				<Definition>A self-taught front-end developer always fixing code on his portfolio
 				</Definition>
 			</Statement>
 		</Box>
