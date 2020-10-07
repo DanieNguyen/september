@@ -114,18 +114,21 @@ export default function Home() {
 						<Title>Hey, I'm Daniel</Title>
 						<Text>
 							I'm a Seattle-based product designer hoping to solve
-							problems and improve lives through technology. I
-							just graduated from the University of Washington
+							problems and improve lives through technology.
+						</Text>
+						<Text>
+							I just graduated from the University of Washington
 							with a B.S. in Human Centered Design and
 							Engineering.
 						</Text>
 						<Text>
-							My most recent experience was working on Spotify
+							My most recent experiences are working on Spotify
 							Podcasts for the Applied 2020 program and interning
-							at Garmin on the Automotive UX OEM team.{' '}
+							at Garmin on the Automotive UX OEM team in summer
+							2019.{' '}
 							<Strong>
 								I'm currently looking for full time
-								opportunities!
+								opportunities and internships!
 							</Strong>
 						</Text>
 						<br />
@@ -142,11 +145,11 @@ export default function Home() {
 						<Text>
 							My goal as a designer is to{' '}
 							<Strong>
-								prevent dark UX patterns like casinos and create meaningful
-								experiences for everyone.
+								prevent dark UX patterns like casinos and create
+								meaningful experiences for everyone.
 							</Strong>
 						</Text>
-						<br/>
+						<br />
 						<Heade>Things I Do</Heade>
 						<UL>
 							<Li>Eat dessert after every meal</Li>
@@ -168,6 +171,7 @@ export default function Home() {
 						</UL>
 						<Heade>Fonts I Dream About Owning</Heade>
 						<UL>
+							<Li>Tiempos Headline</Li>
 							<Li>Circular</Li>
 							<Li>Noe Display</Li>
 							<Li>Calibre</Li>
