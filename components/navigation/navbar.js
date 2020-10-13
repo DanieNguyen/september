@@ -144,7 +144,7 @@ export default function Nav() {
 					<NavItem>ABOUT</NavItem>
 				</Link>
 				<a
-					href='https://www.dropbox.com/s/s8qebeevjr19eyz/Daniel_Nguyen_Res.pdf?dl=0'
+					href='static/Daniel_Nguyen_Resume.pdf'
 					target='_blank'>
 					<NavItem>RESUME</NavItem>
 				</a>
