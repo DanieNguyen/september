@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import { Fragment } from 'react';
-import { GA_TRACKING_ID } from '../pages/lib/gtag';
+import { GA_TRACKING_ID } from '../components/lib/gtag';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx) {

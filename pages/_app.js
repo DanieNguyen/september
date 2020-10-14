@@ -5,7 +5,7 @@ import { device } from '../components/device';
 import SimpleReactLightbox from 'simple-react-lightbox';
 import React, { Fragment } from 'react';
 import Router from 'next/router';
-import * as gtag from '../pages/lib/gtag';
+import * as gtag from '../components/lib/gtag';
 
 // Notice how we track pageview when route is changed
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
