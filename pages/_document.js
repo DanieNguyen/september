@@ -41,6 +41,11 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
+					<link
+						href='https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'
+						rel='stylesheet'
+					/>
+
 					{/* We only want to add the scripts if in production */}
 					{isProduction && (
 						<Fragment>
@@ -52,22 +57,18 @@ export default class MyDocument extends Document {
 							<script
 								dangerouslySetInnerHTML={{
 									__html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+									window.dataLayer = window.dataLayer || [];
+									function gtag(){dataLayer.push(arguments);}
+									gtag('js', new Date());
 
-                    gtag('config', '${GA_TRACKING_ID}', {
-                      page_path: window.location.pathname,
-                    });
-                  `,
+									gtag('config', '${GA_TRACKING_ID}', {
+									page_path: window.location.pathname,
+									});
+								`,
 								}}
 							/>
 						</Fragment>
 					)}
-					<link
-						href='https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'
-						rel='stylesheet'
-					/>
 				</Head>
 				<body>
 					<Main />

@@ -5,7 +5,6 @@ import { device } from '../components/device';
 import SimpleReactLightbox from 'simple-react-lightbox';
 import React, { Fragment } from 'react';
 import Router from 'next/router';
-
 import * as gtag from '../pages/lib/gtag';
 
 // Notice how we track pageview when route is changed
@@ -121,16 +120,16 @@ const GlobalStyle = createGlobalStyle`
 
 export default class MyApp extends App {
 	render() {
-        const { Component, pageProps } = this.props;
+		const { Component, pageProps } = this.props;
 
 		return (
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
-				<Fragment>
-					<SimpleReactLightbox>
+				<SimpleReactLightbox>
+					<Fragment>
 						<Component {...pageProps} />
-					</SimpleReactLightbox>
-				</Fragment>
+					</Fragment>
+				</SimpleReactLightbox>
 			</ThemeProvider>
 		);
 	}
